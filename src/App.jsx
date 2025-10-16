@@ -36,6 +36,7 @@ import NotFoundPage from './Pages/thanks-and-error-pages/NotFoundPage';
 import TitleReveal from './styles/pages/test/TitleReveal';
 import SingleProjectPage from './Pages/index-pages/SingleProjectPage';
 import ExtellNavbar from './Components/common/ExtellNavbar';
+import OngoingProjects from "./Pages/index-pages/OngoingProjects";
 
 function App() {
 
@@ -50,6 +51,15 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/:slug' element={<SingleProjectPage/>} />
         <Route path='/services' element={<Services />} />
+
+
+        {/* Ongoing projects start */}
+        <Route path="/ongoing-projects" element={<OngoingProjects />} />
+        {/* <Route path="/property-detail" element={<PropertyDetail />} /> */}
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        {/* <Route path="*" element={<NotFound />} /> */}
+
+        {/* Onggoing projects end */}
 
         <Route path='/auro-architects' element={<AuroArchitects />} />
         <Route path='/sadhisha-homes' element={< SadhishaHomes />} />
