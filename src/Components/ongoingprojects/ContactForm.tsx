@@ -1,6 +1,6 @@
 import { useState } from "react";
-// import { toast } from "sonner";
-// import contactImage from "@/assets/contact.jpg";
+import { toast } from "sonner";
+import contactImage from "../../assets/images/ongoingprojects/contact.jpg";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -15,19 +15,19 @@ const ContactForm = () => {
     
     // Basic validation
     if (!formData.name || !formData.email || !formData.phone) {
-      // toast.error("Please fill in all required fields");
+      toast.error("Please fill in all required fields");
       return;
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      // toast.error("Please enter a valid email address");
+      toast.error("Please enter a valid email address");
       return;
     }
 
     // Success message
-    // toast.success("Thank you! We'll contact you soon.");
+    toast.success("Thank you! We'll contact you soon.");
     
     // Reset form
     setFormData({
@@ -109,7 +109,7 @@ const ContactForm = () => {
 
           <div className="hidden lg:block">
             <img 
-              // src={contactImage} 
+              src={contactImage} 
               alt="Business handshake" 
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />

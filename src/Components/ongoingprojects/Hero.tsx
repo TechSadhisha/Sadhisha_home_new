@@ -1,16 +1,16 @@
 import { Phone } from "lucide-react";
-// import heroImage from "@/assets/hero-bg.jpg";
-// import Header from "@/components/Header";
+import heroImage from "../../assets/images/ongoingprojects/hero-bg.jpg";
+import Header from "./Header";
 
 const Hero = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <section className="relative min-h-screen flex flex-col">
         {/* Hero Content */}
         <div 
           className="flex-1 flex items-center justify-center bg-cover bg-center relative"
-          // style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${heroImage})` }}
         >
           <div className="absolute inset-0 bg-black/40"></div>
           <div className="relative z-10 text-center text-white px-4">

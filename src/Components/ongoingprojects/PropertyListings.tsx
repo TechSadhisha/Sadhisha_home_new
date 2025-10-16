@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-// import property1 from "@/assets/property1.jpg";
-// import property2 from "@/assets/property2.jpg";
+import property1 from "../../assets/images/ongoingprojects/property1.jpg";
+import property2 from "../../assets/images/ongoingprojects/property2.jpg";
 
 const PropertyListings = () => {
   const properties = [
     {
       id: "auroville-lakeview",
-      // image: property1,
+      image: property1,
       title: "Auroville Lakeview Land",
       description: "Prime Development Land near SBI Kullapalayam Junction",
       price: "₹2,500 per sq. ft.",
@@ -14,7 +14,7 @@ const PropertyListings = () => {
     },
     {
       id: "ecr-beachfront",
-      // image: property2,
+      image: property2,
       title: "ECR Beachfront Enclave",
       description: "Prime Coastal Land 100 meters from East Coast Road (ECR) Shoreline",
       price: "₹550 per sq. ft.",
@@ -34,7 +34,7 @@ const PropertyListings = () => {
             <Link to={`/property-detail?id=${property.id}`} key={property.id}>
               <div className="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
                 <img 
-                  // src={property.image} 
+                  src={property.image} 
                   alt={property.title}
                   className="w-full h-64 object-cover"
                 />

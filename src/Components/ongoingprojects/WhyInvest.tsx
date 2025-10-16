@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-// import beachImage from "@/assets/beach.jpg";
+import beachImage from "../../assets/images/ongoingprojects/beach.jpg";
 
 const WhyInvest = () => {
   const reasons = [
@@ -20,7 +20,7 @@ const WhyInvest = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
             <img 
-              // src={beachImage} 
+              src={beachImage} 
               alt="Coastal landscape" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
