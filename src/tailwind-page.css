@@ -1,0 +1,15 @@
+/* Import theme vars and utilities only (no preflight reset) */
+@layer theme, utilities;
+
+/* theme variables (colors, spacing, etc) */
+@import "tailwindcss/theme.css" layer(theme);
+
+/* utilities only — no base/preflight reset imported here */
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+
+
+
+
+
