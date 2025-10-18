@@ -1,29 +1,24 @@
 import { Phone } from "lucide-react";
-import heroImage from "../../assets/images/ongoingprojects/hero-bg.jpg";
+import heroVideo from "../../assets/images/ongoingprojects/hero-Video.mp4";
 import Header from "./Header";
 
 const Hero = () => {
   return (
     <>
       <Header />
-      <section className="relative min-h-screen flex flex-col">
+<section className="position-relative d-flex flex-column" style={{ minHeight: "77vh" }}>
+
         {/* Hero Content */}
-        <div 
-          className="flex-1 flex items-center justify-center bg-cover bg-center relative"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 bg-black/40"></div>
-          <div className="relative z-10 text-center text-white px-4">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              Premium Lands in Pondicherry
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Build Your Dream. Invest in Growth.
-            </p>
-            <button className="bg-accent hover:bg-accent/90 text-white px-8 py-4 text-lg rounded-md font-medium transition-colors">
-              Explore Properties
-            </button>
-          </div>
+        <div className="flex-fill d-flex align-items-center justify-content-center position-relative overflow-hidden">
+          {/* Background Video */}
+          <video
+            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            src={heroVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
         </div>
       </section>
 
@@ -32,10 +27,20 @@ const Hero = () => {
         href="https://wa.me/919585230000"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-transform hover:scale-110"
+        className="position-fixed btn btn-success rounded-circle shadow-lg"
+        style={{
+          bottom: "24px",
+          right: "24px",
+          zIndex: 1050,
+          width: "60px",
+          height: "60px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
         aria-label="Contact on WhatsApp"
       >
-        <Phone className="w-8 h-8" />
+        <Phone size={32} />
       </a>
     </>
   );

@@ -1,21 +1,30 @@
 import { Link } from "react-router-dom";
-// import logo from "@/assets/sadhisha-logo.png";
+import logo from  "../../assets/images/ongoingprojects/logo.webp"
+
 
 const Header = () => {
   return (
-    <header className="bg-background border-b">
-      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to="/" className="text-foreground hover:text-primary transition-colors">
-          HOME
-        </Link>
-        
-        <Link to="/" className="flex items-center">
-          {/* <img src={logo} alt="Sadhisha Homes" className="h-16" /> */}
-        </Link>
-        
-        <Link to="/#investor" className="text-foreground hover:text-primary transition-colors">
-          INVESTOR CLUB
-        </Link>
+    <header className="bg-black border-bottom">
+      <nav className="container py-4">
+        <div className="row align-items-center">
+          <div className="col-4">
+            <Link to="/" className="text-light text-decoration-none fw-semibold">
+              HOME
+            </Link>
+          </div>
+          
+          <div className="col-4 text-center">
+            <Link to="/" className="d-flex justify-content-center align-items-center">
+              <img src={logo} alt="Sadhisha Homes" style={{ height: '75px' }} />
+            </Link>
+          </div>
+          
+          <div className="col-4 text-end">
+            <Link to="/investor-club" className="text-light text-decoration-none fw-semibold">
+              INVESTOR CLUB
+            </Link>
+          </div>
+        </div>
       </nav>
     </header>
   );

@@ -1,5 +1,3 @@
-import "../../tailwind-page.css";
-
 import Hero from "../../Components/ongoingprojects/Hero";
 import Features from "../../Components/ongoingprojects/Features";
 import PropertyListings from "../../Components/ongoingprojects/PropertyListings";

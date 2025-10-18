@@ -1,6 +1,6 @@
 import { MapPin, Mail, Phone, Facebook, Twitter, Youtube } from "lucide-react";
-// import logo from "@/assets/sadhisha-logo.png";
-// import award from "@/assets/award.png";
+import logo1 from "../../assets/images/ongoingprojects/logo1.webp";
+import award from "../../assets/images/ongoingprojects/award.webp";
 
 const Footer = () => {
   const locations = [
@@ -10,70 +10,78 @@ const Footer = () => {
     "Properties in East Coast Road",
     "Properties in Marakanam",
     "Properties in Mahabalipuram",
-    "Properties near Beach"
+    "Properties near Beach",
   ];
 
   const quickLinks = [
     { name: "Home", href: "#" },
     { name: "About", href: "#about" },
-    { name: "Contact us", href: "#contact" }
+    { name: "Contact us", href: "#contact" },
   ];
 
   return (
-    <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+    <footer className="bg-white border-top">
+      <div className="container py-5">
+        <div className="row g-4 mb-5">
           {/* Contact Section */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Contact Sadisha</h3>
-            {/* <img src={logo} alt="Sadhisha Homes" className="h-24 mb-6" /> */}
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
+          <div className="col-lg-3 col-md-6">
+            <h3 className="h5 fw-bold mb-4">Contact Sadisha</h3>
+            <img
+              src={logo1}
+              alt="Sadhisha Homes"
+              style={{ height: "96px" }}
+              className="mb-4"
+            />
+            <div className="d-flex flex-column gap-3">
+              <div className="d-flex gap-2">
+                <Phone size={20} className="flex-shrink-0 mt-1" />
                 <span>+91 95852 30000</span>
               </div>
-              <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
+              <div className="d-flex gap-2">
+                <Mail size={20} className="flex-shrink-0 mt-1" />
                 <span>info@sadhisha.com</span>
               </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
+              <div className="d-flex gap-2">
+                <MapPin size={20} className="flex-shrink-0 mt-1" />
                 <span>Workafella IFL TOWERS Perungudi, OMR, Chennai</span>
               </div>
             </div>
 
-            <div className="flex gap-4 mt-6">
-              <a 
-                href="#" 
-                className="w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded flex items-center justify-center transition-colors"
+            <div className="d-flex gap-3 mt-4">
+              <a
+                href="#"
+                className="btn btn-primary rounded d-flex align-items-center justify-content-center"
+                style={{ width: "48px", height: "48px" }}
                 aria-label="Facebook"
               >
-                <Facebook className="w-6 h-6" />
+                <Facebook size={24} />
               </a>
-              <a 
-                href="#" 
-                className="w-12 h-12 bg-blue-400 hover:bg-blue-500 text-white rounded flex items-center justify-center transition-colors"
+              <a
+                href="#"
+                className="btn btn-info text-white rounded d-flex align-items-center justify-content-center"
+                style={{ width: "48px", height: "48px" }}
                 aria-label="Twitter"
               >
-                <Twitter className="w-6 h-6" />
+                <Twitter size={24} />
               </a>
-              <a 
-                href="#" 
-                className="w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded flex items-center justify-center transition-colors"
+              <a
+                href="#"
+                className="btn btn-danger rounded d-flex align-items-center justify-content-center"
+                style={{ width: "48px", height: "48px" }}
                 aria-label="YouTube"
               >
-                <Youtube className="w-6 h-6" />
+                <Youtube size={24} />
               </a>
             </div>
           </div>
 
           {/* Top Locations */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Top Locations</h3>
-            <ul className="space-y-3">
+          <div className="col-lg-3 col-md-6">
+            <h3 className="h5 fw-bold mb-4">Top Locations</h3>
+            <ul className="list-unstyled">
               {locations.map((location, index) => (
-                <li key={index}>
-                  <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                <li key={index} className="mb-2">
+                  <a href="#" className="text-muted text-decoration-none">
                     {location}
                   </a>
                 </li>
@@ -82,12 +90,15 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
+          <div className="col-lg-3 col-md-6">
+            <h3 className="h5 fw-bold mb-4">Quick Links</h3>
+            <ul className="list-unstyled">
               {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors">
+                <li key={index} className="mb-2">
+                  <a
+                    href={link.href}
+                    className="text-muted text-decoration-none"
+                  >
                     {link.name}
                   </a>
                 </li>
@@ -96,26 +107,34 @@ const Footer = () => {
           </div>
 
           {/* Awards */}
-          <div>
-            <div className="flex gap-4">
-              {/* <img src={award} alt="Best Thailand Agent Award" className="h-32 w-auto" />
-              <img src={award} alt="Best Thailand Agent Award" className="h-32 w-auto" />
-              <img src={award} alt="Best Thailand Agent Award" className="h-32 w-auto" /> */}
+          <div className="col-lg-3 col-md-6">
+            <div className="d-flex gap-3">
+              <img
+                src={award}
+                alt="Best Thailand Agent Award"
+                style={{ height: "250px", width: "100px" }}
+              />
+              <img
+                src={award}
+                alt="Best Thailand Agent Award"
+                style={{ height: "250px", width: "100px" }}
+              />
+              <img
+                src={award}
+                alt="Best Thailand Agent Award"
+                style={{ height: "250px", width: "100px" }}
+              />
             </div>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground">
-            Copyright © 2025 Sadhisha
-          </p>
-          <p className="text-muted-foreground">
-            Online Presence Powered by:{" "}
-            <a href="#" className="text-blue-500 hover:text-blue-600 transition-colors">
-              Agam Creative Studio
-            </a>
-          </p>
+        <div className="border-top pt-4">
+          <div className="row align-items-center">
+            <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <p className="text-muted mb-0">Copyright © 2025 Sadhisha</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -31,86 +31,104 @@ const Testimonials = () => {
     },
   ];
 
-  const next = () =>
+  const next = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-  const prev = () =>
+  };
+
+  const prev = () => {
     setCurrentIndex(
       (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
+  };
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            What Our Clients Say
-          </h2>
-          <p className="text-xl text-gray-600">Real Stories. Real Trust.</p>
-          <p className="mt-4 text-gray-700 max-w-3xl mx-auto">
-            At Sadhisha, our clients aren’t just buyers — they’re part of a
+    <section className="py-5" style={{ backgroundColor: "#f8f9fa" }}>
+      <div className="container">
+        <div className="text-center mb-5">
+          <h2 className="h2 fw-bold mb-3">What our Clients Say?</h2>
+          <p className="lead text-muted">Real Stories. Real Trust.</p>
+          <p className="text-muted">
+            At Sadhisha, our clients aren't just buyers—they're part of a
             growing family built on trust, transparency, and timeless value.
-            Here’s what some of them have to say:
+            Here's what some of them have to say:
           </p>
         </div>
 
-        {/* Testimonial Card */}
-        <div className="max-w-4xl mx-auto relative">
-          <div className="bg-white rounded-2xl p-10 shadow-lg text-center">
-            <p className="text-lg md:text-xl text-gray-700 italic mb-6">
-              “{testimonials[currentIndex].quote}”
-            </p>
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="position-relative">
+              <div className="">
+                <div className="card-body p-5">
+                  <div className="text-center">
+                    <p className="fs-5 fst-italic text-muted mb-4">
+                      "{testimonials[currentIndex].quote}"
+                    </p>
+                    <div className="d-flex justify-content-center gap-1 mb-3">
+                      {[...Array(testimonials[currentIndex].rating)].map(
+                        (_, i) => (
+                          <Star
+                            key={i}
+                            size={24}
+                            fill="#f59e0b"
+                            color="#f59e0b"
+                          />
+                        )
+                      )}
+                    </div>
+                    <p className="small text-muted mb-3">
+                      {testimonials[currentIndex].date}
+                    </p>
+                    <p className="h5 fw-bold mb-1">
+                      — {testimonials[currentIndex].author}
+                    </p>
+                    <p className="text-muted">
+                      {testimonials[currentIndex].role}
+                    </p>
+                  </div>
 
-            <div className="flex justify-center gap-1 mb-4">
-              {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                <Star
-                  key={i}
-                  className="w-6 h-6 text-yellow-500 fill-yellow-500"
-                />
-              ))}
-            </div>
+                  <div className="d-flex justify-content-center gap-2 mt-4">
+                    {testimonials.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`btn btn-sm rounded-circle p-0 ${
+                          index === currentIndex ? "bg-warning" : "bg-secondary"
+                        }`}
+                        style={{ width: "8px", height: "8px", border: "none" }}
+                        onClick={() => setCurrentIndex(index)}
+                        aria-label={`Go to testimonial ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <button
+                className="btn btn-outline-secondary rounded-circle position-absolute top-50 start-0 translate-middle-y"
+                style={{
+                  width: "48px",
+                  height: "48px",
+                  transform: "translate(-50%, -50%)", 
+                }}
+                onClick={prev}
+                aria-label="Previous testimonial"
+              >
+                <ChevronLeft size={24} />
+              </button>
 
-            <p className="text-sm text-gray-500 mb-2">
-              {testimonials[currentIndex].date}
-            </p>
-            <p className="text-xl font-bold text-gray-900">
-              — {testimonials[currentIndex].author}
-            </p>
-            <p className="text-gray-600">{testimonials[currentIndex].role}</p>
-
-            {/* Dots Navigation */}
-            <div className="flex justify-center gap-2 mt-8">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentIndex
-                      ? "bg-yellow-500 scale-110"
-                      : "bg-gray-300 hover:bg-gray-400"
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
+              {/* Right Arrow */}
+              <button
+                className="btn btn-outline-secondary rounded-circle position-absolute top-50 end-0 translate-middle-y"
+                style={{
+                  width: "48px",
+                  height: "48px",
+                  transform: "translate(50%, -50%)", 
+                }}
+                onClick={next}
+                aria-label="Next testimonial"
+              >
+                <ChevronRight size={24} />
+              </button>
             </div>
           </div>
-
-          {/* Navigation Buttons */}
-          <button
-            onClick={prev}
-            aria-label="Previous testimonial"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 bg-white border border-gray-300 rounded-full p-3 shadow-md hover:bg-gray-100 transition"
-          >
-            <ChevronLeft className="w-6 h-6 text-gray-700" />
-          </button>
-
-          <button
-            onClick={next}
-            aria-label="Next testimonial"
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 bg-white border border-gray-300 rounded-full p-3 shadow-md hover:bg-gray-100 transition"
-          >
-            <ChevronRight className="w-6 h-6 text-gray-700" />
-          </button>
         </div>
       </div>
     </section>

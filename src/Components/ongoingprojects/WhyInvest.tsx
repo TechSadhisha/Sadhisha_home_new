@@ -7,34 +7,41 @@ const WhyInvest = () => {
     "Located in fast-appreciating zones near the coast, green belts & major highways",
     "Ready for immediate registration and construction",
     "Options ranging from compact lifestyle plots to expansive estates",
-    "Ideal for retirement homes, weekend villas, eco-residences, and resale investments"
+    "Ideal for retirement homes, weekend villas, eco-residences, and resale investments",
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+    <section className="py-5 bg-white">
+      <div className="container">
+        <h2 className="h2 fw-bold text-center mb-5">
           Why Invest in Land with Sadhisha?
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div>
-            <img 
-              src={beachImage} 
-              alt="Coastal landscape" 
-              className="w-full h-auto rounded-lg shadow-lg"
+        <div className="row g-5 align-items-center">
+          <div className="col-lg-6">
+            <img
+              src={beachImage}
+              alt="Coastal landscape"
+              className="img-fluid rounded shadow-lg"
             />
           </div>
 
-          <div className="space-y-6">
-            {reasons.map((reason, index) => (
-              <div key={index} className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
-                  <Check className="w-5 h-5 text-accent" />
+          <div className="col-lg-6">
+            <div className="d-flex flex-column gap-4">
+              {reasons.map((reason, index) => (
+                <div key={index} className="d-flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div
+                      className="rounded-circle bg-warning bg-opacity-10 d-flex align-items-center justify-content-center"
+                      style={{ width: "32px", height: "32px" }}
+                    >
+                      <Check size={20} className="text-warning" />
+                    </div>
+                  </div>
+                  <p className="text-muted fs-6 mb-0">{reason}</p>
                 </div>
-                <p className="text-lg">{reason}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

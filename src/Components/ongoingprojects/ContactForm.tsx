@@ -1,18 +1,21 @@
 import { useState } from "react";
 import { toast } from "sonner";
 import contactImage from "../../assets/images/ongoingprojects/contact.jpg";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: "I am interested in receiving more information about this property. Thank you"
+    message:
+      "I am interested in receiving more information about this property. Thank you",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.phone) {
       toast.error("Please fill in all required fields");
@@ -28,90 +31,134 @@ const ContactForm = () => {
 
     // Success message
     toast.success("Thank you! We'll contact you soon.");
-    
+
     // Reset form
     setFormData({
       name: "",
       email: "",
       phone: "",
-      message: "I am interested in receiving more information about this property. Thank you"
+      message:
+        "I am interested in receiving more information about this property. Thank you",
     });
   };
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.state?.scrollTo === "contact") {
+      const section = document.getElementById("contact");
+      if (section) {
+        // Wait a short moment for the page to fully render
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+
+      // 🧹 Clear the scroll state so it doesn’t persist on reload
+      navigate(location.pathname, { replace: true, state: {} });
+    }
+  }, [location, navigate]);
+
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Enquire Sadhisha
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            Get in touch with our land advisors today to schedule a private site visit or request layout options.
+    <section
+      id="contact"
+      className="py-5 contact-section"
+      style={{ backgroundColor: "#f8f9fa" }}
+    >
+      <div className="container">
+        <div className="text-center mb-5">
+          <h2 className="h4 fw-bold mb-3">Enquire Sadhisha</h2>
+          <p className="lead text-muted">
+            Get in touch with our land advisors today to schedule a private site
+            visit or request layout options.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">Your name</label>
-              <input
-                id="name"
-                type="text"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                required
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">Your email</label>
-              <input
-                id="email"
-                type="email"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                required
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone Number</label>
-              <input
-                id="phone"
-                type="tel"
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                required
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">Your message (optional)</label>
-              <textarea
-                id="message"
-                rows={5}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              />
-            </div>
-
-            <button 
-              type="submit" 
-              className="h-11 px-8 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-colors"
+        <div className="row g-5">
+          <div className="col-lg-6">
+            <form
+              onSubmit={handleSubmit}
+              className="p-4 bg-white rounded shadow-sm"
             >
-              Submit
-            </button>
-          </form>
+              <div className="mb-3">
+                <label htmlFor="name" className="form-label fw-semibold">
+                  Your name
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  className="form-control"
+                  value={formData.name}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
+                  required
+                />
+              </div>
 
-          <div className="hidden lg:block">
-            <img 
-              src={contactImage} 
-              alt="Business handshake" 
-              className="w-full h-full object-cover rounded-lg shadow-lg"
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label fw-semibold">
+                  Your email
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  className="form-control"
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
+                  required
+                />
+              </div>
+
+              <div className="mb-3">
+                <label htmlFor="phone" className="form-label fw-semibold">
+                  Phone Number
+                </label>
+                <input
+                  id="phone"
+                  type="tel"
+                  className="form-control"
+                  value={formData.phone}
+                  onChange={(e) =>
+                    setFormData({ ...formData, phone: e.target.value })
+                  }
+                  required
+                />
+              </div>
+
+              <div className="mb-4">
+                <label htmlFor="message" className="form-label fw-semibold">
+                  Your message (optional)
+                </label>
+                <textarea
+                  id="message"
+                  className="form-control text-muted"
+                  rows={5}
+                  value={formData.message}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="btn btn-primary w-100 py-2 fw-semibold"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <div className="col-lg-6 d-none d-lg-block">
+            <img
+              src={contactImage}
+              alt="Business handshake"
+              className="img-fluid h-100 w-100 rounded shadow-lg"
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
