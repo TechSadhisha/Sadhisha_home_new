@@ -168,7 +168,7 @@ const PropertyListings = () => {
 
   return (
     <section className="py-5" style={{ backgroundColor: "#f8f9fa" }}>
-      <div className="container">
+      <div className="container p-5">
         <h2 className="h3 fw-bold text-center mb-5">
           Pondicherry Real Estate: Premium Listings
         </h2>

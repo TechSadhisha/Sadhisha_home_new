@@ -23,7 +23,27 @@ import property16 from "../../assets/images/ongoingprojects/property16.webp";
 import gandhi from "../../assets/images/ongoingprojects/gandhi.webp";
 import growth from "../../assets/images/ongoingprojects/growth.webp";
 import property from "../../assets/images/ongoingprojects/mangrove.mp4";
+import PropertyMediaSlider from "../../Components/common/PropertyMediaSlider";
 import { useNavigate } from "react-router-dom";
+
+const slideImages = [
+  property1,
+  property2,
+  property3,
+  property4,
+  property5,
+  property6,
+  property7,
+  property8,
+  property9,
+  property10,
+  property11,
+  property12,
+  property13,
+  property14,
+  property15,
+  property16,
+];
 
 // Property data
 const properties = {
@@ -374,32 +394,8 @@ const PropertyDetail = () => {
               </div>
 
               {/* Image Carousel */}
-              <div className="position-relative mb-4">
-                <img
-                  src={currentProperty.images[currentImageIndex]}
-                  alt={`Property view ${currentImageIndex + 1}`}
-                  className="img-fluid rounded w-100"
-                  style={{
-                    height: "500px",
-                    objectFit: "cover",
-                    // backgroundColor: "#f8f9fa", // light gray background fill
-                  }}
-                />
-
-                <button
-                  onClick={prevImage}
-                  className="btn btn-light rounded-circle position-absolute top-50 start-0 translate-middle-y ms-2"
-                  style={{ width: "40px", height: "40px" }}
-                >
-                  <ChevronLeft size={20} />
-                </button>
-                <button
-                  onClick={nextImage}
-                  className="btn btn-light rounded-circle position-absolute top-50 end-0 translate-middle-y me-2"
-                  style={{ width: "40px", height: "40px" }}
-                >
-                  <ChevronRight size={20} />
-                </button>
+              <div className="container my-4">
+                <PropertyMediaSlider media={slideImages} />
               </div>
 
               <div
