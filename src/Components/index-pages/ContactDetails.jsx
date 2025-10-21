@@ -29,8 +29,11 @@ const ContactDetails = () => {
                         </h3>
                         <ul>
                             <p className='paraBlack'>
-                                <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54502 "> +91 95855 54502 </a></span><br />
-                                <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54505 "> +91 95855 54505 </a></span>
+                                {/* <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54502 "> +91 95855 54502 </a></span><br />
+                                <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54505 "> +91 95855 54505 </a></span><br /> */}
+                                <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54505 "> +91 95852 30000 </a></span> <br />
+                                   <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54505 "> +91 95855 54505 </a></span>
+
                             </p>
                         </ul>
                     </div>
@@ -46,7 +49,7 @@ const ContactDetails = () => {
                         <ul>
                             <p className='paraBlack'>
                                 <span><a className='text-decoration-none paraBlack footer-links' href="mailto:sadhishahomes@gmail.com">sadhishahomes@gmail.com</a></span><br />
-                                <span><a className='text-decoration-none paraBlack footer-links' href="mailto:contact.sadhisha@gmail.com">  sadhisha@gmail.com</a></span>
+                                <span><a className='text-decoration-none paraBlack footer-links' href="mailto:info@sadhisha.com">  info@sadhisha.com</a></span>
                             </p>
                         </ul>
                     </div>
@@ -65,8 +68,8 @@ const ContactDetails = () => {
                         </h3>
                         <ul>
                             <p className='paraBlack'>Sadhisha, <br />
-                                [Insert Address Line Here] <br />
-                                Puducherry – [PIN Code]
+                                No.36, Pappammal Koil St, Kuruchikuppam, <br />
+                                Puducherry – 605001
                                 India
                             </p>
                         </ul>
@@ -83,8 +86,8 @@ const ContactDetails = () => {
                         </h3>
                         <ul>
                             <p className='paraBlack'>Sadhisha, <br />
-                                [Insert Address Line Here] <br />
-                                Chennai – [PIN Code]
+                                Workafella IFL TOWERS Perungudi, OMR<br />
+                                Chennai – 600096
                                 India
                             </p>
                         </ul>
