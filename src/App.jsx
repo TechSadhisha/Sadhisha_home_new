@@ -29,6 +29,7 @@ import SadhishaHomes from "./Pages/affilate-pages/SadhishaHomes";
 import SadhishaRapidEdge from "./Pages/affilate-pages/SadhishaRapidEdge";
 import SadhishaRealty from "./Pages/affilate-pages/SadhishaRealty";
 import SadhishaInteriors from "./Pages/affilate-pages/SadhishaInteriors";
+import SadhishaAi from "./Pages/affilate-pages/SadhishaAi";
 import ThanksPage from "./Pages/thanks-and-error-pages/ThanksPage";
 import NotFoundPage from "./Pages/thanks-and-error-pages/NotFoundPage";
 import TitleReveal from "./styles/pages/test/TitleReveal";
@@ -37,7 +38,6 @@ import ExtellNavbar from "./Components/common/ExtellNavbar";
 import OngoingProjects from "./Pages/index-pages/OngoingProjects";
 import PropertyDetail from "./Pages/index-pages/PropertyDetail";
 import ScrollToTop from "./ScrollToTop";
-
 
 function App() {
   const location = useLocation();
@@ -74,6 +74,7 @@ function App() {
         />
         <Route path="/sadhisha-rapid-edge" element={<SadhishaRapidEdge />} />
         <Route path="/sadhisha-realty" element={<SadhishaRealty />} />
+        <Route path="/sadhisha-ai" element={<SadhishaAi />} />
         <Route path="/sadhisha-interiors" element={<SadhishaInteriors />} />
 
         <Route path="/about" element={<About />} />

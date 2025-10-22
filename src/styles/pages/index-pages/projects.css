@@ -55,8 +55,6 @@
   padding: 0.8rem 1rem;
 }
 
-
-
 /* Badge (FOR RENT / FOR SALE) */
 .badge {
   font-size: 0.7rem;
@@ -80,7 +78,6 @@
   }
 }
 
-
 /* Projects Page: Fixed Map & Scrollable Property List */
 
 /* Wrapper row should be full height */
@@ -102,8 +99,8 @@
 .projects-list-col {
   height: 100vh;
   overflow-y: scroll;
-  scrollbar-width: none;         /* Firefox */
-  -ms-overflow-style: none;      /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
   padding-left: 1rem;
   padding-right: 1rem;
 }

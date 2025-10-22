@@ -159,6 +159,7 @@ const ExtellNavbar = () => {
                       path: "/sadhisha-interiors",
                       label: "Sadhisha Interiors",
                     },
+                    { path: "/sadhisha-ai", label: "Sadhisha Ai" },
                   ].map(({ path, label }) => (
                     <li key={path}>
                       <a

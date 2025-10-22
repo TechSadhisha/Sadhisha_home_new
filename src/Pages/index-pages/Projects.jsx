@@ -13,6 +13,8 @@ const Projects = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  
+
   const { propertyPortfolio } = projectsData;
   const [filter, setFilter] = useState("All");
   const [hoveredProperty, setHoveredProperty] = useState(null); // ✅ added
@@ -25,6 +27,8 @@ const Projects = () => {
       : propertyPortfolio.filter(
           (item) => item.type.toLowerCase() === filter.toLowerCase()
         );
+
+        
 
   return (
     <div>

@@ -159,7 +159,7 @@ const propertyPortfolio = [
     slug: "skyview-residences",
     year: 2024,
     location: "Gurgaon, Haryana, India",
-    area: "urgaon, Haryana",
+    area: "Gurugram, Haryana",
     address: "Golf Course Extension Road, Sector 65, Gurugram",
     type: "residency",
     estimatedDuration: "16 months",
