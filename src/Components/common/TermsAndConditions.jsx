@@ -124,8 +124,7 @@ const TermsAndConditions = () => {
                                             </h3>
                                             <ul>
                                                 <p className='paraBlack'>
-                                                    <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54502 "> +91 95855 54502 </a></span><br />
-                                                    <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54505 "> +91 95855 54505 </a></span>
+                                                    <span><a className='text-decoration-none paraBlack footer-links' href="+tel: +91 95855 54502 "> +91 95855 54502 </a></span>
                                                 </p>
                                             </ul>
                                         </div>
@@ -140,8 +139,7 @@ const TermsAndConditions = () => {
                                             </h3>
                                             <ul>
                                                 <p className='paraBlack'>
-                                                    <span><a className='text-decoration-none paraBlack footer-links' href="mailto:sadhishahomes@gmail.com">sadhishahomes@gmail.com</a></span><br />
-                                                    <span><a className='text-decoration-none paraBlack footer-links' href="mailto:contact.sadhisha@gmail.com">  sadhisha@gmail.com</a></span>
+                                                    <span><a className='text-decoration-none paraBlack footer-links' href="mailto:sadhishahomes@gmail.com">sadhishahomes@gmail.com</a></span>
                                                 </p>
                                             </ul>
                                         </div>

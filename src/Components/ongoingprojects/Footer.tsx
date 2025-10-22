@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
               <div className="d-flex gap-2">
                 <Mail size={20} className="flex-shrink-0 mt-1" />
-                <span>info@sadhisha.com</span>
+                <span>sadhishahomes@gmail.com</span>
               </div>
               <div className="d-flex gap-2">
                 <MapPin size={20} className="flex-shrink-0 mt-1" />
