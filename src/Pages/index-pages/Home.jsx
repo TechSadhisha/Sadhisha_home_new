@@ -38,7 +38,7 @@ const Home = () => {
   } = HomeData;
 
   const [hovered, setHovered] = useState(null);
-
+ 
 
   // Set up the inView observer
   const [ref, inView] = useInView({

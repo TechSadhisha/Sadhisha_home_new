@@ -1,26 +1,39 @@
 @import "leaflet/dist/leaflet.css";
 
+/* ===========================
+   HERO VIDEO SECTION
+=========================== */
+
 .video-banner {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 
-/* Fixed background video positioned at bottom */
+/* Fixed video background behind everything */
 .video-banner video {
-  position: fixed; /* changed from absolute */
-  bottom: 0;       /* stick to bottom */
+  position: fixed;
+  top: 0;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
   transform: translateX(-50%);
-  z-index: -1;     /* ensure it stays behind all other content */
-  pointer-events: none; /* makes sure video doesn't block clicks */
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -10; /* stays behind navbar and all other content */
+  pointer-events: none; /* allows clicks on top */
 }
 
-/* Overlay content centered and on top */
+/* Optional overlay for readability */
+.video-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -5;
+}
+
+/* Text overlay in hero section */
 .overlay-content {
   position: relative;
   z-index: 1;
@@ -28,10 +41,28 @@
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
+  padding: 0 1rem;
 }
 
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
 
+/* Make sure navbar is above video */
+nav, .navbar, .header {
+  position: relative;
+  z-index: 999;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
 .green-btn.btn {
   width: 150px;
   padding: 13px 15px;
@@ -43,67 +74,19 @@
 }
 
 .green-btn.btn:hover {
+  transform: scale(1.1);
   background-color: var(--green);
-  border: 1px solid var(--gold);
-  color: var(--white);
-  transform: scale(1.1);
-}
-
-.red-btn.btn {
-  width: 150px;
-  padding: 13px 15px;
-  background-color: var(--black);
-  color: var(--white);
-  transition: transform 0.3s ease;
-  border-radius: 0;
-}
-
-.red-btn.btn:hover {
-  background-color: var(--black);
-  color: var(--white);
-  transform: scale(1.1);
-}
-
-.black-btn.btn {
-  width: 150px;
-  padding: 13px 15px;
-  background-color: var(--black);
-  color: var(--white);
-  transition: transform 0.3s ease;
-  border-radius: 0;
-}
-
-.black-btn.btn:hover {
-  transform: scale(1.1);
- background-color: var(--black);
-  color: var(--white);
-  border: 1px solid var(--black);
-}
-
-.white-btn.btn {
-  width: 150px;
-  padding: 13px 15px;
-  background-color: transparent;
-  border: 1px solid var(--gold);
-  color: var(--white);
-  transition: transform 0.3s ease;
-  border-radius: 0;
-}
-
-.white-btn.btn:hover {
-  transform: scale(1.1);
-  background-color: transparent;
   border: 1px solid var(--gold);
   color: var(--white);
 }
 
 @media (max-width:768px) {
-  .green-btn.btn,
-  .red-btn.btn,
-  .black-btn.btn,
-  .transparent-btn.btn {
-    width: 130px;
-    font-size: 14px;
-    padding: 10px 12px;
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
   }
 }
+
+
