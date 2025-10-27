@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import sadhishaLogo from "../../assets/images/common/SADHISHA LOGO 1/2.png";
+
 import "../../styles/components/common/navbar.css";
 import { Link } from "react-router-dom";
 
@@ -65,7 +66,6 @@ const ExtellNavbar = () => {
               className="bannerLogo"
               width={130}
               src={sadhishaLogo}
-              style={{ borderRadius: "50%" }}
               alt="sadhishaLogo"
             />
           </a>

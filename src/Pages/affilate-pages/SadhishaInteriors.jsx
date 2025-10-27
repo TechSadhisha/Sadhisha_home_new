@@ -29,7 +29,7 @@ const SadhishaInteriors = () => {
                                       <img src={SadhishaHomesLogo} width={130} alt="SadhishaHomesLogo" style={{ borderRadius: "50%" }} />
                                     </div>
             <div className="flex-row-center row mb-md-2 mb-2">
-              <h4 className="subTitleGreen fs-3 text-center">Sadhisha Homes</h4>
+              <h4 className="subTitleGreen fs-3 text-center">Sadhisha Interiors</h4>
               <p
                 className="subParaTextGreen text-uppercase mb-md-4 mb-2 text-center"
               
