@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams, Link, useLocation } from "react-router-dom";
 import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
+
 // import { useToast } from "@/hooks/use-toast";
 import Header from "../../Components/ongoingprojects/Header";
 import Footer from "../../Components/ongoingprojects/Footer";
@@ -9,24 +10,28 @@ import property1slide1 from "../../assets/images/ongoingprojects/property1slide1
 import property1slide2 from "../../assets/images/ongoingprojects/property1slide2.jpg";
 import property1slide3 from "../../assets/images/ongoingprojects/property1slide3.jpg";
 import property1slide4 from "../../assets/images/ongoingprojects/property1slide4.jpg";
+import property1_video from "../../assets/images/ongoingprojects/property1_video.mp4";
 
 import property2 from "../../assets/images/ongoingprojects/property2.jpg";
 import property2slide1 from "../../assets/images/ongoingprojects/property2slide1.jpg";
 import property2slide2 from "../../assets/images/ongoingprojects/property2slide2.jpg";
 import property2slide3 from "../../assets/images/ongoingprojects/property2slide3.jpg";
 import property2slide4 from "../../assets/images/ongoingprojects/property2slide4.jpg";
+import property2_video from "../../assets/images/ongoingprojects/property2_video.mp4";
 
 import property3 from "../../assets/images/ongoingprojects/property3.jpg";
 import property3slide1 from "../../assets/images/ongoingprojects/property3slide1.jpg";
 import property3slide2 from "../../assets/images/ongoingprojects/property3slide2.jpg";
 import property3slide3 from "../../assets/images/ongoingprojects/property3slide3.jpg";
 import property3slide4 from "../../assets/images/ongoingprojects/property3slide4.jpg";
+import property3_video from "../../assets/images/ongoingprojects/property3_video.mp4";
 
 import property4 from "../../assets/images/ongoingprojects/property4.jpg";
 import property4slide1 from "../../assets/images/ongoingprojects/property4slide1.jpg";
 import property4slide2 from "../../assets/images/ongoingprojects/property4slide2.jpg";
 import property4slide3 from "../../assets/images/ongoingprojects/property4slide3.jpg";
 import property4slide4 from "../../assets/images/ongoingprojects/property4slide4.jpg";
+import property4_video from "../../assets/images/ongoingprojects/property4_video.mp4";
 
 import property5 from "../../assets/images/ongoingprojects/property5.jpg";
 import property5slide1 from "../../assets/images/ongoingprojects/property5slide1.jpg";
@@ -39,18 +44,21 @@ import property6slide1 from "../../assets/images/ongoingprojects/property6slide1
 import property6slide2 from "../../assets/images/ongoingprojects/property6slide2.jpg";
 import property6slide3 from "../../assets/images/ongoingprojects/property6slide3.jpg";
 import property6slide4 from "../../assets/images/ongoingprojects/property6slide4.jpg";
+import property6_video from "../../assets/images/ongoingprojects/property6_video.mp4";
 
 import property7 from "../../assets/images/ongoingprojects/property7.jpg";
 import property7slide1 from "../../assets/images/ongoingprojects/property7slide1.jpg";
 import property7slide2 from "../../assets/images/ongoingprojects/property7slide2.jpg";
 import property7slide3 from "../../assets/images/ongoingprojects/property7slide3.jpg";
 import property7slide4 from "../../assets/images/ongoingprojects/property7slide4.jpg";
+import property7_video from "../../assets/images/ongoingprojects/property7_video.mp4";
 
 import property8 from "../../assets/images/ongoingprojects/property8.jpg";
 import property8slide1 from "../../assets/images/ongoingprojects/property8slide1.jpg";
 import property8slide2 from "../../assets/images/ongoingprojects/property8slide2.jpg";
 import property8slide3 from "../../assets/images/ongoingprojects/property8slide3.jpg";
 import property8slide4 from "../../assets/images/ongoingprojects/property8slide4.jpg";
+import property8_video from "../../assets/images/ongoingprojects/property8_video.mp4";
 
 import property9 from "../../assets/images/ongoingprojects/property9.jpg";
 import property9slide1 from "../../assets/images/ongoingprojects/property9slide1.jpg";
@@ -81,6 +89,7 @@ import property13slide1 from "../../assets/images/ongoingprojects/property13slid
 import property13slide2 from "../../assets/images/ongoingprojects/property13slide2.jpg";
 import property13slide3 from "../../assets/images/ongoingprojects/property13slide3.jpg";
 import property13slide4 from "../../assets/images/ongoingprojects/property13slide4.jpg";
+import property13_video from "../../assets/images/ongoingprojects/property13_video.mp4";
 
 import property14 from "../../assets/images/ongoingprojects/property14.jpg";
 import property14slide1 from "../../assets/images/ongoingprojects/property14slide1.jpg";
@@ -99,6 +108,7 @@ import property16slide1 from "../../assets/images/ongoingprojects/property16slid
 import property16slide2 from "../../assets/images/ongoingprojects/property16slide2.jpg";
 import property16slide3 from "../../assets/images/ongoingprojects/property16slide3.jpg";
 import property16slide4 from "../../assets/images/ongoingprojects/property16slide4.jpg";
+import property16_video from "../../assets/images/ongoingprojects/property16_video.mp4";
 
 import property17 from "../../assets/images/ongoingprojects/property17.jpg";
 import property17slide1 from "../../assets/images/ongoingprojects/property17slide1.jpg";
@@ -111,6 +121,7 @@ import property18slide1 from "../../assets/images/ongoingprojects/property18slid
 import property18slide2 from "../../assets/images/ongoingprojects/property18slide2.jpg";
 import property18slide3 from "../../assets/images/ongoingprojects/property18slide3.jpg";
 import property18slide4 from "../../assets/images/ongoingprojects/property18slide4.jpg";
+import property18_video from "../../assets/images/ongoingprojects/property18_video.mp4";
 
 import property19 from "../../assets/images/ongoingprojects/property19.jpg";
 import property19slide1 from "../../assets/images/ongoingprojects/property19slide1.jpg";
@@ -172,6 +183,7 @@ const properties = {
       property1slide4,
     ],
     mainImage: property1,
+    video: property1_video,
   },
 
   // 2. Club House
@@ -189,6 +201,7 @@ const properties = {
       "10,000 sq.ft. Built-up | Banquet, Indoor Games, Café | Located near Auroville Township",
     images: [property2, property2slide1, property2slide2],
     mainImage: property2,
+    video: property2_video,
   },
 
   // 3. Convention Center
@@ -212,6 +225,7 @@ const properties = {
       property3slide4,
     ],
     mainImage: property3,
+    video: property3_video,
   },
 
   // 4. Education Institution
@@ -235,6 +249,7 @@ const properties = {
       property4slide4,
     ],
     mainImage: property4,
+    video: property4_video,
   },
 
   // 5. Financial District
@@ -259,6 +274,7 @@ const properties = {
     ],
 
     mainImage: property5,
+    video: property1_video,
   },
 
   // 6. High Rise Apartment
@@ -283,6 +299,7 @@ const properties = {
     ],
 
     mainImage: property6,
+    video: property6_video,
   },
 
   // 7. Industrial Park
@@ -306,6 +323,7 @@ const properties = {
       property7slide4,
     ],
     mainImage: property7,
+    video: property7_video,
   },
 
   // 8. IT World
@@ -329,6 +347,7 @@ const properties = {
       property8slide4,
     ],
     mainImage: property8,
+    video: property8_video,
   },
 
   // 9. Luxury Villas
@@ -352,6 +371,7 @@ const properties = {
       property9slide4,
     ],
     mainImage: property9,
+    video: property1_video,
   },
 
   // 10. Multiplex Theatre
@@ -376,6 +396,7 @@ const properties = {
     ],
 
     mainImage: property10,
+    video: property1_video,
   },
 
   // 11. Office Space
@@ -399,6 +420,7 @@ const properties = {
       property11slide4,
     ],
     mainImage: property11,
+    video: property1_video,
   },
 
   // 12. Recreational Center
@@ -423,6 +445,7 @@ const properties = {
     ],
 
     mainImage: property12,
+    video: property1_video,
   },
   // 13. Resort in Goa
   "resort-in-goa": {
@@ -446,6 +469,7 @@ const properties = {
     ],
 
     mainImage: property13,
+    video: property13_video,
   },
 
   // 14. Row Housing
@@ -469,6 +493,7 @@ const properties = {
       property14slide4,
     ],
     mainImage: property14,
+    video: property1_video,
   },
 
   // 15. Shopping Mall
@@ -493,6 +518,7 @@ const properties = {
     ],
 
     mainImage: property15,
+    video: property1_video,
   },
 
   // 16. Spiritual Retreat
@@ -517,6 +543,7 @@ const properties = {
     ],
 
     mainImage: property16,
+    video: property16_video,
   },
 
   // 17. Theme Park
@@ -541,6 +568,7 @@ const properties = {
     ],
 
     mainImage: property17,
+    video: property1_video,
   },
 
   // 18. Urbanscape Township
@@ -565,6 +593,7 @@ const properties = {
     ],
 
     mainImage: property18,
+    video: property18_video,
   },
 
   // 19. Yoga Retreat
@@ -589,6 +618,7 @@ const properties = {
     ],
 
     mainImage: property19,
+    video: property1_video,
   },
 
   // 20. Multispeciality Hospital in Bangalore
@@ -612,6 +642,7 @@ const properties = {
       property20slide4,
     ],
 
+    video: property1_video,
     mainImage: property20,
   },
 
@@ -628,6 +659,7 @@ const properties = {
       "1.25 Acres (54,450 sq. ft.) | Subdividable into 10,000 sq. ft. plots | Auroville",
     images: [property21, property21slide1, property21slide2],
     mainImage: property21,
+    video: property1_video,
   },
 
   // 22. ECR Beachfront Enclave
@@ -645,6 +677,7 @@ const properties = {
       "1 Acre (43,560 sq. ft.) | Subdividable into 10,000 sq. ft. plots | near Auroville",
     images: [property22, property21slide1, property21slide2],
     mainImage: property22,
+    video: property1_video,
   },
 
   // 23. Auroville Coastal Grove
@@ -659,6 +692,7 @@ const properties = {
     details: "85 Cents | 37,000 sq. ft | Subdividable into 2,500 sq. ft. plots",
     images: [property23, property21slide1, property21slide2],
     mainImage: property23,
+    video: property1_video,
   },
 
   // 24. ECR Coconut Grove
@@ -674,6 +708,7 @@ const properties = {
       "2.5 Acres | 1,08,900 sq. ft. | Subdividable into 10,000 sq. ft. plots",
     images: [property24, property21slide1, property21slide2],
     mainImage: property24,
+    video: property1_video,
   },
   // 25. ECR Anumanthai Haven
   "ecr-anumanthai-haven": {
@@ -688,6 +723,7 @@ const properties = {
       "1.1 Acres | Approx. 47,916 sq.ft | Subdividable into 10,000 sq.ft plots",
     images: [property25, property21slide1, property21slide2],
     mainImage: property25,
+    video: property1_video,
   },
 
   // 26. Marakanam Meadows
@@ -703,6 +739,7 @@ const properties = {
       "34 Acres | Approx. 14,80,000+ sq.ft | Suitable for Township Projects",
     images: [property26, property21slide1, property21slide2],
     mainImage: property26,
+    video: property1_video,
   },
 
   // 27. PIMS Enclave
@@ -719,6 +756,7 @@ const properties = {
       "1.5 Acres | Approx. 65,340 sq.ft | Subdividable into 10,000 sq.ft plots",
     images: [property27, property21slide1, property21slide2],
     mainImage: property27,
+    video: property1_video,
   },
 
   // 28. Auroville Coastal Grove Apartments
@@ -733,6 +771,7 @@ const properties = {
     details: "85 Cents | 37,000 sq.ft | Subdividable into 2,500 sq.ft plots",
     images: [property28, property21slide1, property21slide2],
     mainImage: property28,
+    video: property1_video,
   },
 
   // 29. Chinna Kottakuppam Villa Plots
@@ -749,6 +788,7 @@ const properties = {
     details: "2,500 sq.ft Land | 1,000 sq.ft Villa | Chinna Kottakuppam",
     images: [property29, property21slide1, property21slide2],
     mainImage: property29,
+    video: property1_video,
   },
 
   // 30. Chinna Kottakuppam Plots
@@ -763,6 +803,7 @@ const properties = {
     details: "2,500 sq.ft Land | ₹1,700 per sq.ft | Chinna Kottakuppam",
     images: [property30, property21slide1, property21slide2],
     mainImage: property30,
+    video: property1_video,
   },
 
   // 31. Sandai Pudukuppam Plot
@@ -778,6 +819,7 @@ const properties = {
       "5,750 sq.ft | Total Price: ₹30 Lakhs | Individual Plot near Puducherry",
     images: [property31, property21slide1, property21slide2],
     mainImage: property31,
+    video: property1_video,
   },
 
   // 32. Arumbarthapuram Apartment
@@ -794,6 +836,7 @@ const properties = {
       "1,450 sq.ft | Spacious 3 BHK | Near AG Padhmavathi Hospital, Arumbarthapuram",
     images: [property32, property21slide1, property21slide2],
     mainImage: property32,
+    video: property1_video,
   },
 
   // 33. Bommayapalayam Buddha Garden Plot
@@ -809,6 +852,7 @@ const properties = {
       "3,000 sq.ft Plot | 1 KM from Mango Hill Resort | 500 M from Aurolec",
     images: [property33, property21slide1, property21slide2],
     mainImage: property33,
+    video: property1_video,
   },
 
   // 34. Bommayapalayam Buddha Garden Villa
@@ -824,6 +868,7 @@ const properties = {
       "3,000 sq.ft Plot | 1,500 sq.ft Built-up | 3 BHK Villa | Near Mango Hill Resort",
     images: [property34, property21slide1, property21slide2],
     mainImage: property34,
+    video: property1_video,
   },
 
   // 35. Ariyankuppam Villas
@@ -839,6 +884,7 @@ const properties = {
       "1,200 sq.ft Land | 1,000 sq.ft Built-up | 2 BHK Villa | Developed Locality",
     images: [property35, property21slide1, property21slide2],
     mainImage: property35,
+    video: property1_video,
   },
 
   // 36. Ariyankuppam Plots
@@ -855,6 +901,7 @@ const properties = {
     details: "1,200 sq.ft Plot | ₹3,750 per sq.ft | Developed Locality",
     images: [property36, property21slide1, property21slide2],
     mainImage: property36,
+    video: property1_video,
   },
 };
 
@@ -948,306 +995,342 @@ const PropertyDetail = () => {
   ];
 
   return (
-<div className="min-vh-100 bg-white">
-  <Header />
+    <div className="min-vh-100 bg-white">
+      <Header />
 
-  {/* Hero Section */}
-  <section
-    className="
-      position-relative 
-      d-flex 
-      align-items-center 
-      justify-content-center 
-      text-center 
-      text-white
-    "
-    style={{
-      minHeight: "60vh",
-      backgroundImage: `url(${currentProperty.mainImage})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-    }}
-  >
-    {/* Optional text overlay */}
-    {/* <div className="bg-dark bg-opacity-50 p-3 rounded">
-      <h1 className="display-6 fw-bold">Property Title</h1>
-      <p className="lead mb-0">Find your dream home today</p>
-    </div> */}
-  </section>
+      {/* Hero Section */}
+      <section
+        className="
+    position-relative 
+    d-flex 
+    align-items-center 
+    justify-content-center 
+    text-center 
+    text-white
+  "
+        style={{
+          backgroundImage: `url(${currentProperty.mainImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></section>
 
-  {/* Property Details and Form */}
-  <section className="py-5">
-    <div className="container">
-      <div className="row g-4">
-        {/* Left: Property Details */}
-        <div className="col-lg-8">
-          <h2 className="h4 fw-bold mb-3">{currentProperty.title}</h2>
-          <p className="text-muted mb-3">{currentProperty.description}</p>
-          <p className="text-warning fw-semibold h6 mb-2">
-            {currentProperty.price} {currentProperty.priceLabel.toLowerCase()}
-          </p>
-          <p className="text-muted mb-4" style={{ whiteSpace: "pre-line" }}>
-            {currentProperty.details}
-          </p>
+      <style>
+        {`
+  section {
+    min-height: 100vh; /* default for large screens */
+  }
 
-          <div className="text-center">
-            <button
-              className="btn btn-dark px-4 py-2 mb-4"
-              onClick={handleBookVisit}
-            >
-              Book a Site Visit
-            </button>
-          </div>
+  /* Tablet view */
+  @media (max-width: 1024px) {
+    section {
+      min-height: 80vh;
+    }
+  }
 
-          {/* Image Carousel */}
-          <div className="my-4">
-            <PropertyMediaSlider media={currentProperty.images} />
-          </div>
+  /* Mobile view */
+  @media (max-width: 768px) {
+    section {
+      min-height: 60vh;
+    }
+  }
+`}
+      </style>
 
-          {/* Responsive Video */}
-          <div className="ratio ratio-16x9 mb-4">
-            <video
-              src={property}
-              className="w-100 h-100"
-              style={{ objectFit: "cover" }}
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-            />
-          </div>
+      {/* Property Details and Form */}
+      <section className="py-5">
+        <div className="container">
+          <div className="row g-4">
+            {/* Left: Property Details */}
+            <div className="col-lg-8">
+              <h2 className="h4 fw-bold mb-3">{currentProperty.title}</h2>
+              <p className="text-muted mb-3">{currentProperty.description}</p>
+              <p className="text-warning fw-semibold h6 mb-2">
+                {currentProperty.price}{" "}
+                {currentProperty.priceLabel.toLowerCase()}
+              </p>
+              <p className="text-muted mb-4" style={{ whiteSpace: "pre-line" }}>
+                {currentProperty.details}
+              </p>
 
-          {/* Property Description */}
-          <div className="mb-5">
-            <p className="text-muted">
-              We are proud to present an exclusive opportunity to own 1.25 acres
-              of premium land near the tranquil shores of Auroville Lake...
-            </p>
-
-            <h3 className="h6 fw-bold mt-4 mb-3">Property Highlights</h3>
-            <ul className="list-unstyled">
-              <li className="mb-3 text-muted">
-                <strong className="text-dark">Prestigious Location:</strong> Just
-                off Auroville's scenic green belt...
-              </li>
-              <li className="mb-3 text-muted">
-                <strong className="text-dark">Versatile Usage Potential:</strong>{" "}
-                Ideal for subdividing or building villas...
-              </li>
-              <li className="mb-3 text-muted">
-                <strong className="text-dark">Breathtaking Setting:</strong> Enjoy
-                unobstructed views of lush greenery...
-              </li>
-              <li className="mb-3 text-muted">
-                <strong className="text-dark">Developer-Friendly Parcel:</strong>{" "}
-                Flat terrain, road-facing access, etc.
-              </li>
-            </ul>
-
-            <h3 className="h6 fw-bold mt-4 mb-3">Investment Insights</h3>
-            <ul className="list-unstyled">
-              <li className="mb-2 text-muted">High Appreciation Zone</li>
-              <li className="mb-2 text-muted">
-                Proximity to Coastal Tourism Belt
-              </li>
-              <li className="mb-2 text-muted">
-                Ideal for NRI Investment, Wellness Resorts & Eco Living
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Right: Enquiry Form */}
-        <div className="col-lg-4">
-          <div className="card border-0 shadow-sm sticky-top" style={{ top: "20px" }}>
-            <div className="card-body p-4">
-              <h3 className="h5 fw-bold mb-4">Enquire Sadhisha</h3>
-              <form onSubmit={handleSubmit}>
-                <div className="mb-3">
-                  <label className="form-label fw-semibold">Your name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    required
-                  />
-                </div>
-                <div className="mb-3">
-                  <label className="form-label fw-semibold">Your email</label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    required
-                  />
-                </div>
-                <div className="mb-3">
-                  <label className="form-label fw-semibold">Phone Number</label>
-                  <input
-                    type="tel"
-                    className="form-control"
-                    value={formData.phone}
-                    onChange={(e) =>
-                      setFormData({ ...formData, phone: e.target.value })
-                    }
-                    required
-                  />
-                </div>
-                <div className="mb-3">
-                  <label className="form-label fw-semibold">
-                    Your message (optional)
-                  </label>
-                  <textarea
-                    className="form-control text-muted"
-                    value={formData.message}
-                    onChange={(e) =>
-                      setFormData({ ...formData, message: e.target.value })
-                    }
-                    rows={5}
-                  />
-                </div>
-                <button type="submit" className="btn btn-dark w-100 py-2 fw-semibold">
-                  Submit
+              <div className="text-center">
+                <button
+                  className="btn btn-dark px-4 py-2 mb-4"
+                  onClick={handleBookVisit}
+                >
+                  Book a Site Visit
                 </button>
-              </form>
+              </div>
+
+              {/* Image Carousel */}
+              <div className="my-4">
+                <PropertyMediaSlider media={currentProperty.images} />
+              </div>
+
+              {/* Responsive Video */}
+              <div className="ratio ratio-16x9 mb-4">
+                <video
+                  src={(currentProperty as any).video}
+                  className="w-100 h-100"
+                  style={{ objectFit: "cover" }}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                />
+              </div>
+
+              {/* Property Description */}
+              <div className="mb-5">
+                <p className="text-muted">
+                  We are proud to present an exclusive opportunity to own 1.25
+                  acres of premium land near the tranquil shores of Auroville
+                  Lake...
+                </p>
+
+                <h3 className="h6 fw-bold mt-4 mb-3">Property Highlights</h3>
+                <ul className="list-unstyled">
+                  <li className="mb-3 text-muted">
+                    <strong className="text-dark">Prestigious Location:</strong>{" "}
+                    Just off Auroville's scenic green belt...
+                  </li>
+                  <li className="mb-3 text-muted">
+                    <strong className="text-dark">
+                      Versatile Usage Potential:
+                    </strong>{" "}
+                    Ideal for subdividing or building villas...
+                  </li>
+                  <li className="mb-3 text-muted">
+                    <strong className="text-dark">Breathtaking Setting:</strong>{" "}
+                    Enjoy unobstructed views of lush greenery...
+                  </li>
+                  <li className="mb-3 text-muted">
+                    <strong className="text-dark">
+                      Developer-Friendly Parcel:
+                    </strong>{" "}
+                    Flat terrain, road-facing access, etc.
+                  </li>
+                </ul>
+
+                <h3 className="h6 fw-bold mt-4 mb-3">Investment Insights</h3>
+                <ul className="list-unstyled">
+                  <li className="mb-2 text-muted">High Appreciation Zone</li>
+                  <li className="mb-2 text-muted">
+                    Proximity to Coastal Tourism Belt
+                  </li>
+                  <li className="mb-2 text-muted">
+                    Ideal for NRI Investment, Wellness Resorts & Eco Living
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  {/* About Pondicherry */}
-  <section className="py-5 bg-light">
-    <div className="container">
-      <div className="row g-4 align-items-center">
-        <div className="col-md-6">
-          <img
-            src={gandhi}
-            alt="Pondicherry landmark"
-            className="img-fluid rounded shadow-lg"
-          />
-        </div>
-        <div className="col-md-6">
-          <h2 className="h3 fw-bold mb-4">About Pondicherry</h2>
-          <p className="text-muted">
-            Pondicherry — often called the "French Riviera of the East"...
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {/* Real Estate Investment */}
-  <section className="py-5">
-    <div className="container">
-      <div className="row g-4 align-items-center">
-        <div className="col-md-6">
-          <h2 className="h3 fw-bold mb-4">Real Estate Investment in Pondicherry</h2>
-          <p className="text-muted">
-            Pondicherry is fast emerging as a prime destination...
-          </p>
-        </div>
-        <div className="col-md-6">
-          <img
-            src={growth}
-            alt="Investment growth"
-            className="img-fluid rounded shadow-lg"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {/* FAQ Section */}
-  <section className="py-5 bg-light">
-    <div className="container">
-      <h2 className="h3 fw-bold text-center mb-5">
-        Frequently Asked Questions About Auroville
-      </h2>
-      <div className="row justify-content-center">
-        <div className="col-lg-8">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-bottom mb-3">
-              <button
-                onClick={() =>
-                  setOpenFaqIndex(openFaqIndex === index ? null : index)
-                }
-                className="btn btn-link text-decoration-none text-dark w-100 text-start d-flex justify-content-between align-items-center py-3"
+            {/* Right: Enquiry Form */}
+            <div className="col-lg-4">
+              <div
+                className="card border-0 shadow-sm sticky-top"
+                style={{ top: "20px" }}
               >
-                <span className="fs-6">{faq.question}</span>
-                <ChevronDown
-                  size={20}
-                  style={{
-                    transform:
-                      openFaqIndex === index
-                        ? "rotate(180deg)"
-                        : "rotate(0deg)",
-                    transition: "transform 0.3s",
-                  }}
-                />
-              </button>
-              {openFaqIndex === index && (
-                <div className="pb-3 text-muted small">{faq.answer}</div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {/* Similar Listings */}
-  <section className="py-5">
-    <div className="container">
-      <h2 className="h2 fw-bold text-center mb-5">
-        Similar Listings Recommended by Sadhisha
-      </h2>
-      <div className="row g-4">
-        {similarProperties.map((property) => (
-          <div key={property.id} className="col-md-6 col-lg-4">
-            <Link
-              to={`/property-detail?id=${property.id}`}
-              className="text-decoration-none"
-            >
-              <div className="card h-100 border-0 shadow-sm overflow-hidden">
-                <img
-                  src={property.mainImage}
-                  alt={property.title}
-                  className="card-img-top"
-                  style={{ height: "250px", objectFit: "cover" }}
-                />
                 <div className="card-body p-4">
-                  <h3 className="h5 fw-bold mb-2 text-decoration-underline">
-                    {property.title}
-                  </h3>
-                  <p className="small text-muted mb-3">{property.description}</p>
-                  <p
-                    className="fw-bold mb-0"
-                    style={{ color: "var(--gold-color)" }}
-                  >
-                    {property.price} {property.priceLabel}
-                  </p>
+                  <h3 className="h5 fw-bold mb-4">Enquire Sadhisha</h3>
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-3">
+                      <label className="form-label fw-semibold">
+                        Your name
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={formData.name}
+                        onChange={(e) =>
+                          setFormData({ ...formData, name: e.target.value })
+                        }
+                        required
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label fw-semibold">
+                        Your email
+                      </label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        value={formData.email}
+                        onChange={(e) =>
+                          setFormData({ ...formData, email: e.target.value })
+                        }
+                        required
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label fw-semibold">
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        className="form-control"
+                        value={formData.phone}
+                        onChange={(e) =>
+                          setFormData({ ...formData, phone: e.target.value })
+                        }
+                        required
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label fw-semibold">
+                        Your message (optional)
+                      </label>
+                      <textarea
+                        className="form-control text-muted"
+                        value={formData.message}
+                        onChange={(e) =>
+                          setFormData({ ...formData, message: e.target.value })
+                        }
+                        rows={5}
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="btn btn-dark w-100 py-2 fw-semibold"
+                    >
+                      Submit
+                    </button>
+                  </form>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
+
+      {/* About Pondicherry */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="row g-4 align-items-center">
+            <div className="col-md-6">
+              <img
+                src={gandhi}
+                alt="Pondicherry landmark"
+                className="img-fluid rounded shadow-lg"
+              />
+            </div>
+            <div className="col-md-6">
+              <h2 className="h3 fw-bold mb-4">About Pondicherry</h2>
+              <p className="text-muted">
+                Pondicherry — often called the "French Riviera of the East"...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Real Estate Investment */}
+      <section className="py-5">
+        <div className="container">
+          <div className="row g-4 align-items-center">
+            <div className="col-md-6">
+              <h2 className="h3 fw-bold mb-4">
+                Real Estate Investment in Pondicherry
+              </h2>
+              <p className="text-muted">
+                Pondicherry is fast emerging as a prime destination...
+              </p>
+            </div>
+            <div className="col-md-6">
+              <img
+                src={growth}
+                alt="Investment growth"
+                className="img-fluid rounded shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <h2 className="h3 fw-bold text-center mb-5">
+            Frequently Asked Questions About Auroville
+          </h2>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              {faqs.map((faq, index) => (
+                <div key={index} className="border-bottom mb-3">
+                  <button
+                    onClick={() =>
+                      setOpenFaqIndex(openFaqIndex === index ? null : index)
+                    }
+                    className="btn btn-link text-decoration-none text-dark w-100 text-start d-flex justify-content-between align-items-center py-3"
+                  >
+                    <span className="fs-6">{faq.question}</span>
+                    <ChevronDown
+                      size={20}
+                      style={{
+                        transform:
+                          openFaqIndex === index
+                            ? "rotate(180deg)"
+                            : "rotate(0deg)",
+                        transition: "transform 0.3s",
+                      }}
+                    />
+                  </button>
+                  {openFaqIndex === index && (
+                    <div className="pb-3 text-muted small">{faq.answer}</div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Similar Listings */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="h2 fw-bold text-center mb-5">
+            Similar Listings Recommended by Sadhisha
+          </h2>
+          <div className="row g-4">
+            {similarProperties.map((property) => (
+              <div key={property.id} className="col-md-6 col-lg-4">
+                <Link
+                  to={`/property-detail?id=${property.id}`}
+                  className="text-decoration-none"
+                >
+                  <div className="card h-100 border-0 shadow-sm overflow-hidden">
+                    <img
+                      src={property.mainImage}
+                      alt={property.title}
+                      className="card-img-top"
+                      style={{ height: "250px", objectFit: "cover" }}
+                    />
+                    <div className="card-body p-4">
+                      <h3 className="h5 fw-bold mb-2 text-decoration-underline">
+                        {property.title}
+                      </h3>
+                      <p className="small text-muted mb-3">
+                        {property.description}
+                      </p>
+                      <p
+                        className="fw-bold mb-0"
+                        style={{ color: "var(--gold-color)" }}
+                      >
+                        {property.price} {property.priceLabel}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
-  </section>
-
-  <Footer />
-</div>
-
   );
 };
 
