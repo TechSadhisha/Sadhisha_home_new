@@ -250,7 +250,13 @@ const properties = {
       "Premium commercial land designated for banks, offices, and fintech startups in a rapidly developing zone.",
     details:
       "5 Acres | Commercial Zone | Wide 60ft Road Access | Near Pondicherry Airport",
-images: [property5, property5slide1, property5slide2, property5slide3, property5slide4],
+    images: [
+      property5,
+      property5slide1,
+      property5slide2,
+      property5slide3,
+      property5slide4,
+    ],
 
     mainImage: property5,
   },
@@ -268,7 +274,13 @@ images: [property5, property5slide1, property5slide2, property5slide3, property5
       "Luxury skyscraper residences offering panoramic city and sea views with premium lifestyle facilities.",
     details:
       "3 & 4 BHK | 1,800–2,800 sq.ft. | 20 Floors | Sky Lounge, Infinity Pool, Gym",
-images: [property6, property6slide1, property6slide2, property6slide3, property6slide4],
+    images: [
+      property6,
+      property6slide1,
+      property6slide2,
+      property6slide3,
+      property6slide4,
+    ],
 
     mainImage: property6,
   },
@@ -286,7 +298,13 @@ images: [property6, property6slide1, property6slide2, property6slide3, property6
       "Fully developed industrial layout with road connectivity, power supply, and drainage — ideal for factories and logistics.",
     details:
       "15 Acres | Ready Infrastructure | Near Villupuram Highway | Zoned for Manufacturing",
-images: [property7, property7slide1, property7slide2, property7slide3, property7slide4],
+    images: [
+      property7,
+      property7slide1,
+      property7slide2,
+      property7slide3,
+      property7slide4,
+    ],
     mainImage: property7,
   },
 
@@ -303,7 +321,13 @@ images: [property7, property7slide1, property7slide2, property7slide3, property7
       "A cutting-edge tech park for IT and startups featuring smart infrastructure and business-friendly facilities.",
     details:
       "10 Acres | 3,00,000 sq.ft. Development Potential | Fiber Optic Connectivity | Near Chennai-Pondy Highway",
-images: [property8, property8slide1, property8slide2, property8slide3, property8slide4],
+    images: [
+      property8,
+      property8slide1,
+      property8slide2,
+      property8slide3,
+      property8slide4,
+    ],
     mainImage: property8,
   },
 
@@ -320,7 +344,13 @@ images: [property8, property8slide1, property8slide2, property8slide3, property8
       "Exclusive collection of modern villas with private pools and landscaped gardens, designed for elite living.",
     details:
       "4 BHK | 3,000 sq.ft. | 4,000 sq.ft. Plot | Near Auroville Beach Road",
-images: [property9, property9slide1, property9slide2, property9slide3, property9slide4],
+    images: [
+      property9,
+      property9slide1,
+      property9slide2,
+      property9slide3,
+      property9slide4,
+    ],
     mainImage: property9,
   },
 
@@ -337,7 +367,13 @@ images: [property9, property9slide1, property9slide2, property9slide3, property9
       "Premium entertainment complex featuring multiple screens, food court, and advanced projection systems.",
     details:
       "25,000 sq.ft. | 5 Screens | Seating Capacity 1,200 | Located on ECR",
-images: [property10, property10slide1, property10slide2, property10slide3, property10slide4],
+    images: [
+      property10,
+      property10slide1,
+      property10slide2,
+      property10slide3,
+      property10slide4,
+    ],
 
     mainImage: property10,
   },
@@ -355,7 +391,13 @@ images: [property10, property10slide1, property10slide2, property10slide3, prope
       "Modern workspace complex ideal for corporate offices and co-working setups with flexible layouts.",
     details:
       "4 Floors | 2,500 sq.ft. Each | Lift & Power Backup | Near Pondicherry City Center",
-images: [property11, property11slide1, property11slide2, property11slide3, property11slide4],
+    images: [
+      property11,
+      property11slide1,
+      property11slide2,
+      property11slide3,
+      property11slide4,
+    ],
     mainImage: property11,
   },
 
@@ -372,7 +414,13 @@ images: [property11, property11slide1, property11slide2, property11slide3, prope
       "A health and fitness retreat featuring gyms, yoga halls, and activity zones for families and corporates.",
     details:
       "8,000 sq.ft. Built-up | Swimming Pool | Multi-purpose Hall | Near Auroville",
-images: [property12, property12slide1, property12slide2, property12slide3, property12slide4],
+    images: [
+      property12,
+      property12slide1,
+      property12slide2,
+      property12slide3,
+      property12slide4,
+    ],
 
     mainImage: property12,
   },
@@ -389,7 +437,13 @@ images: [property12, property12slide1, property12slide2, property12slide3, prope
       "Luxury beachfront resort property in North Goa offering villas, cottages, and a private beach zone.",
     details:
       "2 Acres | 25 Keys | Infinity Pool | 300 Meters from Beach | North Goa",
-images: [property13, property13slide1, property13slide2, property13slide3, property13slide4],
+    images: [
+      property13,
+      property13slide1,
+      property13slide2,
+      property13slide3,
+      property13slide4,
+    ],
 
     mainImage: property13,
   },
@@ -407,7 +461,13 @@ images: [property13, property13slide1, property13slide2, property13slide3, prope
       "Stylish row houses designed for urban family living with community parks and easy city access.",
     details:
       "2 & 3 BHK | 1,200–1,600 sq.ft. | 50 Units | Near Ariyankuppam, Pondicherry",
-images: [property14, property14slide1, property14slide2, property14slide3, property14slide4],
+    images: [
+      property14,
+      property14slide1,
+      property14slide2,
+      property14slide3,
+      property14slide4,
+    ],
     mainImage: property14,
   },
 
@@ -424,7 +484,13 @@ images: [property14, property14slide1, property14slide2, property14slide3, prope
       "A large commercial complex with retail spaces, food courts, and entertainment zones for high footfall traffic.",
     details:
       "1,00,000 sq.ft. | 4 Floors | Parking for 150 Cars | On East Coast Road (ECR)",
-images: [property15, property15slide1, property15slide2, property15slide3, property15slide4],
+    images: [
+      property15,
+      property15slide1,
+      property15slide2,
+      property15slide3,
+      property15slide4,
+    ],
 
     mainImage: property15,
   },
@@ -442,7 +508,13 @@ images: [property15, property15slide1, property15slide2, property15slide3, prope
       "A serene wellness center surrounded by nature, ideal for meditation camps and holistic living.",
     details:
       "3 Acres | 15 Cottages | Meditation Hall & Organic Garden | Near Auroville Forest Zone",
-images: [property16, property16slide1, property16slide2, property16slide3, property16slide4],
+    images: [
+      property16,
+      property16slide1,
+      property16slide2,
+      property16slide3,
+      property16slide4,
+    ],
 
     mainImage: property16,
   },
@@ -460,7 +532,13 @@ images: [property16, property16slide1, property16slide2, property16slide3, prope
       "Adventure and water park designed for family entertainment with attractions, rides, and restaurants.",
     details:
       "12 Acres | 50,000 sq.ft. Built-up | 25 Rides | Near Chennai–Pondicherry Highway",
-images: [property17, property17slide1, property17slide2, property17slide3, property17slide4],
+    images: [
+      property17,
+      property17slide1,
+      property17slide2,
+      property17slide3,
+      property17slide4,
+    ],
 
     mainImage: property17,
   },
@@ -478,7 +556,13 @@ images: [property17, property17slide1, property17slide2, property17slide3, prope
       "Integrated township offering residential, commercial, and recreational zones with premium amenities.",
     details:
       "50 Acres | Mixed-Use Zoning | 12m Road Network | Near Puducherry–Tindivanam Highway",
-images: [property18, property18slide1, property18slide2, property18slide3, property18slide4],
+    images: [
+      property18,
+      property18slide1,
+      property18slide2,
+      property18slide3,
+      property18slide4,
+    ],
 
     mainImage: property18,
   },
@@ -496,7 +580,13 @@ images: [property18, property18slide1, property18slide2, property18slide3, prope
       "An eco-friendly yoga sanctuary amidst lush greenery offering calm, rejuvenating stays and workshops.",
     details:
       "2 Acres | 10 Cottages | Yoga Hall | Near Auroville Forest | Organic Café",
-images: [property19, property19slide1, property19slide2, property19slide3, property19slide4],
+    images: [
+      property19,
+      property19slide1,
+      property19slide2,
+      property19slide3,
+      property19slide4,
+    ],
 
     mainImage: property19,
   },
@@ -514,7 +604,13 @@ images: [property19, property19slide1, property19slide2, property19slide3, prope
       "A cutting-edge medical complex equipped with modern facilities and advanced healthcare technology.",
     details:
       "2 Acres | 1,50,000 sq.ft. | 150 Beds | Located in Bangalore Tech Corridor",
-images: [property20, property20slide1, property20slide2, property20slide3, property20slide4],
+    images: [
+      property20,
+      property20slide1,
+      property20slide2,
+      property20slide3,
+      property20slide4,
+    ],
 
     mainImage: property20,
   },
@@ -530,7 +626,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Prime Development Land near SBI Kuilapalayam Junction",
     details:
       "1.25 Acres (54,450 sq. ft.) | Subdividable into 10,000 sq. ft. plots | Auroville",
-    images: [property21, property21slide1,property21slide2],
+    images: [property21, property21slide1, property21slide2],
     mainImage: property21,
   },
 
@@ -547,7 +643,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
       "Prime Coastal Land 100 meters from East Coast Road (ECR) Shoreline",
     details:
       "1 Acre (43,560 sq. ft.) | Subdividable into 10,000 sq. ft. plots | near Auroville",
-    images: [property22, property21slide1,property21slide2],
+    images: [property22, property21slide1, property21slide2],
     mainImage: property22,
   },
 
@@ -561,7 +657,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     priceLabel: "Starting Price",
     description: "Villas Near ECR & Aurolec",
     details: "85 Cents | 37,000 sq. ft | Subdividable into 2,500 sq. ft. plots",
-    images: [property23, property21slide1,property21slide2],
+    images: [property23, property21slide1, property21slide2],
     mainImage: property23,
   },
 
@@ -576,7 +672,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Development Land Near Wooden Resort – Just 20m Off ECR",
     details:
       "2.5 Acres | 1,08,900 sq. ft. | Subdividable into 10,000 sq. ft. plots",
-    images: [property24, property21slide1,property21slide2],
+    images: [property24, property21slide1, property21slide2],
     mainImage: property24,
   },
   // 25. ECR Anumanthai Haven
@@ -590,7 +686,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Premium Coconut Land – 1 km from Anumanthai Toll Gate",
     details:
       "1.1 Acres | Approx. 47,916 sq.ft | Subdividable into 10,000 sq.ft plots",
-    images: [property25, property21slide1,property21slide2],
+    images: [property25, property21slide1, property21slide2],
     mainImage: property25,
   },
 
@@ -605,7 +701,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Prime Development Land – 1 km from Marakanam (ECR)",
     details:
       "34 Acres | Approx. 14,80,000+ sq.ft | Suitable for Township Projects",
-    images: [property26, property21slide1,property21slide2],
+    images: [property26, property21slide1, property21slide2],
     mainImage: property26,
   },
 
@@ -621,7 +717,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Prime Development Land 1 km from ECR, Close to PIMS Hospital",
     details:
       "1.5 Acres | Approx. 65,340 sq.ft | Subdividable into 10,000 sq.ft plots",
-    images: [property27, property21slide1,property21slide2],
+    images: [property27, property21slide1, property21slide2],
     mainImage: property27,
   },
 
@@ -635,7 +731,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     priceLabel: "Starting Price",
     description: "Studio Apartments Near ECR & Aurolec",
     details: "85 Cents | 37,000 sq.ft | Subdividable into 2,500 sq.ft plots",
-    images: [property28, property21slide1,property21slide2],
+    images: [property28, property21slide1, property21slide2],
     mainImage: property28,
   },
 
@@ -651,7 +747,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description:
       "Premium Residential Villa Plots Near Kottakuppam, Pondicherry",
     details: "2,500 sq.ft Land | 1,000 sq.ft Villa | Chinna Kottakuppam",
-    images: [property29,property21slide1,property21slide2],
+    images: [property29, property21slide1, property21slide2],
     mainImage: property29,
   },
 
@@ -665,7 +761,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     priceLabel: "Total",
     description: "Premium Residential Plots Near Kottakuppam, Pondicherry",
     details: "2,500 sq.ft Land | ₹1,700 per sq.ft | Chinna Kottakuppam",
-    images: [property30, property21slide1,property21slide2],
+    images: [property30, property21slide1, property21slide2],
     mainImage: property30,
   },
 
@@ -680,7 +776,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Prime Land Parcel at Vanur",
     details:
       "5,750 sq.ft | Total Price: ₹30 Lakhs | Individual Plot near Puducherry",
-    images: [property31, property21slide1,property21slide2],
+    images: [property31, property21slide1, property21slide2],
     mainImage: property31,
   },
 
@@ -696,7 +792,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "3 BHK Residential Apartment at Prime Location in Pondicherry",
     details:
       "1,450 sq.ft | Spacious 3 BHK | Near AG Padhmavathi Hospital, Arumbarthapuram",
-    images: [property32, property21slide1,property21slide2],
+    images: [property32, property21slide1, property21slide2],
     mainImage: property32,
   },
 
@@ -711,7 +807,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Premium Residential Plot near Auroville Township",
     details:
       "3,000 sq.ft Plot | 1 KM from Mango Hill Resort | 500 M from Aurolec",
-    images: [property33, property21slide1,property21slide2],
+    images: [property33, property21slide1, property21slide2],
     mainImage: property33,
   },
 
@@ -726,7 +822,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Premium Luxury Villa near Auroville Township",
     details:
       "3,000 sq.ft Plot | 1,500 sq.ft Built-up | 3 BHK Villa | Near Mango Hill Resort",
-    images: [property34, property21slide1,property21slide2],
+    images: [property34, property21slide1, property21slide2],
     mainImage: property34,
   },
 
@@ -741,7 +837,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description: "Premium Luxury Villa near Ariyankuppam Church, Pondicherry",
     details:
       "1,200 sq.ft Land | 1,000 sq.ft Built-up | 2 BHK Villa | Developed Locality",
-    images: [property35, property21slide1,property21slide2],
+    images: [property35, property21slide1, property21slide2],
     mainImage: property35,
   },
 
@@ -757,7 +853,7 @@ images: [property20, property20slide1, property20slide2, property20slide3, prope
     description:
       "Premium Residential Plot Near Ariyankuppam Church, Pondicherry",
     details: "1,200 sq.ft Plot | ₹3,750 per sq.ft | Developed Locality",
-    images: [property36, property21slide1,property21slide2],
+    images: [property36, property21slide1, property21slide2],
     mainImage: property36,
   },
 };
@@ -852,356 +948,306 @@ const PropertyDetail = () => {
   ];
 
   return (
-    <div className="min-vh-100 bg-white">
-      <Header />
+<div className="min-vh-100 bg-white">
+  <Header />
 
-      {/* Hero Section */}
-      <section
-        className="position-relative d-flex align-items-center justify-content-center text-center"
-        style={{
-          height: "1000px",
-          backgroundImage: `url(${currentProperty.mainImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></section>
+  {/* Hero Section */}
+  <section
+    className="
+      position-relative 
+      d-flex 
+      align-items-center 
+      justify-content-center 
+      text-center 
+      text-white
+    "
+    style={{
+      minHeight: "60vh",
+      backgroundImage: `url(${currentProperty.mainImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}
+  >
+    {/* Optional text overlay */}
+    {/* <div className="bg-dark bg-opacity-50 p-3 rounded">
+      <h1 className="display-6 fw-bold">Property Title</h1>
+      <p className="lead mb-0">Find your dream home today</p>
+    </div> */}
+  </section>
 
-      {/* Property Details and Form */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row g-4">
-            {/* Left: Property Details */}
-            <div className="col-lg-8">
-              <h2 className="h4 fw-bold mb-3">{currentProperty.title}</h2>
-              <p className="text-muted mb-3">{currentProperty.description}</p>
-              <p
-                className="text-muted h6 mb-2"
-                style={{ color: "var(--gold-color)" }}
-              >
-                {currentProperty.price}{" "}
-                {currentProperty.priceLabel.toLowerCase()}
-              </p>
-              <p className="text-muted mb-4" style={{ whiteSpace: "pre-line" }}>
-                {currentProperty.details}
-              </p>
+  {/* Property Details and Form */}
+  <section className="py-5">
+    <div className="container">
+      <div className="row g-4">
+        {/* Left: Property Details */}
+        <div className="col-lg-8">
+          <h2 className="h4 fw-bold mb-3">{currentProperty.title}</h2>
+          <p className="text-muted mb-3">{currentProperty.description}</p>
+          <p className="text-warning fw-semibold h6 mb-2">
+            {currentProperty.price} {currentProperty.priceLabel.toLowerCase()}
+          </p>
+          <p className="text-muted mb-4" style={{ whiteSpace: "pre-line" }}>
+            {currentProperty.details}
+          </p>
 
-              <div className="text-center">
-                <button
-                  className="btn btn-dark px-4 py-2 mb-4"
-                  onClick={handleBookVisit}
-                >
-                  Book a Site Visit
-                </button>
-              </div>
+          <div className="text-center">
+            <button
+              className="btn btn-dark px-4 py-2 mb-4"
+              onClick={handleBookVisit}
+            >
+              Book a Site Visit
+            </button>
+          </div>
 
-              {/* Image Carousel */}
-              <div className="container my-4">
-                <PropertyMediaSlider media={currentProperty.images} />
-              </div>
+          {/* Image Carousel */}
+          <div className="my-4">
+            <PropertyMediaSlider media={currentProperty.images} />
+          </div>
 
-              <div
-                className="mb-4 rounded overflow-hidden"
-                style={{
-                  width: "100%",
-                  height: "500px", // or whatever you prefer
-                }}
-              >
-                <video
-                  src={property}
-                  className="w-100 h-80"
-                  style={{
-                    objectFit: "cover", // fills area, crops a little
-                  }}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  controls
-                />
-              </div>
+          {/* Responsive Video */}
+          <div className="ratio ratio-16x9 mb-4">
+            <video
+              src={property}
+              className="w-100 h-100"
+              style={{ objectFit: "cover" }}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+            />
+          </div>
 
-              {/* Property Description */}
-              <div className="mb-5">
-                <p className="text-muted">
-                  We are proud to present an exclusive opportunity to own 1.25
-                  acres of premium land near the tranquil shores of Auroville
-                  Lake, nestled just minutes from SBI Kullapalayam Junction.
-                  This rare parcel of real estate offers a blank canvas for
-                  discerning buyers looking to create something extraordinary—be
-                  it a private estate, boutique development, or a serene
-                  retreat.
-                </p>
+          {/* Property Description */}
+          <div className="mb-5">
+            <p className="text-muted">
+              We are proud to present an exclusive opportunity to own 1.25 acres
+              of premium land near the tranquil shores of Auroville Lake...
+            </p>
 
-                <h3 className="h6 fw-bold mt-4 mb-3">Property Highlights</h3>
-                <ul className="list-styled">
-                  <li className="mb-3 text-muted">
-                    <strong className="text-dark">Prestigious Location:</strong>{" "}
-                    Just off Auroville's scenic green belt, with easy access to
-                    Matrimandir, local cafés, international schools, and the
-                    East Coast Road.
-                  </li>
-                  <li className="mb-3 text-muted">
-                    <strong className="text-dark">
-                      Versatile Usage Potential:
-                    </strong>{" "}
-                    Ideal for subdividing into 10,000 sq. ft. plots or for
-                    building private villas, eco-farmhouses, yoga retreats, or a
-                    boutique resort.
-                  </li>
-                  <li className="mb-3 text-muted">
-                    <strong className="text-dark">Breathtaking Setting:</strong>{" "}
-                    Enjoy unobstructed views of lush greenery, peaceful
-                    surroundings, and the lake breeze—perfect for luxury living
-                    or high-end hospitality ventures.
-                  </li>
-                  <li className="mb-3 text-muted">
-                    <strong className="text-dark">
-                      Developer-Friendly Parcel:
-                    </strong>{" "}
-                    Flat terrain, road-facing access, and well-connected
-                    infrastructure make this plot ready for immediate planning
-                    and execution.
-                  </li>
-                </ul>
+            <h3 className="h6 fw-bold mt-4 mb-3">Property Highlights</h3>
+            <ul className="list-unstyled">
+              <li className="mb-3 text-muted">
+                <strong className="text-dark">Prestigious Location:</strong> Just
+                off Auroville's scenic green belt...
+              </li>
+              <li className="mb-3 text-muted">
+                <strong className="text-dark">Versatile Usage Potential:</strong>{" "}
+                Ideal for subdividing or building villas...
+              </li>
+              <li className="mb-3 text-muted">
+                <strong className="text-dark">Breathtaking Setting:</strong> Enjoy
+                unobstructed views of lush greenery...
+              </li>
+              <li className="mb-3 text-muted">
+                <strong className="text-dark">Developer-Friendly Parcel:</strong>{" "}
+                Flat terrain, road-facing access, etc.
+              </li>
+            </ul>
 
-                <h3 className="h6 fw-bold mt-4 mb-3">Investment Insights</h3>
-                <ul className="list-styled">
-                  <li className="mb-2 text-muted">High Appreciation Zone</li>
-                  <li className="mb-2 text-muted">
-                    Proximity to Coastal Tourism Belt
-                  </li>
-                  <li className="mb-2 text-muted">
-                    Ideal for NRI Investment, Wellness Resorts & Green Living
-                    Concepts
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Right: Enquiry Form */}
-            <div className="col-lg-4">
-              <div
-                className="card border-0 shadow-sm sticky-top"
-                style={{ top: "20px" }}
-              >
-                <div className="card-body p-4">
-                  <h3 className="h5 fw-bold mb-4">Enquire Sadhisha</h3>
-                  <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
-                      <label className="form-label fw-semibold">
-                        Your name
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        value={formData.name}
-                        onChange={(e) =>
-                          setFormData({ ...formData, name: e.target.value })
-                        }
-                        required
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label fw-semibold">
-                        Your email
-                      </label>
-                      <input
-                        type="email"
-                        className="form-control"
-                        value={formData.email}
-                        onChange={(e) =>
-                          setFormData({ ...formData, email: e.target.value })
-                        }
-                        required
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label fw-semibold">
-                        Phone Number
-                      </label>
-                      <input
-                        type="tel"
-                        className="form-control"
-                        value={formData.phone}
-                        onChange={(e) =>
-                          setFormData({ ...formData, phone: e.target.value })
-                        }
-                        required
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label fw-semibold">
-                        Your message (optional)
-                      </label>
-                      <textarea
-                        className="form-control text-muted"
-                        value={formData.message}
-                        onChange={(e) =>
-                          setFormData({ ...formData, message: e.target.value })
-                        }
-                        rows={6}
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      className="btn btn-dark w-100 py-2 fw-semibold"
-                    >
-                      Submit
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
+            <h3 className="h6 fw-bold mt-4 mb-3">Investment Insights</h3>
+            <ul className="list-unstyled">
+              <li className="mb-2 text-muted">High Appreciation Zone</li>
+              <li className="mb-2 text-muted">
+                Proximity to Coastal Tourism Belt
+              </li>
+              <li className="mb-2 text-muted">
+                Ideal for NRI Investment, Wellness Resorts & Eco Living
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
 
-      {/* About Pondicherry */}
-      <section className="py-5 bg-light">
-        <div className="container">
-          <div className="row g-5 align-items-center">
-            <div className="col-md-6">
-              <img
-                src={gandhi}
-                alt="Pondicherry landmark"
-                className="img-fluid rounded shadow-lg"
-                style={{ height: "400px", width: "100%", objectFit: "cover" }}
-              />
-            </div>
-            <div className="col-md-6">
-              <h2 className="h3 fw-bold mb-4">About pondicherry</h2>
-              <p className="text-muted">
-                Pondicherry—often called the "French Riviera of the East"—is a
-                serene coastal town that beautifully blends colonial charm with
-                contemporary living. Known for its clean beaches, spiritual
-                centers like Auroville, vibrant cafés, and heritage
-                architecture, Pondicherry offers a lifestyle that balances
-                peace, culture, and accessibility. With a unique blend of
-                tradition and modernity, it remains one of South India's most
-                desirable destinations for both living and tourism.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Real Estate Investment */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row g-5 align-items-center">
-            <div className="col-md-6">
-              <h2 className="h3 fw-bold mb-4">
-                Real Estate Investment in Pondicherry
-              </h2>
-              <p className="text-muted">
-                Pondicherry is fast emerging as a prime destination for real
-                estate investment in South India. With growing demand for
-                eco-living, vacation homes, and plotted development near
-                Auroville and along the East Coast Road (ECR), property values
-                continue to appreciate steadily. Its proximity to Chennai,
-                strong tourism appeal, and increasing infrastructure make it an
-                ideal choice for long-term investors, NRI buyers, and developers
-                seeking high-value coastal opportunities.
-              </p>
-            </div>
-            <div className="col-md-6">
-              <img
-                src={growth}
-                alt="Investment growth"
-                className="img-fluid rounded shadow-lg"
-                style={{ height: "300px", width: "100%", objectFit: "cover" }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-5 bg-light">
-        <div className="container">
-          <h2 className="h3 fw-bold text-center mb-5">
-            Frequently Asked Questions About Auroville
-          </h2>
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              {faqs.map((faq, index) => (
-                <div key={index} className="border-bottom mb-3">
-                  <button
-                    onClick={() =>
-                      setOpenFaqIndex(openFaqIndex === index ? null : index)
+        {/* Right: Enquiry Form */}
+        <div className="col-lg-4">
+          <div className="card border-0 shadow-sm sticky-top" style={{ top: "20px" }}>
+            <div className="card-body p-4">
+              <h3 className="h5 fw-bold mb-4">Enquire Sadhisha</h3>
+              <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <label className="form-label fw-semibold">Your name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
                     }
-                    className="btn btn-link text-decoration-none text-dark w-100 text-start d-flex justify-content-between align-items-center py-3"
-                  >
-                    <span className="fs-6">{faq.question}</span>
-                    <ChevronDown
-                      size={20}
-                      className={`transition-transform ${
-                        openFaqIndex === index ? "rotate-180" : ""
-                      }`}
-                      style={{
-                        transform:
-                          openFaqIndex === index
-                            ? "rotate(180deg)"
-                            : "rotate(0deg)",
-                        transition: "transform 0.3s",
-                      }}
-                    />
-                  </button>
-                  {openFaqIndex === index && (
-                    <div className="pb-3 text-muted small">{faq.answer}</div>
-                  )}
+                    required
+                  />
                 </div>
-              ))}
+                <div className="mb-3">
+                  <label className="form-label fw-semibold">Your email</label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label className="form-label fw-semibold">Phone Number</label>
+                  <input
+                    type="tel"
+                    className="form-control"
+                    value={formData.phone}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label className="form-label fw-semibold">
+                    Your message (optional)
+                  </label>
+                  <textarea
+                    className="form-control text-muted"
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
+                    rows={5}
+                  />
+                </div>
+                <button type="submit" className="btn btn-dark w-100 py-2 fw-semibold">
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Similar Listings */}
-      <section className="py-5">
-        <div className="container">
-          <h2 className="h2 fw-bold text-center mb-5">
-            Similar Listings recommended by Sadhisha
-          </h2>
-          <div className="row g-4">
-            {similarProperties.map((property) => (
-              <div key={property.id} className="col-md-4">
-                <Link
-                  to={`/property-detail?id=${property.id}`}
-                  className="text-decoration-none"
-                >
-                  <div className="card h-100 border-0 shadow-sm overflow-hidden">
-                    <img
-                      src={property.mainImage}
-                      alt={property.title}
-                      className="card-img-top"
-                      style={{ height: "280px", objectFit: "cover" }}
-                    />
-                    <div className="card-body p-4">
-                      <h3 className="h5 fw-bold mb-2 text-decoration-underline">
-                        {property.title}
-                      </h3>
-                      <p className="small text-muted mb-3">
-                        {property.description}
-                      </p>
-                      <p
-                        className="fw-bold mb-0"
-                        style={{ color: "var(--gold-color)" }}
-                      >
-                        {property.price} {property.priceLabel}
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <Footer />
+      </div>
     </div>
+  </section>
+
+  {/* About Pondicherry */}
+  <section className="py-5 bg-light">
+    <div className="container">
+      <div className="row g-4 align-items-center">
+        <div className="col-md-6">
+          <img
+            src={gandhi}
+            alt="Pondicherry landmark"
+            className="img-fluid rounded shadow-lg"
+          />
+        </div>
+        <div className="col-md-6">
+          <h2 className="h3 fw-bold mb-4">About Pondicherry</h2>
+          <p className="text-muted">
+            Pondicherry — often called the "French Riviera of the East"...
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Real Estate Investment */}
+  <section className="py-5">
+    <div className="container">
+      <div className="row g-4 align-items-center">
+        <div className="col-md-6">
+          <h2 className="h3 fw-bold mb-4">Real Estate Investment in Pondicherry</h2>
+          <p className="text-muted">
+            Pondicherry is fast emerging as a prime destination...
+          </p>
+        </div>
+        <div className="col-md-6">
+          <img
+            src={growth}
+            alt="Investment growth"
+            className="img-fluid rounded shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* FAQ Section */}
+  <section className="py-5 bg-light">
+    <div className="container">
+      <h2 className="h3 fw-bold text-center mb-5">
+        Frequently Asked Questions About Auroville
+      </h2>
+      <div className="row justify-content-center">
+        <div className="col-lg-8">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-bottom mb-3">
+              <button
+                onClick={() =>
+                  setOpenFaqIndex(openFaqIndex === index ? null : index)
+                }
+                className="btn btn-link text-decoration-none text-dark w-100 text-start d-flex justify-content-between align-items-center py-3"
+              >
+                <span className="fs-6">{faq.question}</span>
+                <ChevronDown
+                  size={20}
+                  style={{
+                    transform:
+                      openFaqIndex === index
+                        ? "rotate(180deg)"
+                        : "rotate(0deg)",
+                    transition: "transform 0.3s",
+                  }}
+                />
+              </button>
+              {openFaqIndex === index && (
+                <div className="pb-3 text-muted small">{faq.answer}</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Similar Listings */}
+  <section className="py-5">
+    <div className="container">
+      <h2 className="h2 fw-bold text-center mb-5">
+        Similar Listings Recommended by Sadhisha
+      </h2>
+      <div className="row g-4">
+        {similarProperties.map((property) => (
+          <div key={property.id} className="col-md-6 col-lg-4">
+            <Link
+              to={`/property-detail?id=${property.id}`}
+              className="text-decoration-none"
+            >
+              <div className="card h-100 border-0 shadow-sm overflow-hidden">
+                <img
+                  src={property.mainImage}
+                  alt={property.title}
+                  className="card-img-top"
+                  style={{ height: "250px", objectFit: "cover" }}
+                />
+                <div className="card-body p-4">
+                  <h3 className="h5 fw-bold mb-2 text-decoration-underline">
+                    {property.title}
+                  </h3>
+                  <p className="small text-muted mb-3">{property.description}</p>
+                  <p
+                    className="fw-bold mb-0"
+                    style={{ color: "var(--gold-color)" }}
+                  >
+                    {property.price} {property.priceLabel}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</div>
+
   );
 };
 
