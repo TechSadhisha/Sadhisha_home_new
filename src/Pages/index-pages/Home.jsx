@@ -52,10 +52,10 @@ const Home = () => {
     <div>
       {/* Hero Section START */}
       <div className="container-fluid p-0">
-        <div
+        {/* <div
           className="position-relative w-100"
           style={{ minHeight: "100vh", overflow: "hidden" }}
-        >
+        > */}
           <video
             className="w-100 h-100 object-fit-cover hero-video"
             autoPlay
@@ -67,7 +67,7 @@ const Home = () => {
             <source src={heroVideo} type="video/webm" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        {/* </div> */}
       </div>
 
       {/* Hero Section END */}
