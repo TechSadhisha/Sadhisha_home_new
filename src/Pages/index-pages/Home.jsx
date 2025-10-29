@@ -51,17 +51,25 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section START */}
-      <div className="video-banner">
-        <video autoPlay muted loop playsInline>
-          <source src={heroVideo} type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
-
-        {/* <div className="overlay-content">
-          <h1>Your Title Here</h1>
-          <p>Your subtitle or call to action</p>
-        </div> */}
+      <div className="container-fluid p-0">
+        <div
+          className="position-relative w-100"
+          style={{ minHeight: "100vh", overflow: "hidden" }}
+        >
+          <video
+            className="w-100 h-100 object-fit-cover hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ objectPosition: "center top" }}
+          >
+            <source src={heroVideo} type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
+
       {/* Hero Section END */}
 
       {/* Welcome Section */}
@@ -122,7 +130,6 @@ const Home = () => {
       {/* Services Section Start */}
 
       <div className="bgGreen px-md-0 px-2 py-md-0 py-3">
-    
         <Section>
           <div className="mb-md-4 mb-5 row flex-row-center ">
             <h2 className="secTitleWhite mb-md-3 mb-2 text-center">

@@ -4,6 +4,7 @@ import sadhishaLogo from "../../assets/images/common/SADHISHA LOGO 1/2.png";
 
 import "../../styles/components/common/navbar.css";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const ExtellNavbar = () => {
   const navigate = useNavigate();
@@ -47,13 +48,14 @@ const ExtellNavbar = () => {
   const about = getDropdownHandlers(setIsAboutOpen);
   const join = getDropdownHandlers(setIsJoinOpen);
 
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
     <nav
-      className="navbar sticky-top navbar-expand-lg d-flex justify-content-center"
-      style={{
-        backgroundColor: "rgba(0,0,0,0.6)",
-        backdropFilter: "blur(10px)",
-      }}
+      className={`navbar navbar-expand-lg d-flex justify-content-center ${
+        isHome ? "homepage-navbar" : ""
+      }`}
     >
       <div className="align-items-center d-flex flex-column w-100 justify-content-center">
         <div className="w-100 px-3 d-flex justify-content-between align-items-center">
