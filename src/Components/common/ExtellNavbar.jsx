@@ -146,7 +146,7 @@ const ExtellNavbar = () => {
                   className={`dropdown-menu ${isAffiliatesOpen ? "show" : ""}`}
                 >
                   {[
-                    { path: "/sadhisha-realty", label: "Sadhisha Realty" },
+                    { path: "/sadhisha-realty", label: "Sadhisha Reality" },
                     { path: "/auro-architects", label: "Auro Architects" },
                     {
                       path: "/sadhisha-constructions",
