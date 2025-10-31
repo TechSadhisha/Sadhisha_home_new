@@ -46,6 +46,8 @@ const SadhishaHomes = () => {
               id="carouselExampleIndicators"
               className="carousel slide"
               data-bs-ride="carousel"
+              data-bs-interval="3000"
+              data-bs-pause="false"
             >
               <div className="carousel-indicators">
                 <button
@@ -92,14 +94,6 @@ const SadhishaHomes = () => {
                   />
                 </div>
               </div>
-              {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button> */}
             </div>
           </div>
           <div className="row flex-row-center pt-md-5 pt-3">

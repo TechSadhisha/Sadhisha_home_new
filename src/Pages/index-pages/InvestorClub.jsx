@@ -7,6 +7,7 @@ import gsap from "gsap";
 import logo from "../../assets/images/home/builig black and white.jpg";
 import InvestorClubForm from "../../Components/Forms/InvestorClubForm";
 import ContactDetails from "../../Components/index-pages/ContactDetails";
+import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 
 gsap.registerPlugin(SplitText);
 
@@ -99,7 +100,7 @@ const InvestorClub = () => {
                   Just Say Hello, Our Team Will Reach You as Soon as Possible
                 </p>
               </div>
-              <InvestorClubForm />
+              <GeneralEnquiryForm />
             </div>
           </div>
         </Section>

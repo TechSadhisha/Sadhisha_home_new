@@ -19,9 +19,9 @@ import {
   FaLocationArrow,
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import GeneralEnquiryForm from '../../Components/Forms/GeneralEnquiryForm';
 import ContactDetails from '../../Components/index-pages/ContactDetails';
-import CareerEnquiryForm from '../../Components/Forms/CareerEnquiryForm';
+// import CareerEnquiryForm from '../../Components/Forms/CareerEnquiryForm';
+import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 
 // OPTIONAL: If using React Router for smooth anchor links
 // import { HashLink } from 'react-router-hash-link';
@@ -196,7 +196,7 @@ const Careers = () => {
                     Just Say Hello, Our Team Will Reach You as Soon as Possible
                   </p>
                 </div>
-                <CareerEnquiryForm />
+                <GeneralEnquiryForm />
               </div>
             </div>
           </div>
