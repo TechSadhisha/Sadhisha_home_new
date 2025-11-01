@@ -11,6 +11,7 @@ import growth from "../../assets/images/ongoingprojects/growth.webp";
 import PropertyMediaSlider from "../../Components/common/PropertyMediaSlider";
 import { useNavigate } from "react-router-dom";
 import { propertyDetailData } from "../../assets/data/propertyDetailData";
+import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 
 const PropertyDetail = () => {
   const location = useLocation(); // ✅ now defined
@@ -147,170 +148,103 @@ const PropertyDetail = () => {
 
       {/* Property Details and Form */}
 
-        <div className="container">
-          <div className="row g-4">
-            {/* Left: Property Details */}
-            <div className="col-lg-8">
-              <h2 className="h4 fw-bold mb-3">{currentProperty.title}</h2>
-              <p className="text-muted mb-3">{currentProperty.description}</p>
-              <p className="text-warning fw-semibold h6 mb-2">
-                {currentProperty.price}{" "}
-                {currentProperty.priceLabel.toLowerCase()}
-              </p>
-              <p className="text-muted mb-4" style={{ whiteSpace: "pre-line" }}>
-                {currentProperty.details}
-              </p>
+      <div className="container">
+        <div className="row g-4">
+          {/* Left: Property Details */}
+          <div className="col-lg-8">
+            <h2 className="h4 fw-bold mb-3">{currentProperty.title}</h2>
+            <p className="text-muted mb-3">{currentProperty.description}</p>
+            <p className="text-warning fw-semibold h6 mb-2">
+              {currentProperty.price} {currentProperty.priceLabel.toLowerCase()}
+            </p>
+            <p className="text-muted mb-4" style={{ whiteSpace: "pre-line" }}>
+              {currentProperty.details}
+            </p>
 
-              <div className="text-center">
-                <button
-                  className="btn btn-dark px-4 py-2 mb-4"
-                  onClick={handleBookVisit}
-                >
-                  Book a Site Visit
-                </button>
-              </div>
-
-              {/* Image Carousel */}
-              <div className="my-4">
-                <PropertyMediaSlider media={currentProperty.images} />
-              </div>
-
-              {/* Responsive Video */}
-              <div className="ratio ratio-16x9 mb-4">
-                <video
-                  src={(currentProperty as any).video}
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  controls
-                />
-              </div>
-
-              {/* Property Description */}
-              <div className="mb-5">
-                <p className="text-muted">
-                  We are proud to present an exclusive opportunity to own 1.25
-                  acres of premium land near the tranquil shores of Auroville
-                  Lake...
-                </p>
-
-                <h3 className="h6 fw-bold mt-4 mb-3">Property Highlights</h3>
-                <ul className="list-unstyled">
-                  <li className="mb-3 text-muted">
-                    <strong className="text-dark">Prestigious Location:</strong>{" "}
-                    Just off Auroville's scenic green belt...
-                  </li>
-                  <li className="mb-3 text-muted">
-                    <strong className="text-dark">
-                      Versatile Usage Potential:
-                    </strong>{" "}
-                    Ideal for subdividing or building villas...
-                  </li>
-                  <li className="mb-3 text-muted">
-                    <strong className="text-dark">Breathtaking Setting:</strong>{" "}
-                    Enjoy unobstructed views of lush greenery...
-                  </li>
-                  <li className="mb-3 text-muted">
-                    <strong className="text-dark">
-                      Developer-Friendly Parcel:
-                    </strong>{" "}
-                    Flat terrain, road-facing access, etc.
-                  </li>
-                </ul>
-
-                <h3 className="h6 fw-bold mt-4 mb-3">Investment Insights</h3>
-                <ul className="list-unstyled">
-                  <li className="mb-2 text-muted">High Appreciation Zone</li>
-                  <li className="mb-2 text-muted">
-                    Proximity to Coastal Tourism Belt
-                  </li>
-                  <li className="mb-2 text-muted">
-                    Ideal for NRI Investment, Wellness Resorts & Eco Living
-                  </li>
-                </ul>
-              </div>
+            <div className="text-center">
+              <button
+                className="btn btn-dark px-4 py-2 mb-4"
+                onClick={handleBookVisit}
+              >
+                Book a Site Visit
+              </button>
             </div>
 
-            {/* Right: Enquiry Form */}
-            <div className="col-lg-4">
-              <div
-                className="card border-0 shadow-sm sticky-top"
-                style={{ top: "20px" }}
-              >
-                <div className="card-body p-4">
-                  <h3 className="h5 fw-bold mb-4">Enquire Sadhisha</h3>
-                  <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
-                      <label className="form-label fw-semibold">
-                        Your name
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        value={formData.name}
-                        onChange={(e) =>
-                          setFormData({ ...formData, name: e.target.value })
-                        }
-                        required
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label fw-semibold">
-                        Your email
-                      </label>
-                      <input
-                        type="email"
-                        className="form-control"
-                        value={formData.email}
-                        onChange={(e) =>
-                          setFormData({ ...formData, email: e.target.value })
-                        }
-                        required
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label fw-semibold">
-                        Phone Number
-                      </label>
-                      <input
-                        type="tel"
-                        className="form-control"
-                        value={formData.phone}
-                        onChange={(e) =>
-                          setFormData({ ...formData, phone: e.target.value })
-                        }
-                        required
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label fw-semibold">
-                        Your message (optional)
-                      </label>
-                      <textarea
-                        className="form-control text-muted"
-                        value={formData.message}
-                        onChange={(e) =>
-                          setFormData({ ...formData, message: e.target.value })
-                        }
-                        rows={5}
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      className="btn btn-dark w-100 py-2 fw-semibold"
-                    >
-                      Submit
-                    </button>
-                  </form>
-                </div>
-              </div>
+            {/* Image Carousel */}
+            <div className="my-4">
+              <PropertyMediaSlider media={currentProperty.images} />
+            </div>
+
+            {/* Responsive Video */}
+            <div className="ratio ratio-16x9 mb-4">
+              <video
+                src={(currentProperty as any).video}
+                className="w-100 h-100"
+                style={{ objectFit: "cover" }}
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              />
+            </div>
+
+            {/* Property Description */}
+            <div className="mb-5">
+              <p className="text-muted">
+                We are proud to present an exclusive opportunity to own 1.25
+                acres of premium land near the tranquil shores of Auroville
+                Lake...
+              </p>
+
+              <h3 className="h6 fw-bold mt-4 mb-3">Property Highlights</h3>
+              <ul className="list-unstyled">
+                <li className="mb-3 text-muted">
+                  <strong className="text-dark">Prestigious Location:</strong>{" "}
+                  Just off Auroville's scenic green belt...
+                </li>
+                <li className="mb-3 text-muted">
+                  <strong className="text-dark">
+                    Versatile Usage Potential:
+                  </strong>{" "}
+                  Ideal for subdividing or building villas...
+                </li>
+                <li className="mb-3 text-muted">
+                  <strong className="text-dark">Breathtaking Setting:</strong>{" "}
+                  Enjoy unobstructed views of lush greenery...
+                </li>
+                <li className="mb-3 text-muted">
+                  <strong className="text-dark">
+                    Developer-Friendly Parcel:
+                  </strong>{" "}
+                  Flat terrain, road-facing access, etc.
+                </li>
+              </ul>
+
+              <h3 className="h6 fw-bold mt-4 mb-3">Investment Insights</h3>
+              <ul className="list-unstyled">
+                <li className="mb-2 text-muted">High Appreciation Zone</li>
+                <li className="mb-2 text-muted">
+                  Proximity to Coastal Tourism Belt
+                </li>
+                <li className="mb-2 text-muted">
+                  Ideal for NRI Investment, Wellness Resorts & Eco Living
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
 
+          {/* Right: Enquiry Form */}
+          <div className="col-lg-4">
+            
+              <div className="card-body p-4">
+                <h3 className="h5 fw-bold mb-4">Enquire Sadhisha</h3>
+                <GeneralEnquiryForm />
+              </div>
+
+          </div>
+        </div>
+      </div>
 
       {/* About Pondicherry */}
       <div className=" bg-light">
