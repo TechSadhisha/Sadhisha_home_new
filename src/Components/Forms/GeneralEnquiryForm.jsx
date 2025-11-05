@@ -40,7 +40,7 @@ const GeneralEnquiryForm = () => {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
-        "https://sadhisha-home-backend-new.onrender.com/api/leads",
+        "https://sadhisha-home-backend-new-1.onrender.com/api/leads",
 
         {
           name: data.name,
