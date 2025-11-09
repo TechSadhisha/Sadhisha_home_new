@@ -23,7 +23,7 @@ const Hero = () => {
       </div>
 
       {/* WhatsApp Float Button */}
-      <a
+      {/* <a
         href="https://wa.me/919585230000"
         target="_blank"
         rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Hero = () => {
         style={{ zIndex: 1000 }}
       >
         <FaWhatsapp size={32} />
-      </a>
+      </a> */}
     </>
   );
 };

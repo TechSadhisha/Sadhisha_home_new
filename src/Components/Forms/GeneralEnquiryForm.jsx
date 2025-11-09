@@ -54,6 +54,10 @@ const GeneralEnquiryForm = () => {
       console.log(response.data);
       toast.success("Enquiry submitted successfully!");
 
+      if (window.fbq) {
+        window.fbq("track", "Lead");
+      }
+
       reset();
     } catch (error) {
       console.error(error);
@@ -151,6 +155,7 @@ const GeneralEnquiryForm = () => {
           {isSubmitting ? "Submitting..." : "Submit Enquiry"}
         </button>
       </form>
+
       <ToastContainer
         position="bottom-right"
         autoClose={3000}
