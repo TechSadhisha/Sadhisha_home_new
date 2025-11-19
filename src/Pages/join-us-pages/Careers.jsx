@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import building from '../../assets/images/home/builig black and white.jpg';
-import logo from '../../assets/images/common/sadhisha-half-logo.jpg';
 import { Section } from '../../layouts/Section';
 import '../../styles/pages/join-us-pages/careers.css';
 import careerData from '../../assets/data/careerData';
@@ -18,13 +17,9 @@ import {
   FaLinkedinIn,
   FaLocationArrow,
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import ContactDetails from '../../Components/index-pages/ContactDetails';
-// import CareerEnquiryForm from '../../Components/Forms/CareerEnquiryForm';
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 
-// OPTIONAL: If using React Router for smooth anchor links
-// import { HashLink } from 'react-router-hash-link';
 
 const Careers = () => {
   useEffect(() => {
@@ -66,11 +61,6 @@ const Careers = () => {
                 <a href="#contact-section" className="btn green-btn mt-4">
                   Join Us
                 </a>
-                {/* If using HashLink: 
-                <HashLink smooth to="#contact-section" className="btn green-btn mt-4">
-                  Join Us
-                </HashLink> 
-                */}
               </div>
             </div>
 
@@ -147,16 +137,10 @@ const Careers = () => {
                   <div className="d-md-flex justify-content-between align-items-center pt-3 mb-md-0 mb-3">
                     <h3 className="subTitleGreen mb-md-3 mb-3">{opening.title}</h3>
 
-                    {/* Updated Apply Now Button */}
                     <a href="#contact-section" className="paraGreen btn btn-outline-dark rounded-5 apply-btn py-2 px-3">
                       Apply Now <GoArrowUpRight />
                     </a>
 
-                    {/* OR HashLink alternative:
-                    <HashLink smooth to="#contact-section" className="paraGreen btn btn-outline-dark rounded-5 apply-btn py-2 px-3">
-                      Apply Now <GoArrowUpRight />
-                    </HashLink>
-                    */}
                   </div>
                   <p className="paraBlack col-md-9">{opening.description}</p>
                 </div>

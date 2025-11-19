@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
@@ -17,7 +17,6 @@ import heroVideo from "../../assets/images/home/hero-video (1).mp4";
 import { Link } from "react-router-dom";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import ContactDetails from "../../Components/index-pages/ContactDetails";
-import gsap from "gsap";
 
 const Home = () => {
   useEffect(() => {
@@ -28,7 +27,6 @@ const Home = () => {
 
   const {
     dataStats,
-    serviceCategories,
     pillars,
     departments,
     affiliatesData,
@@ -40,8 +38,6 @@ const Home = () => {
     sadhishaHospitality,
   } = HomeData;
 
-  const [hovered, setHovered] = useState(null);
-
   // Set up the inView observer
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -52,21 +48,17 @@ const Home = () => {
     <div>
       {/* Hero Section START */}
       <div className="container-fluid p-0">
-        {/* <div
-          className="position-relative w-100"
-          style={{ minHeight: "100vh", overflow: "hidden" }}
-        > */}
-          <video
-            className="w-100 h-100 object-fit-cover hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            style={{ objectPosition: "center top" }}
-          >
-            <source src={heroVideo} type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
+        <video
+          className="w-100 h-100 object-fit-cover hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{ objectPosition: "center top" }}
+        >
+          <source src={heroVideo} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
         {/* </div> */}
       </div>
 
@@ -88,10 +80,6 @@ const Home = () => {
                 versatility and expertise.
               </p>
             </div>
-
-            {/* <div className='flex-row-center row'>
-              <button className='btn black-btn'>Scroll Down <MdKeyboardDoubleArrowDown /></button>
-            </div> */}
           </div>
         </Section>
       </div>

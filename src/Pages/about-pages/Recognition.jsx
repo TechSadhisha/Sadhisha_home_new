@@ -10,7 +10,6 @@ import CEO from '../../assets/images/about/founder.jpeg';
 import Founder from '../../assets/images/home/founder-achievement.png';
 
 import client from '../../assets/images/about/client-centric.png'
-import architect from '../../assets/images/about/architectural.png'
 import sustainable from '../../assets/images/about/sustainable.png'
 import workforce from '../../assets/images/about/workforce.png'
 import upcomming from '../../assets/images/about/upcomming-projects.png'
@@ -335,8 +334,6 @@ const Recognition = () => {
 
 
                     <div className="row justify-content-center d-flex pb-md-5 py-2">
-                        {/* <h4 className="subTitleGreen mb-md-2 mb-2 fs-2 text-center"> Bipin Rananaware</h4>
-                            <p className="paraBlack text-uppercase mb-md-4 mb-2 text-center"   > Founder-Chairman, Sadhisha</p> */}
 
                         <div className="ndtv-award-img-box d-flex justify-content-center pb-5 w-100">
                             <PurpleProperties />
@@ -375,8 +372,6 @@ const Recognition = () => {
                     <p className="subParaTextGreen text-uppercase mb-md-4 mb-2 text-md-center text-center"   >  Adding the Trust Factor</p>
 
                     <div className="row justify-content-center d-flex pb-md-5 py-2">
-                        {/* <h4 className="subTitleGreen mb-md-2 mb-2 fs-2 text-center"> Bipin Rananaware</h4>
-                            <p className="paraBlack text-uppercase mb-md-4 mb-2 text-center"   > Founder-Chairman, Sadhisha</p> */}
                         <div className="row flex-row-center order-md-1 order-2">
                             <p className='paraBlack col-md-11 text-md-center pt-md-0 pt-3'>
                                 Sadhisha Homes, under the visionary leadership of Mr. Bipin Rananaware, was featured in the August 15 edition of The Times of India (Chennai) as part of the “Leaders of Change” series—highlighting India's most impactful and purpose-driven businesses.

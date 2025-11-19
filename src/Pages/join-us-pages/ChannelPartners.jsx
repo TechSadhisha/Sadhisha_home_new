@@ -1,16 +1,12 @@
 import React, { useEffect } from "react";
 import building from "../../assets/images/home/builig black and white.jpg";
-import logo from "../../assets/images/common/sadhisha-half-logo.jpg";
 import { Section } from "../../layouts/Section";
 import "../../styles/pages/join-us-pages/channel-partners.css";
-
-import { Link } from "react-router-dom";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 import channelPartnerData from "../../assets/data/ChannelPartnerData";
 
-// OPTIONAL: If you prefer smooth scroll via react-router-hash-link
-// import { HashLink } from "react-router-hash-link";
+
 
 const ChannelPartners = () => {
   useEffect(() => {
@@ -49,11 +45,7 @@ const ChannelPartners = () => {
                   Join Us
                 </a>
 
-                {/* OR if you're using react-router-hash-link:
-                <HashLink smooth to="#contact-section" className="btn green-btn mt-4">
-                  Join Us
-                </HashLink> 
-                */}
+             
               </div>
             </div>
 
@@ -84,10 +76,7 @@ const ChannelPartners = () => {
               <a href="#contact-section" className="btn green-btn mt-4">
                 Join Us
               </a>
-              {/* OR with HashLink if needed */}
-              {/* <HashLink smooth to="#contact-section" className="btn green-btn mt-4">
-                Join Us
-              </HashLink> */}
+            
             </div>
           </div>
         </Section>

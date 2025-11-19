@@ -1,4 +1,4 @@
-import quick from '../images/affilates/sadhisha-construction/fast-time.png'
+
 import Customizable from '../images/affilates/sadhisha-construction/flexible.png'
 import expansion from '../images/affilates/sadhisha-construction/expansion.png'
 import sustainability from '../images/affilates/sadhisha-construction/sustainable.png'

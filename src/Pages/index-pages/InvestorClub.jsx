@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import { Section } from "../../layouts/Section";
-import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
 import gsap from "gsap";
 
 import logo from "../../assets/images/home/builig black and white.jpg";
-import InvestorClubForm from "../../Components/Forms/InvestorClubForm";
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 

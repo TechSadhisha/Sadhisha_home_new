@@ -1,6 +1,5 @@
 import commission from '../../assets/images/join/commission.png'
 import payouts from '../../assets/images/join/money.png'
-import flexibleTiming from '../../assets/images/join/timer.png'
 import noExperienceNeeded from '../../assets/images/join/thumbs-up.png'
 import training from '../../assets/images/join/workshop.png'
 

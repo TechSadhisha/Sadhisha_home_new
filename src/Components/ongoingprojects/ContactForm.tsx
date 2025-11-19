@@ -1,8 +1,3 @@
-import { useState } from "react";
-import { toast } from "sonner";
-import contactImage from "../../assets/images/ongoingprojects/contact.jpg";
-import { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import { FaPhoneAlt, FaEnvelope, FaLocationArrow } from "react-icons/fa";
 

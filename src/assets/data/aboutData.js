@@ -1,4 +1,4 @@
-import logo from '../../assets/images/common/sadhisha-half-logo.jpg'
+
 
 import innovation from '../images/about/about us/innovation.jpg'
 import Sustainability from '../images/about/about us/sustainabilty.jpg'

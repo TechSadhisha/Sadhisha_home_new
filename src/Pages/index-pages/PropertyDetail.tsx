@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchParams, Link, useLocation } from "react-router-dom";
-import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 // import { useToast } from "@/hooks/use-toast";
 import Header from "../../Components/ongoingprojects/Header";

@@ -1,4 +1,4 @@
-import building from '../images/home/builig black and white.jpg';
+
 
 import donation from '../images/about/csr/donation.jpg'
 import medicalCamps from '../images/about/csr/medical-camps.jpg'

@@ -9,7 +9,7 @@ import pillar2 from "../images/home/row-1-column-2.jpg";
 import pillar3 from "../images/home/row-1-column-3.jpg";
 import pillar4 from "../images/home/row-1-column-4.jpg";
 
-import building from "../images/home/builig black and white.jpg";
+
 
 import Acquisition from "../images/home/acquisattion.webp";
 import audit from "../images/home/audit.webp";
