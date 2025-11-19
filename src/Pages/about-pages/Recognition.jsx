@@ -3,10 +3,10 @@ import { Page } from '../../layouts/Page'
 
 
 import '../../styles/pages/about-pages/recognition.css';
-import NDTVProfitAward from '../../assets/images/about/NDTV-profit-award.jpg';
-import logo from '../../assets/images/common/sadhisha-half-logo.jpg';
+import NDTVProfitAward from '../../assets/images/about/NDTV-profit-award.webp';
+import logo from '../../assets/images/common/sadhisha-half-logo.webp';
 import founderAchievement from '../../assets/images/home/founder-achievement.png'
-import CEO from '../../assets/images/about/founder.jpeg';
+import CEO from '../../assets/images/about/founder.webp';
 import Founder from '../../assets/images/home/founder-achievement.png';
 
 import client from '../../assets/images/about/client-centric.png'
@@ -43,14 +43,14 @@ const Recognition = () => {
                             </div>
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img
+                                    <img loading="lazy"
                                         className="d-block w-100"
                                         src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
                                         alt="First slide"
                                     />
                                 </div>
                                 <div className="carousel-item">
-                                    <img
+                                    <img loading="lazy"
                                         className="d-block w-100"
                                         src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1200&q=80"
 
@@ -58,7 +58,7 @@ const Recognition = () => {
                                     />
                                 </div>
                                 <div className="carousel-item">
-                                    <img
+                                    <img loading="lazy"
                                         className="d-block w-100"
                                         src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
                                         alt="Third slide"
@@ -104,7 +104,7 @@ const Recognition = () => {
 
                         <div className="col-md-6 p-md-4">
                             <div className="ceo-img-box position-relative overflow-hidden">
-                                <img className="w-100 h-100" src={NDTVProfitAward} alt="founder & Ceo image" />
+                                <img loading="lazy" className="w-100 h-100" src={NDTVProfitAward} alt="founder & Ceo image" />
 
                                 {/* Overlay content */}
                                 <div className="ceo-overlay d-flex flex-column justify-content-between p-4">
@@ -162,7 +162,7 @@ const Recognition = () => {
 
                         <div className="col-md-6 p-md-4">
                             <div className="ceo-img-box position-relative overflow-hidden">
-                                <img className="w-100 h-100" src={NDTVProfitAward} alt="founder & Ceo image" />
+                                <img loading="lazy" className="w-100 h-100" src={NDTVProfitAward} alt="founder & Ceo image" />
 
                                 {/* Overlay content */}
                                 <div className="ceo-overlay d-flex flex-column justify-content-between p-4">
@@ -194,7 +194,7 @@ const Recognition = () => {
 
                         <div className="col-md-6 p-md-4">
                             <div className="ceo-img-box position-relative overflow-hidden">
-                                <img className="w-100 h-100" src={NDTVProfitAward} alt="founder & Ceo image" />
+                                <img loading="lazy" className="w-100 h-100" src={NDTVProfitAward} alt="founder & Ceo image" />
 
                                 {/* Overlay content */}
                                 <div className="ceo-overlay d-flex flex-column justify-content-between p-4">
@@ -222,7 +222,7 @@ const Recognition = () => {
                             <div className="py-3">
                                 <div className="d-flex gap-3 align-items-center">
 
-                                    <img src={logo} width={50} className='mb-3' alt="" />
+                                    <img loading="lazy" src={logo} width={50} className='mb-3' alt="" />
                                     <h5 className='subTitleWhite fs-6'>
                                         Quality construction
                                     </h5>
@@ -230,7 +230,7 @@ const Recognition = () => {
                                 </div>
                                 <div className=" d-flex gap-3 align-items-center">
 
-                                    <img src={logo} width={50} className='mb-3' alt="" />
+                                    <img loading="lazy" src={logo} width={50} className='mb-3' alt="" />
                                     <h5 className='subTitleWhite fs-6'>
                                         Timely project delivery
                                     </h5>
@@ -238,7 +238,7 @@ const Recognition = () => {
                                 </div>
                                 <div className=" d-flex gap-3 align-items-center">
 
-                                    <img src={logo} width={50} className='mb-3' alt="" />
+                                    <img loading="lazy" src={logo} width={50} className='mb-3' alt="" />
                                     <h5 className='subTitleWhite fs-6' >
                                         Community-centric design
                                     </h5>
@@ -246,7 +246,7 @@ const Recognition = () => {
                                 </div>
                                 <div className=" d-flex gap-3 align-items-center">
 
-                                    <img src={logo} width={50} className='mb-3' alt="" />
+                                    <img loading="lazy" src={logo} width={50} className='mb-3' alt="" />
                                     <h5 className='subTitleWhite fs-6'>
                                         Customer trust and satisfaction
                                     </h5>
@@ -279,7 +279,7 @@ const Recognition = () => {
                             <div className="row justify-content-center ">
                                 <div className="col-md-6 align-items-start">
                                     <div className='position-relative '>
-                                        <img src={NDTVProfitAward} alt="Workforce" className="img-fluid rounded" />
+                                        <img loading="lazy" src={NDTVProfitAward} alt="Workforce" className="img-fluid rounded" />
 
 
                                     </div>
@@ -287,7 +287,7 @@ const Recognition = () => {
                                 </div>
                                 <div className="col-md-6 align-items-end  flex-row-center">
                                     <div className='position-relative  '>
-                                        <img src={NDTVProfitAward} alt="Workforce" className="img-fluid rounded" />
+                                        <img loading="lazy" src={NDTVProfitAward} alt="Workforce" className="img-fluid rounded" />
 
 
                                     </div>
@@ -308,7 +308,7 @@ const Recognition = () => {
 
                         <div className="col-md-6 p-md-4">
                             <div className="ceo-img-box position-relative overflow-hidden">
-                                <img className="w-100 h-100" src={NDTVProfitAward} alt="founder & Ceo image" />
+                                <img loading="lazy" className="w-100 h-100" src={NDTVProfitAward} alt="founder & Ceo image" />
 
                                 {/* Overlay content */}
                                 <div className="ceo-overlay d-flex flex-column justify-content-between p-4">
@@ -380,7 +380,7 @@ const Recognition = () => {
                             </p>
                         </div>
                         <div className="row justify-content-center order-1 order-md-2 w-100">
-                            <img src={founderAchievement} className='w-100' alt="founderAchievement" />
+                            <img loading="lazy" src={founderAchievement} className='w-100' alt="founderAchievement" />
                         </div>
                         <div className=" py-md-5 py-3 order-3  px-md-0 px-3">
                             <h4 className="subTitleGreen mb-md-4 mb-3 fs-3 text-md-start text-center"> Key Highlights from the Article:</h4>
@@ -390,7 +390,7 @@ const Recognition = () => {
                                     <div className="mission-vision-card">
 
                                         <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                                            <img src={client} width={120} alt="" />
+                                            <img loading="lazy" src={client} width={120} alt="" />
                                         </div>
                                         <h4 className="subTitleBlack mb-md-4 text-center mb-2">Customer-Centric <br /> Approach</h4>
                                         <p className='paraGreen text-center'>
@@ -402,7 +402,7 @@ const Recognition = () => {
                                     <div className="mission-vision-card">
 
                                         <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                                            <img src={upcomming} width={120} alt="" />
+                                            <img loading="lazy" src={upcomming} width={120} alt="" />
                                         </div>
                                         <h4 className="subTitleBlack mb-md-4 text-center mb-2">Upcoming <br /> Projects</h4>
                                         <p className='paraGreen text-center'>
@@ -414,7 +414,7 @@ const Recognition = () => {
                                     <div className="mission-vision-card">
 
                                         <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                                            <img width={120} src={workforce} alt="" />
+                                            <img loading="lazy" width={120} src={workforce} alt="" />
                                         </div>
                                         <h4 className="subTitleBlack mb-md-4 text-center mb-2">Workforce <br /> Empowerment</h4>
                                         <p className='paraGreen text-center'>
@@ -426,7 +426,7 @@ const Recognition = () => {
                                     <div className="mission-vision-card">
 
                                         <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                                            <img src={sustainable} width={120} alt="" />
+                                            <img loading="lazy" src={sustainable} width={120} alt="" />
                                         </div>
                                         <h4 className="subTitleBlack mb-md-4 text-center mb-2">Sustainable <br /> Innovation: </h4>
                                         <p className='paraGreen text-center'>

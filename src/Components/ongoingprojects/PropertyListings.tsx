@@ -39,7 +39,7 @@ const PropertyListings = () => {
                 onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
               >
                 <div className="card h-100 border-0 shadow-sm overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={property.image}
                     alt={property.title}
                     className="card-img-top h-100"

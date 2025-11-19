@@ -251,7 +251,7 @@ const PropertyDetail = () => {
         <div className="container">
           <div className="row g-4 align-items-center">
             <div className="col-md-6">
-              <img
+              <img loading="lazy"
                 src={gandhi}
                 alt="Pondicherry landmark"
                 className="img-fluid rounded shadow-lg"
@@ -294,7 +294,7 @@ const PropertyDetail = () => {
               </p>
             </div>
             <div className="col-md-6">
-              <img
+              <img loading="lazy"
                 src={growth}
                 alt="Investment growth"
                 className="img-fluid rounded shadow-lg"
@@ -356,7 +356,7 @@ const PropertyDetail = () => {
                   className="text-decoration-none"
                 >
                   <div className="card h-100 border-0 shadow-sm overflow-hidden">
-                    <img
+                    <img loading="lazy"
                       src={property.mainImage}
                       alt={property.title}
                       className="card-img-top"

@@ -1,54 +1,54 @@
 
 
-import AVMCConfereneHallImg1 from '../../assets/images/project/avmc-conference-hall/AVMC-Conferene-Hall-Img1.jpg' 
-import AVMCConfereneHallImg2 from '../../assets/images/project/avmc-conference-hall/AVMC-Conferene-Hall-Img2.jpg' 
-import AVMCConfereneHallImg3 from '../../assets/images/project/avmc-conference-hall/AVMC-Conferene-Hall-Img3.jpg' 
+import AVMCConfereneHallImg1 from '../../assets/images/project/avmc-conference-hall/AVMC-Conferene-Hall-Img1.webp' 
+import AVMCConfereneHallImg2 from '../../assets/images/project/avmc-conference-hall/AVMC-Conferene-Hall-Img2.webp' 
+import AVMCConfereneHallImg3 from '../../assets/images/project/avmc-conference-hall/AVMC-Conferene-Hall-Img3.webp' 
 
-import HyderabadConventionCenterImg1 from '../../assets/images/project/hyderabad-convention-centre/hyderabad-convention-centre-img1.jpg';
-import HyderabadConventionCenterImg2 from '../../assets/images/project/hyderabad-convention-centre/hyderabad-convention-centre-img2.jpg';
-import HyderabadConventionCenterImg3 from '../../assets/images/project/hyderabad-convention-centre/hyderabad-convention-centre-img3.jpg'
+import HyderabadConventionCenterImg1 from '../../assets/images/project/hyderabad-convention-centre/hyderabad-convention-centre-img1.webp';
+import HyderabadConventionCenterImg2 from '../../assets/images/project/hyderabad-convention-centre/hyderabad-convention-centre-img2.webp';
+import HyderabadConventionCenterImg3 from '../../assets/images/project/hyderabad-convention-centre/hyderabad-convention-centre-img3.webp'
 
-import CoimbatoreEliteClubImg1 from '../../assets/images/project/coimbatore-elite-clubhouse/coimbatore-elite-clubhouse-img1.jpg';
-import CoimbatoreEliteClubImg2 from '../../assets/images/project/coimbatore-elite-clubhouse/coimbatore-elite-clubhouse-img2.jpg';
-import CoimbatoreEliteClubImg3 from '../../assets/images/project/coimbatore-elite-clubhouse/coimbatore-elite-clubhouse-img3.jpg';
+import CoimbatoreEliteClubImg1 from '../../assets/images/project/coimbatore-elite-clubhouse/coimbatore-elite-clubhouse-img1.webp';
+import CoimbatoreEliteClubImg2 from '../../assets/images/project/coimbatore-elite-clubhouse/coimbatore-elite-clubhouse-img2.webp';
+import CoimbatoreEliteClubImg3 from '../../assets/images/project/coimbatore-elite-clubhouse/coimbatore-elite-clubhouse-img3.webp';
 
-import BhubhaneshwarTechHavenImg1 from '../../assets/images/project/bhubaneshwar-tech-haven/bhubaneshwar-tech-haven-img1.jpg';
-import BhubhaneshwarTechHavenImg2 from '../../assets/images/project/bhubaneshwar-tech-haven/bhubaneshwar-tech-haven-img2.jpg';
-import BhubhaneshwarTechHavenImg3 from '../../assets/images/project/bhubaneshwar-tech-haven/bhubaneshwar-tech-haven-img3.jpg';
+import BhubhaneshwarTechHavenImg1 from '../../assets/images/project/bhubaneshwar-tech-haven/bhubaneshwar-tech-haven-img1.webp';
+import BhubhaneshwarTechHavenImg2 from '../../assets/images/project/bhubaneshwar-tech-haven/bhubaneshwar-tech-haven-img2.webp';
+import BhubhaneshwarTechHavenImg3 from '../../assets/images/project/bhubaneshwar-tech-haven/bhubaneshwar-tech-haven-img3.webp';
 
-import SerenResortGoaImg1 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img1.jpg';
-import SerenResortGoaImg2 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img2.jpg';
-import SerenResortGoaImg3 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img3.jpg';
-import SerenResortGoaImg4 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img4.jpg';
-import SerenResortGoaImg5 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img5.jpg';
+import SerenResortGoaImg1 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img1.webp';
+import SerenResortGoaImg2 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img2.webp';
+import SerenResortGoaImg3 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img3.webp';
+import SerenResortGoaImg4 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img4.webp';
+import SerenResortGoaImg5 from '../../assets/images/project/serene-shores-resort-goa/serene-shores-resort-goa-img5.webp';
 
-import SereniteResidencyPuducherryImg1 from '../../assets/images/project/serenity-residence-pondicherry/serenity-residence-pondicherry-img1.jpg';
-import SereniteResidencyPuducherryImg2 from '../../assets/images/project/serenity-residence-pondicherry/serenity-residence-pondicherry-img2.jpg';
-import SereniteResidencyPuducherryImg3 from '../../assets/images/project/serenity-residence-pondicherry/serenity-residence-pondicherry-img3.jpg';
+import SereniteResidencyPuducherryImg1 from '../../assets/images/project/serenity-residence-pondicherry/serenity-residence-pondicherry-img1.webp';
+import SereniteResidencyPuducherryImg2 from '../../assets/images/project/serenity-residence-pondicherry/serenity-residence-pondicherry-img2.webp';
+import SereniteResidencyPuducherryImg3 from '../../assets/images/project/serenity-residence-pondicherry/serenity-residence-pondicherry-img3.webp';
 
-import SkyViewAppartmentGurgaonImg1 from '../../assets/images/project/skyview-appartment-gurugon/skyview-appartment-gurugon-img1.jpg';
-import SkyViewAppartmentGurgaonImg2 from '../../assets/images/project/skyview-appartment-gurugon/skyview-appartment-gurugon-img2.jpg';
-import SkyViewAppartmentGurgaonImg3 from '../../assets/images/project/skyview-appartment-gurugon/skyview-appartment-gurugon-img3.jpg';
+import SkyViewAppartmentGurgaonImg1 from '../../assets/images/project/skyview-appartment-gurugon/skyview-appartment-gurugon-img1.webp';
+import SkyViewAppartmentGurgaonImg2 from '../../assets/images/project/skyview-appartment-gurugon/skyview-appartment-gurugon-img2.webp';
+import SkyViewAppartmentGurgaonImg3 from '../../assets/images/project/skyview-appartment-gurugon/skyview-appartment-gurugon-img3.webp';
 
-import StarliteResortImg1 from '../../assets/images/project/starlite-resort/starlite-resort-img1.jpg';
-import StarliteResortImg2 from '../../assets/images/project/starlite-resort/starlite-resort-img2.jpg';
-import StarliteResortImg3 from '../../assets/images/project/starlite-resort/starlite-resort-img3.jpg';
-import StarliteResortImg4 from '../../assets/images/project/starlite-resort/starlite-resort-img4.jpg';
-import StarliteResortImg5 from '../../assets/images/project/starlite-resort/starlite-resort-img5.jpg';
-import StarliteResortImg6 from '../../assets/images/project/starlite-resort/starlite-resort-img6.jpg';
-import StarliteResortImg7 from '../../assets/images/project/starlite-resort/starlite-resort-img7.jpg';
-import StarliteResortImg8 from '../../assets/images/project/starlite-resort/starlite-resort-img8.jpg';
+import StarliteResortImg1 from '../../assets/images/project/starlite-resort/starlite-resort-img1.webp';
+import StarliteResortImg2 from '../../assets/images/project/starlite-resort/starlite-resort-img2.webp';
+import StarliteResortImg3 from '../../assets/images/project/starlite-resort/starlite-resort-img3.webp';
+import StarliteResortImg4 from '../../assets/images/project/starlite-resort/starlite-resort-img4.webp';
+import StarliteResortImg5 from '../../assets/images/project/starlite-resort/starlite-resort-img5.webp';
+import StarliteResortImg6 from '../../assets/images/project/starlite-resort/starlite-resort-img6.webp';
+import StarliteResortImg7 from '../../assets/images/project/starlite-resort/starlite-resort-img7.webp';
+import StarliteResortImg8 from '../../assets/images/project/starlite-resort/starlite-resort-img8.webp';
 
-import RecreationalCentreImg1 from '../../assets/images/project/recreational-center-karnataka/recreational-center-karnataka-img1.jpg';
-import RecreationalCentreImg2 from '../../assets/images/project/recreational-center-karnataka/recreational-center-karnataka-img2.jpg';
+import RecreationalCentreImg1 from '../../assets/images/project/recreational-center-karnataka/recreational-center-karnataka-img1.webp';
+import RecreationalCentreImg2 from '../../assets/images/project/recreational-center-karnataka/recreational-center-karnataka-img2.webp';
 
-import GalleriaMallImg1 from '../../assets/images/project/galleria-mall-kolkata/galleria-mall-kolkata-img1.jpg';
-import GalleriaMallImg2 from '../../assets/images/project/galleria-mall-kolkata/galleria-mall-kolkata-img2.jpg';
-import GalleriaMallImg3 from '../../assets/images/project/galleria-mall-kolkata/galleria-mall-kolkata-img3.jpg';
+import GalleriaMallImg1 from '../../assets/images/project/galleria-mall-kolkata/galleria-mall-kolkata-img1.webp';
+import GalleriaMallImg2 from '../../assets/images/project/galleria-mall-kolkata/galleria-mall-kolkata-img2.webp';
+import GalleriaMallImg3 from '../../assets/images/project/galleria-mall-kolkata/galleria-mall-kolkata-img3.webp';
 
-import EastCoastalVillaImg1 from '../../assets/images/project/east-coastal-villas-chennai/east-coastal-villas-chennai-img1.jpg'
-import EastCoastalVillaImg2 from '../../assets/images/project/east-coastal-villas-chennai/east-coastal-villas-chennai-img2.jpg'
-import EastCoastalVillaImg3 from '../../assets/images/project/east-coastal-villas-chennai/east-coastal-villas-chennai-img3.jpg'
+import EastCoastalVillaImg1 from '../../assets/images/project/east-coastal-villas-chennai/east-coastal-villas-chennai-img1.webp'
+import EastCoastalVillaImg2 from '../../assets/images/project/east-coastal-villas-chennai/east-coastal-villas-chennai-img2.webp'
+import EastCoastalVillaImg3 from '../../assets/images/project/east-coastal-villas-chennai/east-coastal-villas-chennai-img3.webp'
 
 const propertyPortfolio = [
   {

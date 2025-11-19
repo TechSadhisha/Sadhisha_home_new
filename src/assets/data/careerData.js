@@ -1,7 +1,7 @@
 import growth from '../images/home/sales.webp'
-import groupLearning from '../images/join/group-learning.jpg'
-import respecful from '../images/join/respecful.jpg'
-import performane from '../images/join/performane.jpg'
+import groupLearning from '../images/join/group-learning.webp'
+import respecful from '../images/join/respecful.webp'
+import performane from '../images/join/performane.webp'
 const currentOpenings = [
   {
     title: "Sales Executive (Deals Chief)",

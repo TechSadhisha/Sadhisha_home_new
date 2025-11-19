@@ -25,7 +25,7 @@ const Availability = () => {
         {properties.map((property, index) => (
         <div className="property-card row mb-5" key={index}>
           <div className="col-md-4">
-            <img src={property.image} alt={property.name} className="img-fluid w-100" />
+            <img loading="lazy" src={property.image} alt={property.name} className="img-fluid w-100" />
           </div>
           <div className="col-md-8">
             <h2 className="secTitleGreen mb-3">{property.name}</h2>

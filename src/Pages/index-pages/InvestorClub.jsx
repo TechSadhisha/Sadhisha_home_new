@@ -3,7 +3,7 @@ import { Section } from "../../layouts/Section";
 import SplitText from "gsap/SplitText";
 import gsap from "gsap";
 
-import logo from "../../assets/images/home/builig black and white.jpg";
+import logo from "../../assets/images/home/builig black and white.webp";
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 
@@ -28,7 +28,7 @@ const InvestorClub = () => {
               <div className="row justify-content-center d-flex">
                 <div className="col-6 pb-md-5 pb-3 flex-row-center">
                   <div className="position-relative">
-                    <img
+                    <img loading="lazy"
                       src={logo}
                       alt="Investor"
                       className="img-fluid rounded"
@@ -37,7 +37,7 @@ const InvestorClub = () => {
                 </div>
                 <div className="col-6 pt-md-5 pt-3 flex-row-center">
                   <div className="position-relative">
-                    <img
+                    <img loading="lazy"
                       src={logo}
                       alt="Investor"
                       className="img-fluid rounded"

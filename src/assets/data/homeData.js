@@ -4,10 +4,10 @@ import SadhishaHomesLogo from "../../assets/images/common/SADHISHA LOGO 1/1.webp
 
 import logo from "../images/common/sadhisha-half-logo.png";
 
-import pillar1 from "../images/home/row-1-column-1.jpg";
-import pillar2 from "../images/home/row-1-column-2.jpg";
-import pillar3 from "../images/home/row-1-column-3.jpg";
-import pillar4 from "../images/home/row-1-column-4.jpg";
+import pillar1 from "../images/home/row-1-column-1.webp";
+import pillar2 from "../images/home/row-1-column-2.webp";
+import pillar3 from "../images/home/row-1-column-3.webp";
+import pillar4 from "../images/home/row-1-column-4.webp";
 
 
 

@@ -8,8 +8,8 @@ import AuroLogo from "../../assets/images/common/AURO ARCHITECTS/1.webp";
 
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 import AuroArchitectsImage from "../../assets/images/our_companies/auro_architects.webp";
-import AuroArchitect2 from "../../assets/images/our_companies/architect2.jpg";
-import AuroArchitect3 from "../../assets/images/our_companies/architect3.jpg";
+import AuroArchitect2 from "../../assets/images/our_companies/architect2.webp";
+import AuroArchitect3 from "../../assets/images/our_companies/architect3.webp";
 
 const AuroArchitects = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const AuroArchitects = () => {
         <Section>
           <div className="md-md-0">
             <div className=" flex-row-center mb-3">
-              <img
+              <img loading="lazy"
                 src={AuroLogo}
                 width={130}
                 alt="AuroLogo"
@@ -75,21 +75,21 @@ const AuroArchitects = () => {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={AuroArchitectsImage}
                     alt="First slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={AuroArchitect2}
                     alt="Second slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={AuroArchitect3}
                     alt="Third slide"
@@ -145,7 +145,7 @@ const AuroArchitects = () => {
                   <div className="hexagon-card">
                     <div className="hexagon-card-content px-4 py-3">
                       <div className="text-center mb-2">
-                        <img
+                        <img loading="lazy"
                           src={specialization.image}
                           alt={specialization.title}
                           style={{ width: "80px" }}
@@ -163,7 +163,7 @@ const AuroArchitects = () => {
                   <div className="normal-specialization-card rounded-3 bgGreen">
                     <div className="normal-specialization-card-content p-3">
                       <div className="text-center my-3">
-                        <img
+                        <img loading="lazy"
                           src={specialization.image}
                           alt={specialization.title}
                           style={{ width: "80px" }}

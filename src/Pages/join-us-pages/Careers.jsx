@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import building from '../../assets/images/home/builig black and white.jpg';
+import building from '../../assets/images/home/builig black and white.webp';
 import { Section } from '../../layouts/Section';
 import '../../styles/pages/join-us-pages/careers.css';
 import careerData from '../../assets/data/careerData';
@@ -68,12 +68,12 @@ const Careers = () => {
               <div className="row justify-content-center d-flex">
                 <div className="col-6 pb-md-5 pb-3 align-items-start flex-row-center">
                   <div className="position-relative">
-                    <img src={building} alt="Workforce" className="img-fluid rounded" />
+                    <img loading="lazy" src={building} alt="Workforce" className="img-fluid rounded" />
                   </div>
                 </div>
                 <div className="col-6 pt-md-5 pt-3 align-items-end flex-row-center">
                   <div className="position-relative">
-                    <img src={building} alt="Workforce" className="img-fluid rounded" />
+                    <img loading="lazy" src={building} alt="Workforce" className="img-fluid rounded" />
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const Careers = () => {
             {careerBenefitsData.map((benefits, index) => (
               <div className="col-md-3 mb-md-2 mb-3" key={index}>
                 <div className="position-relative career-benefits-image-wrapper">
-                  <img
+                  <img loading="lazy"
                     src={benefits.image}
                     alt={benefits.title}
                     className="img-fluid"

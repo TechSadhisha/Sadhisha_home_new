@@ -5,9 +5,9 @@ import sadhishaHomesData from "../../assets/data/sadhishaHomesData";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import SadhishaHomesLogo from "../../assets/images/common/SADHISHA LOGO 1/1.webp";
 import ContactDetails from "../../Components/index-pages/ContactDetails";
-import ai1 from "../../assets/images/our_companies/ai1.jpeg";
-import ai2 from "../../assets/images/our_companies/ai2.jpeg";
-import ai3 from "../../assets/images/our_companies/ai3.jpg";
+import ai1 from "../../assets/images/our_companies/ai1.webp";
+import ai2 from "../../assets/images/our_companies/ai2.webp";
+import ai3 from "../../assets/images/our_companies/ai3.webp";
 
 const SadhishaAi = () => {
   useEffect(() => {
@@ -25,7 +25,7 @@ const SadhishaAi = () => {
         <Section>
           <div className="md-md-0">
             <div className="flex-row-center mb-3">
-              <img
+              <img loading="lazy"
                 src={SadhishaHomesLogo}
                 width={130}
                 alt="SadhishaHomesLogo"
@@ -71,21 +71,21 @@ const SadhishaAi = () => {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={ai1}
                     alt="AI-Optimized Home Design"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={ai2}
                     alt="Smart Construction Technology"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={ai3}
                     alt="AI-Powered Interior Spaces"
@@ -128,7 +128,7 @@ const SadhishaAi = () => {
               >
                 <div className="rounded-2 py-md-5 px-md-3 p-3 developmentFeaturesCard mb-md-4 mb-3">
                   <div className="d-flex justify-content-center mb-md-4 mb-3">
-                    <img
+                    <img loading="lazy"
                       className="p-3"
                       src={point.image}
                       width={120}

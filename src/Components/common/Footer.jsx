@@ -120,7 +120,7 @@ const Footer = () => {
             </div>
             <div className="col-md-2 order-md-1 order-2">
               <div className="logo-box">
-                <img src={sadhishaLogo} className="w-100" alt="" />
+                <img loading="lazy" src={sadhishaLogo} className="w-100" alt="" />
               </div>
             </div>
             <div className="col-md-5 order-md-3 order-3"></div>

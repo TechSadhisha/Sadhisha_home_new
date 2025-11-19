@@ -142,7 +142,7 @@ const CenterImgNavbar = () => {
 
         <div className="ms-5">
           <a className="navbar-brand" href="/" onClick={(e) => handleNavClick(e, "/")}>
-            <img className="bannerLogo" width={130} src={sadhishaLogo} style={{borderRadius:"50%"}} alt="sadhishaLogo" />
+            <img loading="lazy" className="bannerLogo" width={130} src={sadhishaLogo} style={{borderRadius:"50%"}} alt="sadhishaLogo" />
           </a>
 
         

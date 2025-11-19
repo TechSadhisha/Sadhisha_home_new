@@ -1,5 +1,5 @@
 .welcome-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../../../assets/images/bg/welcome-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../../../assets/images/bg/welcome-bg.webp');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

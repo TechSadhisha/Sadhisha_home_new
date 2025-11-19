@@ -15,7 +15,7 @@ const Header = () => {
           
           <div className="col-4 text-center">
             <Link to="/" className="d-flex justify-content-center align-items-center">
-              <img src={logo} alt="Sadhisha Homes" style={{ height: '75px' }} />
+              <img loading="lazy" src={logo} alt="Sadhisha Homes" style={{ height: '75px' }} />
             </Link>
           </div>
           

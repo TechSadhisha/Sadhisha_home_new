@@ -1,11 +1,30 @@
 
-// Tell TypeScript how to handle image imports
-declare module "*.jpg";
-declare module "*.jpeg";
-declare module "*.png";
-declare module "*.svg";
-declare module "*.gif";
-declare module "*.webp";
+// Tell TypeScript how to handle asset imports
+declare module "*.webp" {
+  const src: string;
+  export default src;
+}
+
+declare module "*.png" {
+  const src: string;
+  export default src;
+}
+
+declare module "*.svg" {
+  const src: string;
+  export default src;
+}
+
+declare module "*.gif" {
+  const src: string;
+  export default src;
+}
+
+declare module "*.avif" {
+  const src: string;
+  export default src;
+}
+
 declare module "*.mp4" {
   const src: string;
   export default src;

@@ -10,8 +10,8 @@ import SadhishaHomesLogo from "../../assets/images/common/SADHISHA LOGO 1/1.webp
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 
 import SadhishaRealityImage from "../../assets/images/our_companies/sadhisha_reality.webp";
-import Reality2 from "../../assets/images/our_companies/reality2.jpg";
-import Reality3 from "../../assets/images/our_companies/reality3.jpg";
+import Reality2 from "../../assets/images/our_companies/reality2.webp";
+import Reality3 from "../../assets/images/our_companies/reality3.webp";
 
 const SadhishaRealty = () => {
   useEffect(() => {
@@ -27,7 +27,7 @@ const SadhishaRealty = () => {
         <Section>
           <div className="md-md-0">
             <div className=" flex-row-center mb-3">
-              <img
+              <img loading="lazy"
                 src={SadhishaHomesLogo}
                 width={130}
                 alt="SadhishaHomesLogo"
@@ -75,21 +75,21 @@ const SadhishaRealty = () => {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={SadhishaRealityImage}
                     alt="First slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={Reality2}
                     alt="Second slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img
+                  <img loading="lazy"
                     className="d-block w-100"
                     src={Reality3}
                     alt="Third slide"
@@ -131,7 +131,7 @@ const SadhishaRealty = () => {
                   className="rounded-2 py-md-5 px-md-3 p-3 developmentFeaturesCard mb-md-4 mb-3 "
                 >
                   <div className="d-flex justify-content-center mb-md-4 mb-3">
-                    <img
+                    <img loading="lazy"
                       className="p-3"
                       src={point.image}
                       width={120}

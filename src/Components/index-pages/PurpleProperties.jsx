@@ -11,7 +11,7 @@ const PurpleProperties = () => {
 
   const properties = [
     {
-      img: '/images/home/building-black-white.jpg',
+      img: '/images/home/building-black-white.webp',
       title: 'Purple Lakeview',
       desc: 'Luxury waterfront studio apartments near the Pondicherry–Chennai highway.'
     },
@@ -32,7 +32,7 @@ const PurpleProperties = () => {
       <div className="purpleproperties-icon-cards__content" ref={contentRef}>
         {properties.map((property, idx) => (
           <div className="purpleproperties-icon-cards__item" key={idx}>
-            <img src={property.img} alt={property.title} className="img-fluid" />
+            <img loading="lazy" src={property.img} alt={property.title} className="img-fluid" />
             <div className="purpleproperties-overlay-text">
               <h6 className="subTitleWhite">{property.title}</h6>
               <p className="paraWhite text-center">{property.desc}</p>

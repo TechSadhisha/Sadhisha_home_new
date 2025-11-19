@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import logo from '../../assets/images/home/builig black and white.jpg';
+import logo from '../../assets/images/home/builig black and white.webp';
 import { Section } from '../../layouts/Section';
 import '../../styles/pages/about-pages/csr.css'
 
@@ -50,7 +50,7 @@ const Csr = () => {
               <div className="row justify-content-center d-flex">
                 <div className="col-6 pb-md-5 align-items-start  flex-row-center">
                   <div className='position-relative '>
-                    <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                    <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
                   </div>
@@ -58,7 +58,7 @@ const Csr = () => {
                 </div>
                 <div className="col-6 pt-md-5 align-items-end  flex-row-center">
                   <div className='position-relative  '>
-                    <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                    <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
                   </div>
@@ -95,7 +95,7 @@ const Csr = () => {
                   <div className="mission-vision-card">
 
                     <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                      <img src={client} width={120} alt="" />
+                      <img loading="lazy" src={client} width={120} alt="" />
                     </div>
                     <h4 className="subTitleBlack mb-md-4 text-center mb-2 fs-5">Use of eco-conscious materials</h4>
                   </div>
@@ -104,7 +104,7 @@ const Csr = () => {
                   <div className="mission-vision-card">
 
                     <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                      <img src={upcomming} width={120} alt="" />
+                      <img loading="lazy" src={upcomming} width={120} alt="" />
                     </div>
                     <h4 className="subTitleBlack mb-md-4 text-center mb-2 fs-5">Integration of energy-efficient systems</h4>
 
@@ -114,7 +114,7 @@ const Csr = () => {
                   <div className="mission-vision-card">
 
                     <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                      <img width={120} src={workforce} alt="" />
+                      <img loading="lazy" width={120} src={workforce} alt="" />
                     </div>
                     <h4 className="subTitleBlack mb-md-4 text-center mb-2 fs-5">Water conservation and waste reduction strategies</h4>
 
@@ -124,7 +124,7 @@ const Csr = () => {
                   <div className="mission-vision-card">
 
                     <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                      <img src={sustainable} width={120} alt="" />
+                      <img loading="lazy" src={sustainable} width={120} alt="" />
                     </div>
                     <h4 className="subTitleBlack mb-md-4 text-center mb-2 fs-5">Climate-responsive designs that respect local ecosystems</h4>
 
@@ -166,7 +166,7 @@ const Csr = () => {
               <div className="row justify-content-center d-flex">
                 <div className="col-6 pb-md-5 align-items-start  flex-row-center">
                   <div className='position-relative '>
-                    <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                    <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
                   </div>
@@ -174,7 +174,7 @@ const Csr = () => {
                 </div>
                 <div className="col-6 pt-md-5 align-items-end  flex-row-center">
                   <div className='position-relative  '>
-                    <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                    <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
                   </div>
@@ -199,7 +199,7 @@ const Csr = () => {
                 {charityData.map((charity, index) => (
                   <div className="col-md-3 mb-2" key={index}>
                     <div className="position-relative core-values-image-wrapper">
-                      <img
+                      <img loading="lazy"
                         src={charity.img}
                         alt={charity.title}
                         className="img-fluid"

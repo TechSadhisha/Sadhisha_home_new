@@ -48,7 +48,7 @@ const PropertyMediaSlider: React.FC<PropertyMediaSliderProps> = ({ media }) => {
   return (
     <div className="position-relative mb-4">
       {/* Main Image */}
-      <img
+      <img loading="lazy"
         src={media[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
         className="img-fluid rounded w-100"
@@ -85,7 +85,7 @@ const PropertyMediaSlider: React.FC<PropertyMediaSliderProps> = ({ media }) => {
         }}
       >
         {media.map((src, index) => (
-          <img
+          <img loading="lazy"
             key={index}
             src={src}
             alt={`Thumbnail ${index + 1}`}

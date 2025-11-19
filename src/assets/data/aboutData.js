@@ -1,9 +1,9 @@
 
 
-import innovation from '../images/about/about us/innovation.jpg'
-import Sustainability from '../images/about/about us/sustainabilty.jpg'
-import Integrity from '../images/about/about us/integrity.jpg'
-import ClientCentric from '../images/about/about us/client-centric.jpg'
+import innovation from '../images/about/about us/innovation.webp'
+import Sustainability from '../images/about/about us/sustainabilty.webp'
+import Integrity from '../images/about/about us/integrity.webp'
+import ClientCentric from '../images/about/about us/client-centric.webp'
 
 import AuroLogo from '../../assets/images/common/AURO ARCHITECTS/1.webp';
 import SadhishaConstructionLogo from '../../assets/images/common/SADHISHA CONSTRUCTION/1.webp';

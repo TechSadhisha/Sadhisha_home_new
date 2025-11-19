@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import building from "../../assets/images/home/builig black and white.jpg";
+import building from "../../assets/images/home/builig black and white.webp";
 import { Section } from "../../layouts/Section";
 import "../../styles/pages/join-us-pages/channel-partners.css";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
@@ -53,7 +53,7 @@ const ChannelPartners = () => {
               <div className="row justify-content-center d-flex">
                 <div className="col-md-6 pb-md-5 align-items-start flex-row-center">
                   <div className="position-relative">
-                    <img
+                    <img loading="lazy"
                       src={building}
                       alt="Workforce"
                       className="img-fluid rounded"
@@ -62,7 +62,7 @@ const ChannelPartners = () => {
                 </div>
                 <div className="col-md-6 pt-md-5 align-items-end flex-row-center">
                   <div className="position-relative">
-                    <img
+                    <img loading="lazy"
                       src={building}
                       alt="Workforce"
                       className="img-fluid rounded"
@@ -110,7 +110,7 @@ const ChannelPartners = () => {
                 >
                   <div className="benefit-card">
                     <div className="text-center channel-partner-benefit-img-box mb-3">
-                      <img
+                      <img loading="lazy"
                         src={benefit.img}
                         alt={benefit.title}
                         style={{ width: "100px" }}
@@ -151,7 +151,7 @@ const ChannelPartners = () => {
               >
                 <div className="rounded-2 whyChooseChannelPartnerCard py-md-5 px-md-3 p-3 mb-md-4 mb-3">
                   <div className="flex-row-center mb-md-4 mb-3">
-                    <img src={point.image} width={100} alt={point.title} />
+                    <img loading="lazy" src={point.image} width={100} alt={point.title} />
                   </div>
                   <div className="service-body align-items-start d-flex row justify-content-center">
                     <div>

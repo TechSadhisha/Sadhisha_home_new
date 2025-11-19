@@ -1,4 +1,4 @@
-import building from '../images/home/builig black and white.jpg'
+import building from '../images/home/builig black and white.webp'
 
 
 const properties = [

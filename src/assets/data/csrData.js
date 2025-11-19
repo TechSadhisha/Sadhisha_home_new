@@ -1,8 +1,8 @@
 
 
-import donation from '../images/about/csr/donation.jpg'
-import medicalCamps from '../images/about/csr/medical-camps.jpg'
-import massMarriage from '../images/about/csr/mass-marriage.jpg'
+import donation from '../images/about/csr/donation.webp'
+import medicalCamps from '../images/about/csr/medical-camps.webp'
+import massMarriage from '../images/about/csr/mass-marriage.webp'
 import homes from '../images/about/homes.avif'
 
 const charityData = [

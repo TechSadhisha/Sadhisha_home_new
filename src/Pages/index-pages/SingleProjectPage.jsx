@@ -62,7 +62,7 @@ const SingleProjectPage = () => {
                     key={idx}
                     className={`carousel-item ${idx === 0 ? "active" : ""}`}
                   >
-                    <img
+                    <img loading="lazy"
                       src={img}
                       className="d-block w-100"
                       alt={`Slide ${idx + 1}`}

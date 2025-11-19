@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import beachImage from "../../assets/images/ongoingprojects/beach.jpg";
+import beachImage from "../../assets/images/ongoingprojects/beach.webp";
 
 const WhyInvest = () => {
   const reasons = [
@@ -19,7 +19,7 @@ const WhyInvest = () => {
 
         <div className="row g-5 align-items-center">
           <div className="col-lg-6">
-            <img
+            <img loading="lazy"
               src={beachImage}
               alt="Coastal landscape"
               className="img-fluid rounded shadow-lg"

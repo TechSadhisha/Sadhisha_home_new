@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="col-lg-3 col-md-6">
             <h3 className="h5 fw-bold mb-4">Contact Sadisha</h3>
-            <img
+            <img loading="lazy"
               src={logo1}
               alt="Sadhisha Homes"
               style={{ height: "96px" }}
@@ -109,17 +109,17 @@ const Footer = () => {
           {/* Awards */}
           <div className="col-lg-3 col-md-6">
             <div className="d-flex gap-3">
-              <img
+              <img loading="lazy"
                 src={award}
                 alt="Best Thailand Agent Award"
                 style={{ height: "250px", width: "100px" }}
               />
-              <img
+              <img loading="lazy"
                 src={award}
                 alt="Best Thailand Agent Award"
                 style={{ height: "250px", width: "100px" }}
               />
-              <img
+              <img loading="lazy"
                 src={award}
                 alt="Best Thailand Agent Award"
                 style={{ height: "250px", width: "100px" }}

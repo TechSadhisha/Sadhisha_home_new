@@ -5,9 +5,9 @@ import Recognition from './Recognition';
 import Csr from './Csr'
 
 import '../../styles/pages/about-pages/about.css';
-import logo from '../../assets/images/home/builig black and white.jpg';
+import logo from '../../assets/images/home/builig black and white.webp';
 
-import CEO from '../../assets/images/about/founder.jpeg';
+import CEO from '../../assets/images/about/founder.webp';
 import Founder from '../../assets/images/home/founder-achievement.png';
 
 import founderSignature from '../../assets/images/about/founder-signature.png';
@@ -60,7 +60,7 @@ const About = () => {
                 <div className="row justify-content-center d-flex">
                   <div className="col-6 pb-md-5 align-items-start  flex-row-center">
                     <div className='position-relative '>
-                      <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                      <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
                     </div>
@@ -68,7 +68,7 @@ const About = () => {
                   </div>
                   <div className="col-6 pt-md-5 align-items-end  flex-row-center">
                     <div className='position-relative  '>
-                      <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                      <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
                     </div>
@@ -117,7 +117,7 @@ const About = () => {
           <div className="row justify-content-center d-flex pb-md-5 py-2">
             <div className="col-md-3 mb-3 col-6 pb-md-3 align-items-start  flex-row-center">
               <div className='position-relative '>
-                <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
               </div>
@@ -125,7 +125,7 @@ const About = () => {
             </div>
             <div className="col-md-3 col-6 mb-3 pt-md-3 align-items-end  flex-row-center">
               <div className='position-relative  '>
-                <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
               </div>
@@ -135,7 +135,7 @@ const About = () => {
 
             <div className="col-md-3 col-6 pb-md-3 align-items-start  flex-row-center">
               <div className='position-relative '>
-                <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
               </div>
@@ -143,7 +143,7 @@ const About = () => {
             </div>
             <div className="col-md-3 col-6 pt-md-3 align-items-end  flex-row-center">
               <div className='position-relative  '>
-                <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
               </div>
@@ -187,7 +187,7 @@ const About = () => {
 
             <div className="col-md-6 p-md-4">
               <div className="ceo-img-box position-relative overflow-hidden">
-                <img className="w-100 h-100" src={CEO} alt="founder & Ceo image" />
+                <img loading="lazy" className="w-100 h-100" src={CEO} alt="founder & Ceo image" />
 
                 {/* Overlay content */}
                 <div className="ceo-overlay d-flex flex-column justify-content-between p-4">
@@ -231,7 +231,7 @@ const About = () => {
               </p>
 
               <div className=' flex-row-end'>
-                <img src={founderSignature} width={300} alt="" />
+                <img loading="lazy" src={founderSignature} width={300} alt="" />
               </div>
             </div>
 
@@ -279,7 +279,7 @@ const About = () => {
             {coreValues.map((value, index) => (
               <div className="col-md-3  mb-2" key={index}>
                 <div className="position-relative core-values-image-wrapper">
-                  <img
+                  <img loading="lazy"
                     src={value.image}
                     alt={value.title}
                     className="img-fluid w-100 h-100"
@@ -305,7 +305,7 @@ const About = () => {
                 <div className="mission-vision-card">
 
                   <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                    <img src={vision} width={200} alt="" />
+                    <img loading="lazy" src={vision} width={200} alt="" />
                   </div>
                   <h4 className="subTitleBlack mb-md-4 text-center mb-2">OUR VISION</h4>
                   <p className='paraGreen text-center px-md-0 px-2'>
@@ -320,7 +320,7 @@ const About = () => {
                 <div className="mission-vision-card">
 
                   <div className="mission-vision-image-box flex-row-center mb-md-4 mb-3">
-                    <img className='p-md-3 p-3' src={mission} width={200} alt="" />
+                    <img loading="lazy" className='p-md-3 p-3' src={mission} width={200} alt="" />
                   </div>
                   <h4 className="subTitleBlack mb-md-4 text-center mb-2">OUR MISSION</h4>
                   <p className='paraGreen text-center px-2 px-md-0'>
@@ -356,7 +356,7 @@ const About = () => {
           <div className="row justify-content-center d-flex  py-2">
             
             <div className="founder-img-box w-100">
-              <img src={CEO} alt="" />
+              <img loading="lazy" src={CEO} alt="" />
             </div>
 
             <div className="pt-4">
@@ -397,7 +397,7 @@ const About = () => {
 
             <div className="col-md-6 p-md-4 ">
               <div className="ceo-img-box position-relative overflow-hidden">
-                <img className="w-100 h-100" src={CEO} alt="founder & Ceo image" />
+                <img loading="lazy" className="w-100 h-100" src={CEO} alt="founder & Ceo image" />
 
                 {/* Overlay content */}
                 <div className="ceo-overlay d-flex flex-column justify-content-between p-4">
@@ -480,7 +480,7 @@ const About = () => {
               <div className="row justify-content-center d-flex">
                 <div className="col-6 pb-md-5 align-items-start  flex-row-center">
                   <div className='position-relative '>
-                    <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                    <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
                   </div>
@@ -488,7 +488,7 @@ const About = () => {
                 </div>
                 <div className="col-6 pt-md-5 align-items-end  flex-row-center">
                   <div className='position-relative  '>
-                    <img src={logo} alt="Workforce" className="img-fluid rounded" />
+                    <img loading="lazy" src={logo} alt="Workforce" className="img-fluid rounded" />
 
 
                   </div>
@@ -536,7 +536,7 @@ const About = () => {
                 <div className="col-md-4">
                   <div key={index} className='rounded-2 affilates-card  mb-md-4 mb-3 '>
                     <div className='mb-4 flex-row-center'>
-                      <img src={affiliates.image} width={180} alt="" />
+                      <img loading="lazy" src={affiliates.image} width={180} alt="" />
                     </div>
                     <div className="service-body ">
 

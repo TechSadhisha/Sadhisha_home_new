@@ -60,9 +60,9 @@ const TitleReveal = () => {
       `}</style>
 
       <div className="animation-container bgGreen">
-        <img src={designImage1} alt="left" className="symbol-img left-img" />
+        <img loading="lazy" src={designImage1} alt="left" className="symbol-img left-img" />
         <h2 className="secTitleWhite titleAnimated">Investor Club</h2>
-        <img src={designImage2} alt="right" className="symbol-img right-img" />
+        <img loading="lazy" src={designImage2} alt="right" className="symbol-img right-img" />
       </div>
     </div>
   );

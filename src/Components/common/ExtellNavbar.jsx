@@ -64,7 +64,7 @@ const ExtellNavbar = () => {
             href="/"
             onClick={(e) => handleNavClick(e, "/")}
           >
-            <img
+            <img loading="lazy"
               className="bannerLogo"
               width={130}
               src={sadhishaLogo}

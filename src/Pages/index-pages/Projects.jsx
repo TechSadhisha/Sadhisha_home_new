@@ -76,7 +76,7 @@ const Projects = () => {
                           onMouseLeave={() => setHoveredProperty(null)}
                         >
                           <div className="position-relative">
-                            <img
+                            <img loading="lazy"
                               src={property.images[0]}
                               className="card-img-top"
                               alt={property.name}
