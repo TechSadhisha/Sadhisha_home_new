@@ -4,12 +4,18 @@ import "../../styles/pages/affilate-pages/auro-architect.css";
 import AuroArchitectsData from "../../assets/data/auroArchitectsData";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 
-import AuroLogo from "../../assets/images/common/AURO ARCHITECTS/1.webp";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
+
+const AuroLogo =
+  cloudinaryAssets["src/assets/images/common/AURO ARCHITECTS/1.webp"];
 
 import ContactDetails from "../../Components/index-pages/ContactDetails";
-import AuroArchitectsImage from "../../assets/images/our_companies/auro_architects.webp";
-import AuroArchitect2 from "../../assets/images/our_companies/architect2.webp";
-import AuroArchitect3 from "../../assets/images/our_companies/architect3.webp";
+const AuroArchitectsImage =
+  cloudinaryAssets["src/assets/images/our_companies/auro_architects.webp"];
+const AuroArchitect2 =
+  cloudinaryAssets["src/assets/images/our_companies/architect2.webp"];
+const AuroArchitect3 =
+  cloudinaryAssets["src/assets/images/our_companies/architect3.webp"];
 
 const AuroArchitects = () => {
   useEffect(() => {
@@ -24,7 +30,8 @@ const AuroArchitects = () => {
         <Section>
           <div className="md-md-0">
             <div className=" flex-row-center mb-3">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src={AuroLogo}
                 width={130}
                 alt="AuroLogo"
@@ -75,21 +82,24 @@ const AuroArchitects = () => {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={AuroArchitectsImage}
                     alt="First slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={AuroArchitect2}
                     alt="Second slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={AuroArchitect3}
                     alt="Third slide"
@@ -145,7 +155,8 @@ const AuroArchitects = () => {
                   <div className="hexagon-card">
                     <div className="hexagon-card-content px-4 py-3">
                       <div className="text-center mb-2">
-                        <img loading="lazy"
+                        <img
+                          loading="lazy"
                           src={specialization.image}
                           alt={specialization.title}
                           style={{ width: "80px" }}
@@ -163,7 +174,8 @@ const AuroArchitects = () => {
                   <div className="normal-specialization-card rounded-3 bgGreen">
                     <div className="normal-specialization-card-content p-3">
                       <div className="text-center my-3">
-                        <img loading="lazy"
+                        <img
+                          loading="lazy"
                           src={specialization.image}
                           alt={specialization.title}
                           style={{ width: "80px" }}

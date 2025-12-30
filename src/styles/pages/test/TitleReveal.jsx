@@ -1,10 +1,13 @@
-import React from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import SplitText from 'gsap/SplitText';
+import React from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import SplitText from "gsap/SplitText";
 
-import designImage1 from '../../../assets/images/bg/kolam-design.png';
-import designImage2 from '../../../assets/images/bg/kolam-design - Copy.png';
+import cloudinaryAssets from "../../../assets/cloudinary_assets.json";
+
+const designImage1 = cloudinaryAssets["src/assets/images/bg/kolam-design.png"];
+const designImage2 =
+  cloudinaryAssets["src/assets/images/bg/kolam-design - Copy.png"];
 
 gsap.registerPlugin(SplitText);
 
@@ -13,30 +16,36 @@ const TitleReveal = () => {
     const tl = gsap.timeline();
 
     // Animate left image: from x: 50 to x: -100
-    tl.fromTo('.left-img',
+    tl.fromTo(
+      ".left-img",
       { x: 200, opacity: 1 },
-      { x: -100, opacity: 1, duration: 2.6, ease: 'power3.out' },
+      { x: -100, opacity: 1, duration: 2.6, ease: "power3.out" },
       0
     );
 
     // Animate right image: from x: -50 to x: 100
-    tl.fromTo('.right-img',
+    tl.fromTo(
+      ".right-img",
       { x: -200, opacity: 1 },
-      { x: 100, opacity: 1, duration: 2.6, ease: 'power3.out' },
+      { x: 100, opacity: 1, duration: 2.6, ease: "power3.out" },
       0
     );
 
     // Animate the title in the center
-    const title = document.querySelector('.titleAnimated');
+    const title = document.querySelector(".titleAnimated");
     if (title) {
-      const split = new SplitText(title, { type: 'chars' });
-      tl.from(split.chars, {
-        yPercent: 100,
-        opacity: 0,
-        duration: 1.2,
-        ease: 'expo.out',
-        stagger: 0.05,
-      }, 0.6); // start after the images move
+      const split = new SplitText(title, { type: "chars" });
+      tl.from(
+        split.chars,
+        {
+          yPercent: 100,
+          opacity: 0,
+          duration: 1.2,
+          ease: "expo.out",
+          stagger: 0.05,
+        },
+        0.6
+      ); // start after the images move
     }
   }, []);
 
@@ -60,9 +69,19 @@ const TitleReveal = () => {
       `}</style>
 
       <div className="animation-container bgGreen">
-        <img loading="lazy" src={designImage1} alt="left" className="symbol-img left-img" />
+        <img
+          loading="lazy"
+          src={designImage1}
+          alt="left"
+          className="symbol-img left-img"
+        />
         <h2 className="secTitleWhite titleAnimated">Investor Club</h2>
-        <img loading="lazy" src={designImage2} alt="right" className="symbol-img right-img" />
+        <img
+          loading="lazy"
+          src={designImage2}
+          alt="right"
+          className="symbol-img right-img"
+        />
       </div>
     </div>
   );

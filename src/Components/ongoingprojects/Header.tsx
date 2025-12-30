@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from  "../../assets/images/ongoingprojects/logo.webp"
-
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
+const logo = cloudinaryAssets["src/assets/images/ongoingprojects/logo.webp"];
 
 const Header = () => {
   return (
@@ -8,19 +8,33 @@ const Header = () => {
       <nav className="container py-4">
         <div className="row align-items-center">
           <div className="col-4">
-            <Link to="/" className="text-light text-decoration-none fw-semibold">
+            <Link
+              to="/"
+              className="text-light text-decoration-none fw-semibold"
+            >
               HOME
             </Link>
           </div>
-          
+
           <div className="col-4 text-center">
-            <Link to="/" className="d-flex justify-content-center align-items-center">
-              <img loading="lazy" src={logo} alt="Sadhisha Homes" style={{ height: '75px' }} />
+            <Link
+              to="/"
+              className="d-flex justify-content-center align-items-center"
+            >
+              <img
+                loading="lazy"
+                src={logo}
+                alt="Sadhisha Homes"
+                style={{ height: "75px" }}
+              />
             </Link>
           </div>
-          
+
           <div className="col-4 text-end">
-            <Link to="/investor-club" className="text-light text-decoration-none fw-semibold">
+            <Link
+              to="/investor-club"
+              className="text-light text-decoration-none fw-semibold"
+            >
               INVESTOR CLUB
             </Link>
           </div>

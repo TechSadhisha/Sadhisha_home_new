@@ -11,9 +11,12 @@ import HomeData from "../../assets/data/homeData";
 import { BsBuildings } from "react-icons/bs";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
-import founderAchievement from "../../assets/images/home/founder-achievement.png";
 import ApproachTimeline from "../../Components/index-pages/ApproachTimelinie";
-import heroVideo from "../../assets/images/home/hero-video (1).mp4";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
+
+const founderAchievement =
+  cloudinaryAssets["src/assets/images/home/founder-achievement.png"];
+const heroVideo = cloudinaryAssets["src/assets/images/home/hero-video (1).mp4"];
 import { Link } from "react-router-dom";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import ContactDetails from "../../Components/index-pages/ContactDetails";
@@ -137,7 +140,12 @@ const Home = () => {
                   className="rounded-2 services-category-card mb-md-4 mb-3 "
                 >
                   <div className="mb-4">
-                    <img loading="lazy" src={category.image} width={100} alt="" />
+                    <img
+                      loading="lazy"
+                      src={category.image}
+                      width={100}
+                      alt=""
+                    />
                   </div>
                   <div className="service-body">
                     <h3 className="subTitleGreen mb-3">{category.title}</h3>
@@ -183,7 +191,12 @@ const Home = () => {
                   className="rounded-2 services-category-card mb-md-4 mb-3 "
                 >
                   <div className="mb-4">
-                    <img loading="lazy" src={category.image} width={100} alt="" />
+                    <img
+                      loading="lazy"
+                      src={category.image}
+                      width={100}
+                      alt=""
+                    />
                   </div>
                   <div className="service-body">
                     <h3 className="subTitleGreen mb-3">{category.title}</h3>
@@ -229,7 +242,12 @@ const Home = () => {
                   className="rounded-2 services-category-card mb-md-4 mb-3 "
                 >
                   <div className="mb-4">
-                    <img loading="lazy" src={category.image} width={100} alt="" />
+                    <img
+                      loading="lazy"
+                      src={category.image}
+                      width={100}
+                      alt=""
+                    />
                   </div>
                   <div className="service-body">
                     <h3 className="subTitleGreen mb-3">{category.title}</h3>
@@ -275,7 +293,12 @@ const Home = () => {
                   className="rounded-2 services-category-card mb-md-4 mb-3 "
                 >
                   <div className="mb-4">
-                    <img loading="lazy" src={category.image} width={100} alt="" />
+                    <img
+                      loading="lazy"
+                      src={category.image}
+                      width={100}
+                      alt=""
+                    />
                   </div>
                   <div className="service-body">
                     <h3 className="subTitleGreen mb-3">{category.title}</h3>
@@ -321,7 +344,12 @@ const Home = () => {
                   className="rounded-2 services-category-card mb-md-4 mb-3 "
                 >
                   <div className="mb-4">
-                    <img loading="lazy" src={category.image} width={100} alt="" />
+                    <img
+                      loading="lazy"
+                      src={category.image}
+                      width={100}
+                      alt=""
+                    />
                   </div>
                   <div className="service-body">
                     <h3 className="subTitleGreen mb-3">{category.title}</h3>
@@ -367,7 +395,12 @@ const Home = () => {
                   className="rounded-2 services-category-card mb-md-4 mb-3 "
                 >
                   <div className="mb-4">
-                    <img loading="lazy" src={category.image} width={100} alt="" />
+                    <img
+                      loading="lazy"
+                      src={category.image}
+                      width={100}
+                      alt=""
+                    />
                   </div>
                   <div className="service-body">
                     <h3 className="subTitleGreen mb-3">{category.title}</h3>
@@ -431,7 +464,11 @@ const Home = () => {
             </p>
           </div>
           <div className="row justify-content-center">
-            <img loading="lazy" src={founderAchievement} alt="founderAchievement" />
+            <img
+              loading="lazy"
+              src={founderAchievement}
+              alt="founderAchievement"
+            />
           </div>
         </Section>
       </div>
@@ -454,7 +491,8 @@ const Home = () => {
           {departments.map((department, index) => (
             <div className="department-card mb-4" key={index}>
               <div className="position-relative department-image-wrapper">
-                <img loading="lazy"
+                <img
+                  loading="lazy"
                   src={department.image}
                   alt={department.title}
                   className="img-fluid"
@@ -514,7 +552,8 @@ const Home = () => {
                   className="rounded-2 affilates-card  mb-md-4 mb-3 "
                 >
                   <div className="mb-4 flex-row-center">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src={affiliates.image}
                       width={180}
                       style={{ borderRadius: "50%" }}
@@ -574,7 +613,8 @@ const Home = () => {
               <div className="col-md-3 col-sm-6 mb-4" key={index}>
                 <div className="position-relative">
                   <div className="pillar-image-wrapper">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src={
                         pillar.image ||
                         "https://via.placeholder.com/300x200?text=Placeholder"

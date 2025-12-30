@@ -1,30 +1,33 @@
- 
- 
-import workplaceImage from '../images/affilates/sadhisha-homes/apartment.png'
-import homeImage from '../images/affilates/sadhisha-homes/home.png'
-import educationImage from '../images/affilates/sadhisha-homes/school.png'
-import resortImage from '../images/affilates/sadhisha-homes/resort.png'
+import cloudinaryAssets from "../cloudinary_assets.json";
 
+const workplaceImage =
+  cloudinaryAssets["src/assets/images/affilates/sadhisha-homes/apartment.png"];
+const homeImage =
+  cloudinaryAssets["src/assets/images/affilates/sadhisha-homes/home.png"];
+const educationImage =
+  cloudinaryAssets["src/assets/images/affilates/sadhisha-homes/school.png"];
+const resortImage =
+  cloudinaryAssets["src/assets/images/affilates/sadhisha-homes/resort.png"];
 
 const developmentFeaturesData = [
   {
     title: "Green-certified homes & gated communities",
-    image: homeImage
+    image: homeImage,
   },
   {
     title: "Educational institutions & campuses",
-    image: educationImage
+    image: educationImage,
   },
   {
     title: "Workplaces & office environments",
-    image: workplaceImage
+    image: workplaceImage,
   },
   {
     title: "Hotels, resorts, and recreational spaces",
-    image: resortImage
-  }
-]
+    image: resortImage,
+  },
+];
 
-export default{
-    developmentFeaturesData
-}
+export default {
+  developmentFeaturesData,
+};

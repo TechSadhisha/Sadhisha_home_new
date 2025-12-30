@@ -6,8 +6,12 @@ import { ChevronDown } from "lucide-react";
 import Header from "../../Components/ongoingprojects/Header";
 import Footer from "../../Components/ongoingprojects/Footer";
 
-import gandhi from "../../assets/images/ongoingprojects/gandhi.webp";
-import growth from "../../assets/images/ongoingprojects/growth.webp";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
+
+const gandhi =
+  cloudinaryAssets["src/assets/images/ongoingprojects/gandhi.webp"];
+const growth =
+  cloudinaryAssets["src/assets/images/ongoingprojects/growth.webp"];
 import PropertyMediaSlider from "../../Components/common/PropertyMediaSlider";
 import { useNavigate } from "react-router-dom";
 import { propertyDetailData } from "../../assets/data/propertyDetailData";
@@ -236,12 +240,10 @@ const PropertyDetail = () => {
 
           {/* Right: Enquiry Form */}
           <div className="col-lg-4">
-            
-              <div className="card-body p-4">
-                <h3 className="h5 fw-bold mb-4">Enquire Sadhisha</h3>
-                <GeneralEnquiryForm />
-              </div>
-
+            <div className="card-body p-4">
+              <h3 className="h5 fw-bold mb-4">Enquire Sadhisha</h3>
+              <GeneralEnquiryForm />
+            </div>
           </div>
         </div>
       </div>
@@ -251,7 +253,8 @@ const PropertyDetail = () => {
         <div className="container">
           <div className="row g-4 align-items-center">
             <div className="col-md-6">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src={gandhi}
                 alt="Pondicherry landmark"
                 className="img-fluid rounded shadow-lg"
@@ -294,7 +297,8 @@ const PropertyDetail = () => {
               </p>
             </div>
             <div className="col-md-6">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src={growth}
                 alt="Investment growth"
                 className="img-fluid rounded shadow-lg"
@@ -356,7 +360,8 @@ const PropertyDetail = () => {
                   className="text-decoration-none"
                 >
                   <div className="card h-100 border-0 shadow-sm overflow-hidden">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src={property.mainImage}
                       alt={property.title}
                       className="card-img-top"

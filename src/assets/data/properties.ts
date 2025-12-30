@@ -1,40 +1,78 @@
-import property1 from "../../assets/images/ongoingprojects/property1.webp";
-import property2 from "../../assets/images/ongoingprojects/property2.webp";
-import property3 from "../../assets/images/ongoingprojects/property3.webp";
-import property4 from "../../assets/images/ongoingprojects/property4.webp";
-import property5 from "../../assets/images/ongoingprojects/property5.webp";
-import property6 from "../../assets/images/ongoingprojects/property6.webp";
-import property7 from "../../assets/images/ongoingprojects/property7.webp";
-import property8 from "../../assets/images/ongoingprojects/property8.webp";
-import property9 from "../../assets/images/ongoingprojects/property9.webp";
-import property10 from "../../assets/images/ongoingprojects/property10.webp";
-import property11 from "../../assets/images/ongoingprojects/property11.webp";
-import property12 from "../../assets/images/ongoingprojects/property12.webp";
-import property13 from "../../assets/images/ongoingprojects/property13.webp";
-import property14 from "../../assets/images/ongoingprojects/property14.webp";
-import property15 from "../../assets/images/ongoingprojects/property15.webp";
-import property16 from "../../assets/images/ongoingprojects/property16.webp";
-import property17 from "../../assets/images/ongoingprojects/property17.webp";
-import property18 from "../../assets/images/ongoingprojects/property18.webp";
-import property19 from "../../assets/images/ongoingprojects/property19.webp";
-import property20 from "../../assets/images/ongoingprojects/property20.webp";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-import property21 from "../../assets/images/ongoingprojects/property21.webp";
-import property22 from "../../assets/images/ongoingprojects/property22.webp";
-import property23 from "../../assets/images/ongoingprojects/property23.webp";
-import property24 from "../../assets/images/ongoingprojects/property24.webp";
-import property25 from "../../assets/images/ongoingprojects/property25.webp";
-import property26 from "../../assets/images/ongoingprojects/property26.webp";
-import property27 from "../../assets/images/ongoingprojects/property27.webp";
-import property28 from "../../assets/images/ongoingprojects/property28.webp";
-import property29 from "../../assets/images/ongoingprojects/property29.webp";
-import property30 from "../../assets/images/ongoingprojects/property30.webp";
-import property31 from "../../assets/images/ongoingprojects/property31.webp";
-import property32 from "../../assets/images/ongoingprojects/property32.webp";
-import property33 from "../../assets/images/ongoingprojects/property33.webp";
-import property34 from "../../assets/images/ongoingprojects/property34.webp";
-import property35 from "../../assets/images/ongoingprojects/property35.webp";
-import property36 from "../../assets/images/ongoingprojects/property36.webp";
+const property1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property1.webp"];
+const property2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property2.webp"];
+const property3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property3.webp"];
+const property4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property4.webp"];
+const property5 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property5.webp"];
+const property6 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property6.webp"];
+const property7 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property7.webp"];
+const property8 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property8.webp"];
+const property9 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property9.webp"];
+const property10 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property10.webp"];
+const property11 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property11.webp"];
+const property12 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property12.webp"];
+const property13 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property13.webp"];
+const property14 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property14.webp"];
+const property15 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property15.webp"];
+const property16 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property16.webp"];
+const property17 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property17.webp"];
+const property18 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property18.webp"];
+const property19 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property19.webp"];
+const property20 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property20.webp"];
+
+const property21 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property21.webp"];
+const property22 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property22.webp"];
+const property23 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property23.webp"];
+const property24 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property24.webp"];
+const property25 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property25.webp"];
+const property26 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property26.webp"];
+const property27 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property27.webp"];
+const property28 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property28.webp"];
+const property29 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property29.webp"];
+const property30 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property30.webp"];
+const property31 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property31.webp"];
+const property32 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property32.webp"];
+const property33 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property33.webp"];
+const property34 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property34.webp"];
+const property35 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property35.webp"];
+const property36 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property36.webp"];
 
 export interface Property {
   id: string;

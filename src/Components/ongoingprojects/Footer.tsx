@@ -1,6 +1,8 @@
 import { MapPin, Mail, Phone, Facebook, Twitter, Youtube } from "lucide-react";
-import logo1 from "../../assets/images/ongoingprojects/logo1.webp";
-import award from "../../assets/images/ongoingprojects/award.webp";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
+
+const logo1 = cloudinaryAssets["src/assets/images/ongoingprojects/logo1.webp"];
+const award = cloudinaryAssets["src/assets/images/ongoingprojects/award.webp"];
 
 const Footer = () => {
   const locations = [
@@ -26,7 +28,8 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="col-lg-3 col-md-6">
             <h3 className="h5 fw-bold mb-4">Contact Sadisha</h3>
-            <img loading="lazy"
+            <img
+              loading="lazy"
               src={logo1}
               alt="Sadhisha Homes"
               style={{ height: "96px" }}
@@ -109,17 +112,20 @@ const Footer = () => {
           {/* Awards */}
           <div className="col-lg-3 col-md-6">
             <div className="d-flex gap-3">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src={award}
                 alt="Best Thailand Agent Award"
                 style={{ height: "250px", width: "100px" }}
               />
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src={award}
                 alt="Best Thailand Agent Award"
                 style={{ height: "250px", width: "100px" }}
               />
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src={award}
                 alt="Best Thailand Agent Award"
                 style={{ height: "250px", width: "100px" }}

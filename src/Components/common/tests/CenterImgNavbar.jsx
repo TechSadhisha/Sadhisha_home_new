@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import sadhishaLogo from "../../../assets/images/common/SADHISHA LOGO 1/2.png";
-import '../../styles/components/common/navbar.css';
+import cloudinaryAssets from "../../../assets/cloudinary_assets.json";
+const sadhishaLogo =
+  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/2.png"];
+import "../../styles/components/common/navbar.css";
 
 const CenterImgNavbar = () => {
   const navigate = useNavigate();
@@ -34,118 +36,165 @@ const CenterImgNavbar = () => {
   };
 
   return (
-    <nav className="navbar sticky-top navbar-expand-lg  d-flex justify-content-center" style={{backgroundColor:"rgba(0,0,0,0.6)",backdropFilter:"blur(10px)"}}>
+    <nav
+      className="navbar sticky-top navbar-expand-lg  d-flex justify-content-center"
+      style={{
+        backgroundColor: "rgba(0,0,0,0.6)",
+        backdropFilter: "blur(10px)",
+      }}
+    >
       <div className=" align-items-center d-flex justify-content-center">
-
         <ul className="navbar-nav gap-3">
+          <li className="nav-item">
+            <a
+              href="/"
+              className="nav-link"
+              data-bs-dismiss="offcanvas"
+              onClick={(e) => handleNavClick(e, "/")}
+            >
+              Home
+            </a>
+          </li>
 
-              <li className="nav-item">
+          <li className="nav-item">
+            <a
+              href="/projects"
+              className="nav-link"
+              data-bs-dismiss="offcanvas"
+              onClick={(e) => handleNavClick(e, "/projects")}
+            >
+              Projects
+            </a>
+          </li>
+
+          <li
+            className={`nav-item dropdown ${isAffiliatesOpen ? "show" : ""}`}
+            {...affiliates}
+          >
+            <span
+              className={`nav-link dropdown-toggle ${
+                isAffiliatesOpen ? "show" : ""
+              }`}
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded={isAffiliatesOpen ? "true" : "false"}
+              onClick={affiliates.onClick}
+            >
+              Our Companies
+            </span>
+            <ul className={`dropdown-menu ${isAffiliatesOpen ? "show" : ""}`}>
+              <li>
                 <a
-                  href="/"
-                  className="nav-link"
+                  href="/sadhisha-realty"
+                  className="dropdown-item"
                   data-bs-dismiss="offcanvas"
-                  onClick={(e) => handleNavClick(e, "/")}
+                  onClick={(e) =>
+                    handleNavClick(
+                      e,
+                      "/sadhisha-realty",
+                      affiliates.onItemClick
+                    )
+                  }
                 >
-                  Home
+                  Sadhisha Realty
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/auro-architects"
+                  className="dropdown-item"
+                  data-bs-dismiss="offcanvas"
+                  onClick={(e) =>
+                    handleNavClick(
+                      e,
+                      "/auro-architects",
+                      affiliates.onItemClick
+                    )
+                  }
+                >
+                  Auro Architects
                 </a>
               </li>
 
-              <li className="nav-item">
+              <li>
                 <a
-                  href="/projects"
-                  className="nav-link"
+                  href="/sadhisha-constructions"
+                  className="dropdown-item"
                   data-bs-dismiss="offcanvas"
-                  onClick={(e) => handleNavClick(e, "/projects")}
+                  onClick={(e) =>
+                    handleNavClick(
+                      e,
+                      "/sadhisha-constructions",
+                      affiliates.onItemClick
+                    )
+                  }
                 >
-                  Projects
+                  Sadhisha Construction Technologies
                 </a>
               </li>
-
-              <li className={`nav-item dropdown ${isAffiliatesOpen ? "show" : ""}`} {...affiliates}>
-                <span
-                  className={`nav-link dropdown-toggle ${isAffiliatesOpen ? "show" : ""}`}
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded={isAffiliatesOpen ? "true" : "false"}
-                  onClick={affiliates.onClick}
+              <li>
+                <a
+                  href="/sadhisha-homes"
+                  className="dropdown-item"
+                  data-bs-dismiss="offcanvas"
+                  onClick={(e) =>
+                    handleNavClick(e, "/sadhisha-homes", affiliates.onItemClick)
+                  }
                 >
-                  Our Companies
-                </span>
-                <ul className={`dropdown-menu ${isAffiliatesOpen ? "show" : ""}`}>
-                  <li>
-                    <a
-                      href="/sadhisha-realty"
-                      className="dropdown-item"
-                      data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/sadhisha-realty", affiliates.onItemClick)}
-                    >
-                      Sadhisha Realty
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/auro-architects"
-                      className="dropdown-item"
-                      data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/auro-architects", affiliates.onItemClick)}
-                    >
-                      Auro Architects
-                    </a>
-                  </li>
-
-
-                  <li>
-                    <a
-                      href="/sadhisha-constructions"
-                      className="dropdown-item"
-                      data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/sadhisha-constructions", affiliates.onItemClick)}
-                    >
-                      Sadhisha Construction Technologies
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/sadhisha-homes"
-                      className="dropdown-item"
-                      data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/sadhisha-homes", affiliates.onItemClick)}
-                    >
-                      Sadhisha Homes
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/sadhisha-rapid-edge"
-                      className="dropdown-item"
-                      data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/sadhisha-rapid-edge", affiliates.onItemClick)}
-                    >
-                      Sadhisha Rapid Edge
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/sadhisha-interiors"
-                      className="dropdown-item"
-                      data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/sadhisha-interiors", affiliates.onItemClick)}
-                    >
-                      Sadhisha Interiors
-                    </a>
-                  </li>
-                </ul>
+                  Sadhisha Homes
+                </a>
               </li>
-
-             
+              <li>
+                <a
+                  href="/sadhisha-rapid-edge"
+                  className="dropdown-item"
+                  data-bs-dismiss="offcanvas"
+                  onClick={(e) =>
+                    handleNavClick(
+                      e,
+                      "/sadhisha-rapid-edge",
+                      affiliates.onItemClick
+                    )
+                  }
+                >
+                  Sadhisha Rapid Edge
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/sadhisha-interiors"
+                  className="dropdown-item"
+                  data-bs-dismiss="offcanvas"
+                  onClick={(e) =>
+                    handleNavClick(
+                      e,
+                      "/sadhisha-interiors",
+                      affiliates.onItemClick
+                    )
+                  }
+                >
+                  Sadhisha Interiors
+                </a>
+              </li>
             </ul>
+          </li>
+        </ul>
 
         <div className="ms-5">
-          <a className="navbar-brand" href="/" onClick={(e) => handleNavClick(e, "/")}>
-            <img loading="lazy" className="bannerLogo" width={130} src={sadhishaLogo} style={{borderRadius:"50%"}} alt="sadhishaLogo" />
+          <a
+            className="navbar-brand"
+            href="/"
+            onClick={(e) => handleNavClick(e, "/")}
+          >
+            <img
+              loading="lazy"
+              className="bannerLogo"
+              width={130}
+              src={sadhishaLogo}
+              style={{ borderRadius: "50%" }}
+              alt="sadhishaLogo"
+            />
           </a>
-
-        
 
           <button
             className="navbar-toggler"
@@ -158,7 +207,11 @@ const CenterImgNavbar = () => {
           </button>
         </div>
 
-        <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar">
+        <div
+          className="offcanvas offcanvas-end"
+          tabIndex="-1"
+          id="offcanvasNavbar"
+        >
           <div className="offcanvas-body d-flex flex-column flex-lg-row justify-content-lg-start me-5">
             <button
               type="button"
@@ -168,9 +221,6 @@ const CenterImgNavbar = () => {
             ></button>
 
             <ul className="navbar-nav gap-3">
-
-             
-
               <li className="nav-item">
                 <a
                   href="/investor-club"
@@ -182,9 +232,14 @@ const CenterImgNavbar = () => {
                 </a>
               </li>
 
-              <li className={`nav-item dropdown ${isAboutOpen ? "show" : ""}`} {...about}>
+              <li
+                className={`nav-item dropdown ${isAboutOpen ? "show" : ""}`}
+                {...about}
+              >
                 <span
-                  className={`nav-link dropdown-toggle ${isAboutOpen ? "show" : ""}`}
+                  className={`nav-link dropdown-toggle ${
+                    isAboutOpen ? "show" : ""
+                  }`}
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded={isAboutOpen ? "true" : "false"}
@@ -198,7 +253,9 @@ const CenterImgNavbar = () => {
                       href="/about"
                       className="dropdown-item"
                       data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/about", about.onItemClick)}
+                      onClick={(e) =>
+                        handleNavClick(e, "/about", about.onItemClick)
+                      }
                     >
                       About Us
                     </a>
@@ -208,7 +265,9 @@ const CenterImgNavbar = () => {
                       href="/recognition"
                       className="dropdown-item"
                       data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/recognition", about.onItemClick)}
+                      onClick={(e) =>
+                        handleNavClick(e, "/recognition", about.onItemClick)
+                      }
                     >
                       Awards & Recognition
                     </a>
@@ -218,7 +277,13 @@ const CenterImgNavbar = () => {
                       href="/corprate-social-responsibility"
                       className="dropdown-item"
                       data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/corprate-social-responsibility", about.onItemClick)}
+                      onClick={(e) =>
+                        handleNavClick(
+                          e,
+                          "/corprate-social-responsibility",
+                          about.onItemClick
+                        )
+                      }
                     >
                       CSR
                     </a>
@@ -226,9 +291,14 @@ const CenterImgNavbar = () => {
                 </ul>
               </li>
 
-              <li className={`nav-item dropdown ${isJoinOpen ? "show" : ""}`} {...join}>
+              <li
+                className={`nav-item dropdown ${isJoinOpen ? "show" : ""}`}
+                {...join}
+              >
                 <span
-                  className={`nav-link dropdown-toggle ${isJoinOpen ? "show" : ""}`}
+                  className={`nav-link dropdown-toggle ${
+                    isJoinOpen ? "show" : ""
+                  }`}
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded={isJoinOpen ? "true" : "false"}
@@ -242,7 +312,9 @@ const CenterImgNavbar = () => {
                       href="/careers"
                       className="dropdown-item"
                       data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/careers", join.onItemClick)}
+                      onClick={(e) =>
+                        handleNavClick(e, "/careers", join.onItemClick)
+                      }
                     >
                       Careers
                     </a>
@@ -252,7 +324,9 @@ const CenterImgNavbar = () => {
                       href="/channel-partners"
                       className="dropdown-item"
                       data-bs-dismiss="offcanvas"
-                      onClick={(e) => handleNavClick(e, "/channel-partners", join.onItemClick)}
+                      onClick={(e) =>
+                        handleNavClick(e, "/channel-partners", join.onItemClick)
+                      }
                     >
                       Channel Partners
                     </a>

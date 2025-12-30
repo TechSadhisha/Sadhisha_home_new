@@ -1,5 +1,6 @@
-import building from '../images/home/builig black and white.webp'
-
+import cloudinaryAssets from "../cloudinary_assets.json";
+const building =
+  cloudinaryAssets["src/assets/images/home/builig black and white.webp"];
 
 const properties = [
   {
@@ -13,7 +14,7 @@ const properties = [
         area: "1,185 (sq.ft.)",
         price: "$2,116,000",
         carryingCost: "$1,555.00",
-        floorPlan: "/downloads/floorplan-24F.pdf"
+        floorPlan: "/downloads/floorplan-24F.pdf",
       },
       {
         residence: "23E",
@@ -22,7 +23,7 @@ const properties = [
         area: "1,185 (sq.ft.)",
         price: "$2,132,610",
         carryingCost: "$1,530.00",
-        floorPlan: "/downloads/floorplan-23E.pdf"
+        floorPlan: "/downloads/floorplan-23E.pdf",
       },
       {
         residence: "24F",
@@ -31,7 +32,7 @@ const properties = [
         area: "1,185 (sq.ft.)",
         price: "$2,116,000",
         carryingCost: "$1,555.00",
-        floorPlan: "/downloads/floorplan-24F.pdf"
+        floorPlan: "/downloads/floorplan-24F.pdf",
       },
       {
         residence: "23E",
@@ -40,9 +41,9 @@ const properties = [
         area: "1,185 (sq.ft.)",
         price: "$2,132,610",
         carryingCost: "$1,530.00",
-        floorPlan: "/downloads/floorplan-23E.pdf"
+        floorPlan: "/downloads/floorplan-23E.pdf",
       },
-    ]
+    ],
   },
   {
     name: "Manhattan Heights",
@@ -55,7 +56,7 @@ const properties = [
         area: "1,350 (sq.ft.)",
         price: "$1,980,000",
         carryingCost: "$1,850.00",
-        floorPlan: "/downloads/floorplan-12A.pdf"
+        floorPlan: "/downloads/floorplan-12A.pdf",
       },
       {
         residence: "14B",
@@ -64,9 +65,9 @@ const properties = [
         area: "1,200 (sq.ft.)",
         price: "$1,750,000",
         carryingCost: "$1,720.00",
-        floorPlan: "/downloads/floorplan-14B.pdf"
-      }
-    ]
+        floorPlan: "/downloads/floorplan-14B.pdf",
+      },
+    ],
   },
   {
     name: "Central Park Vista",
@@ -79,7 +80,7 @@ const properties = [
         area: "980 (sq.ft.)",
         price: "$1,420,000",
         carryingCost: "$1,200.00",
-        floorPlan: "/downloads/floorplan-8C.pdf"
+        floorPlan: "/downloads/floorplan-8C.pdf",
       },
       {
         residence: "10D",
@@ -88,9 +89,9 @@ const properties = [
         area: "1,450 (sq.ft.)",
         price: "$2,310,000",
         carryingCost: "$1,870.00",
-        floorPlan: "/downloads/floorplan-10D.pdf"
-      }
-    ]
+        floorPlan: "/downloads/floorplan-10D.pdf",
+      },
+    ],
   },
   {
     name: "Riverfront Residences",
@@ -103,7 +104,7 @@ const properties = [
         area: "800 (sq.ft.)",
         price: "$890,000",
         carryingCost: "$950.00",
-        floorPlan: "/downloads/floorplan-5B.pdf"
+        floorPlan: "/downloads/floorplan-5B.pdf",
       },
       {
         residence: "7F",
@@ -112,9 +113,9 @@ const properties = [
         area: "1,100 (sq.ft.)",
         price: "$1,300,000",
         carryingCost: "$1,300.00",
-        floorPlan: "/downloads/floorplan-7F.pdf"
-      }
-    ]
+        floorPlan: "/downloads/floorplan-7F.pdf",
+      },
+    ],
   },
   {
     name: "SoHo Lofts",
@@ -127,7 +128,7 @@ const properties = [
         area: "950 (sq.ft.)",
         price: "$1,150,000",
         carryingCost: "$1,100.00",
-        floorPlan: "/downloads/floorplan-2A.pdf"
+        floorPlan: "/downloads/floorplan-2A.pdf",
       },
       {
         residence: "3B",
@@ -136,12 +137,12 @@ const properties = [
         area: "1,300 (sq.ft.)",
         price: "$1,990,000",
         carryingCost: "$1,600.00",
-        floorPlan: "/downloads/floorplan-3B.pdf"
-      }
-    ]
-  }
+        floorPlan: "/downloads/floorplan-3B.pdf",
+      },
+    ],
+  },
 ];
 
 export default {
-  properties
-}
+  properties,
+};

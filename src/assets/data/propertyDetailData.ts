@@ -1,151 +1,261 @@
-import property1 from "../../assets/images/ongoingprojects/property1.webp";
-import property1slide1 from "../../assets/images/ongoingprojects/property1slide1.webp";
-import property1slide2 from "../../assets/images/ongoingprojects/property1slide2.webp";
-import property1slide3 from "../../assets/images/ongoingprojects/property1slide3.webp";
-import property1slide4 from "../../assets/images/ongoingprojects/property1slide4.webp";
-import property1_video from "../../assets/images/ongoingprojects/property1_video.mp4";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-import property2 from "../../assets/images/ongoingprojects/property2.webp";
-import property2slide1 from "../../assets/images/ongoingprojects/property2slide1.webp";
-import property2slide2 from "../../assets/images/ongoingprojects/property2slide2.webp";
-import property2slide3 from "../../assets/images/ongoingprojects/property2slide3.webp";
-import property2slide4 from "../../assets/images/ongoingprojects/property2slide4.webp";
-import property2_video from "../../assets/images/ongoingprojects/property2_video.mp4";
-
-import property3 from "../../assets/images/ongoingprojects/property3.webp";
-import property3slide1 from "../../assets/images/ongoingprojects/property3slide1.webp";
-import property3slide2 from "../../assets/images/ongoingprojects/property3slide2.webp";
-import property3slide3 from "../../assets/images/ongoingprojects/property3slide3.webp";
-import property3slide4 from "../../assets/images/ongoingprojects/property3slide4.webp";
-import property3_video from "../../assets/images/ongoingprojects/property3_video.mp4";
-
-import property4 from "../../assets/images/ongoingprojects/property4.webp";
-import property4slide1 from "../../assets/images/ongoingprojects/property4slide1.webp";
-import property4slide2 from "../../assets/images/ongoingprojects/property4slide2.webp";
-import property4slide3 from "../../assets/images/ongoingprojects/property4slide3.webp";
-import property4slide4 from "../../assets/images/ongoingprojects/property4slide4.webp";
-import property4_video from "../../assets/images/ongoingprojects/property4_video.mp4";
-
-import property5 from "../../assets/images/ongoingprojects/property5.webp";
-import property5slide1 from "../../assets/images/ongoingprojects/property5slide1.webp";
-import property5slide2 from "../../assets/images/ongoingprojects/property5slide2.webp";
-import property5slide3 from "../../assets/images/ongoingprojects/property5slide3.webp";
-import property5slide4 from "../../assets/images/ongoingprojects/property5slide4.webp";
-
-import property6 from "../../assets/images/ongoingprojects/property6.webp";
-import property6slide1 from "../../assets/images/ongoingprojects/property6slide1.webp";
-import property6slide2 from "../../assets/images/ongoingprojects/property6slide2.webp";
-import property6slide3 from "../../assets/images/ongoingprojects/property6slide3.webp";
-import property6slide4 from "../../assets/images/ongoingprojects/property6slide4.webp";
-import property6_video from "../../assets/images/ongoingprojects/property6_video.mp4";
-
-import property7 from "../../assets/images/ongoingprojects/property7.webp";
-import property7slide1 from "../../assets/images/ongoingprojects/property7slide1.webp";
-import property7slide2 from "../../assets/images/ongoingprojects/property7slide2.webp";
-import property7slide3 from "../../assets/images/ongoingprojects/property7slide3.webp";
-import property7slide4 from "../../assets/images/ongoingprojects/property7slide4.webp";
-import property7_video from "../../assets/images/ongoingprojects/property7_video.mp4";
-
-import property8 from "../../assets/images/ongoingprojects/property8.webp";
-import property8slide1 from "../../assets/images/ongoingprojects/property8slide1.webp";
-import property8slide2 from "../../assets/images/ongoingprojects/property8slide2.webp";
-import property8slide3 from "../../assets/images/ongoingprojects/property8slide3.webp";
-import property8slide4 from "../../assets/images/ongoingprojects/property8slide4.webp";
-import property8_video from "../../assets/images/ongoingprojects/property8_video.mp4";
-
-import property9 from "../../assets/images/ongoingprojects/property9.webp";
-import property9slide1 from "../../assets/images/ongoingprojects/property9slide1.webp";
-import property9slide2 from "../../assets/images/ongoingprojects/property9slide2.webp";
-import property9slide3 from "../../assets/images/ongoingprojects/property9slide3.webp";
-import property9slide4 from "../../assets/images/ongoingprojects/property9slide4.webp";
-
-import property10 from "../../assets/images/ongoingprojects/property10.webp";
-import property10slide1 from "../../assets/images/ongoingprojects/property10slide1.webp";
-import property10slide2 from "../../assets/images/ongoingprojects/property10slide2.webp";
-import property10slide3 from "../../assets/images/ongoingprojects/property10slide3.webp";
-import property10slide4 from "../../assets/images/ongoingprojects/property10slide4.webp";
-
-import property11 from "../../assets/images/ongoingprojects/property11.webp";
-import property11slide1 from "../../assets/images/ongoingprojects/property11slide1.webp";
-import property11slide2 from "../../assets/images/ongoingprojects/property11slide2.webp";
-import property11slide3 from "../../assets/images/ongoingprojects/property11slide3.webp";
-import property11slide4 from "../../assets/images/ongoingprojects/property11slide4.webp";
-
-import property12 from "../../assets/images/ongoingprojects/property12.webp";
-import property12slide1 from "../../assets/images/ongoingprojects/property12slide1.webp";
-import property12slide2 from "../../assets/images/ongoingprojects/property12slide2.webp";
-import property12slide3 from "../../assets/images/ongoingprojects/property12slide3.webp";
-import property12slide4 from "../../assets/images/ongoingprojects/property12slide4.webp";
-
-import property13 from "../../assets/images/ongoingprojects/property13.webp";
-import property13slide1 from "../../assets/images/ongoingprojects/property13slide1.webp";
-import property13slide2 from "../../assets/images/ongoingprojects/property13slide2.webp";
-import property13slide3 from "../../assets/images/ongoingprojects/property13slide3.webp";
-import property13slide4 from "../../assets/images/ongoingprojects/property13slide4.webp";
-import property13_video from "../../assets/images/ongoingprojects/property13_video.mp4";
-
-import property14 from "../../assets/images/ongoingprojects/property14.webp";
-import property14slide1 from "../../assets/images/ongoingprojects/property14slide1.webp";
-import property14slide2 from "../../assets/images/ongoingprojects/property14slide2.webp";
-import property14slide3 from "../../assets/images/ongoingprojects/property14slide3.webp";
-import property14slide4 from "../../assets/images/ongoingprojects/property14slide4.webp";
-
-import property15 from "../../assets/images/ongoingprojects/property15.webp";
-import property15slide1 from "../../assets/images/ongoingprojects/property15slide1.webp";
-import property15slide2 from "../../assets/images/ongoingprojects/property15slide2.webp";
-import property15slide3 from "../../assets/images/ongoingprojects/property15slide3.webp";
-import property15slide4 from "../../assets/images/ongoingprojects/property15slide4.webp";
-
-import property16 from "../../assets/images/ongoingprojects/property16.webp";
-import property16slide1 from "../../assets/images/ongoingprojects/property16slide1.webp";
-import property16slide2 from "../../assets/images/ongoingprojects/property16slide2.webp";
-import property16slide3 from "../../assets/images/ongoingprojects/property16slide3.webp";
-import property16slide4 from "../../assets/images/ongoingprojects/property16slide4.webp";
-import property16_video from "../../assets/images/ongoingprojects/property16_video.mp4";
-
-import property17 from "../../assets/images/ongoingprojects/property17.webp";
-import property17slide1 from "../../assets/images/ongoingprojects/property17slide1.webp";
-import property17slide2 from "../../assets/images/ongoingprojects/property17slide2.webp";
-import property17slide3 from "../../assets/images/ongoingprojects/property17slide3.webp";
-import property17slide4 from "../../assets/images/ongoingprojects/property17slide4.webp";
-
-import property18 from "../../assets/images/ongoingprojects/property18.webp";
-import property18slide1 from "../../assets/images/ongoingprojects/property18slide1.webp";
-import property18slide2 from "../../assets/images/ongoingprojects/property18slide2.webp";
-import property18slide3 from "../../assets/images/ongoingprojects/property18slide3.webp";
-import property18slide4 from "../../assets/images/ongoingprojects/property18slide4.webp";
-import property18_video from "../../assets/images/ongoingprojects/property18_video.mp4";
-
-import property19 from "../../assets/images/ongoingprojects/property19.webp";
-import property19slide1 from "../../assets/images/ongoingprojects/property19slide1.webp";
-import property19slide2 from "../../assets/images/ongoingprojects/property19slide2.webp";
-import property19slide3 from "../../assets/images/ongoingprojects/property19slide3.webp";
-import property19slide4 from "../../assets/images/ongoingprojects/property19slide4.webp";
-
-import property20 from "../../assets/images/ongoingprojects/property20.webp";
-import property20slide1 from "../../assets/images/ongoingprojects/property20slide1.webp";
-import property20slide2 from "../../assets/images/ongoingprojects/property20slide2.webp";
-import property20slide3 from "../../assets/images/ongoingprojects/property20slide3.webp";
-import property20slide4 from "../../assets/images/ongoingprojects/property20slide4.webp";
-
-import property21 from "../../assets/images/ongoingprojects/property21.webp";
-import property21slide1 from "../../assets/images/ongoingprojects/property21slide1.webp";
-import property21slide2 from "../../assets/images/ongoingprojects/property21slide2.webp";
-import property22 from "../../assets/images/ongoingprojects/property22.webp";
-import property23 from "../../assets/images/ongoingprojects/property23.webp";
-import property24 from "../../assets/images/ongoingprojects/property24.webp";
-import property25 from "../../assets/images/ongoingprojects/property25.webp";
-import property26 from "../../assets/images/ongoingprojects/property26.webp";
-import property27 from "../../assets/images/ongoingprojects/property27.webp";
-import property28 from "../../assets/images/ongoingprojects/property28.webp";
-import property29 from "../../assets/images/ongoingprojects/property29.webp";
-import property30 from "../../assets/images/ongoingprojects/property30.webp";
-import property31 from "../../assets/images/ongoingprojects/property31.webp";
-import property32 from "../../assets/images/ongoingprojects/property32.webp";
-import property33 from "../../assets/images/ongoingprojects/property33.webp";
-import property34 from "../../assets/images/ongoingprojects/property34.webp";
-import property35 from "../../assets/images/ongoingprojects/property35.webp";
-import property36 from "../../assets/images/ongoingprojects/property36.webp";
+const property1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property1.webp"];
+const property1slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property1slide1.webp"];
+const property1slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property1slide2.webp"];
+const property1slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property1slide3.webp"];
+const property1slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property1slide4.webp"];
+const property1_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property1_video.mp4"];
+const property2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property2.webp"];
+const property2slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property2slide1.webp"];
+const property2slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property2slide2.webp"];
+const property2slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property2slide3.webp"];
+const property2slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property2slide4.webp"];
+const property2_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property2_video.mp4"];
+const property3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property3.webp"];
+const property3slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property3slide1.webp"];
+const property3slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property3slide2.webp"];
+const property3slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property3slide3.webp"];
+const property3slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property3slide4.webp"];
+const property3_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property3_video.mp4"];
+const property4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property4.webp"];
+const property4slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property4slide1.webp"];
+const property4slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property4slide2.webp"];
+const property4slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property4slide3.webp"];
+const property4slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property4slide4.webp"];
+const property4_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property4_video.mp4"];
+const property5 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property5.webp"];
+const property5slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property5slide1.webp"];
+const property5slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property5slide2.webp"];
+const property5slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property5slide3.webp"];
+const property5slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property5slide4.webp"];
+const property6 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property6.webp"];
+const property6slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property6slide1.webp"];
+const property6slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property6slide2.webp"];
+const property6slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property6slide3.webp"];
+const property6slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property6slide4.webp"];
+const property6_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property6_video.mp4"];
+const property7 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property7.webp"];
+const property7slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property7slide1.webp"];
+const property7slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property7slide2.webp"];
+const property7slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property7slide3.webp"];
+const property7slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property7slide4.webp"];
+const property7_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property7_video.mp4"];
+const property8 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property8.webp"];
+const property8slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property8slide1.webp"];
+const property8slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property8slide2.webp"];
+const property8slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property8slide3.webp"];
+const property8slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property8slide4.webp"];
+const property8_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property8_video.mp4"];
+const property9 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property9.webp"];
+const property9slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property9slide1.webp"];
+const property9slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property9slide2.webp"];
+const property9slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property9slide3.webp"];
+const property9slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property9slide4.webp"];
+const property10 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property10.webp"];
+const property10slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property10slide1.webp"];
+const property10slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property10slide2.webp"];
+const property10slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property10slide3.webp"];
+const property10slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property10slide4.webp"];
+const property11 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property11.webp"];
+const property11slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property11slide1.webp"];
+const property11slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property11slide2.webp"];
+const property11slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property11slide3.webp"];
+const property11slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property11slide4.webp"];
+const property12 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property12.webp"];
+const property12slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property12slide1.webp"];
+const property12slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property12slide2.webp"];
+const property12slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property12slide3.webp"];
+const property12slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property12slide4.webp"];
+const property13 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property13.webp"];
+const property13slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property13slide1.webp"];
+const property13slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property13slide2.webp"];
+const property13slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property13slide3.webp"];
+const property13slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property13slide4.webp"];
+const property13_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property13_video.mp4"];
+const property14 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property14.webp"];
+const property14slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property14slide1.webp"];
+const property14slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property14slide2.webp"];
+const property14slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property14slide3.webp"];
+const property14slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property14slide4.webp"];
+const property15 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property15.webp"];
+const property15slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property15slide1.webp"];
+const property15slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property15slide2.webp"];
+const property15slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property15slide3.webp"];
+const property15slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property15slide4.webp"];
+const property16 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property16.webp"];
+const property16slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property16slide1.webp"];
+const property16slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property16slide2.webp"];
+const property16slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property16slide3.webp"];
+const property16slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property16slide4.webp"];
+const property16_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property16_video.mp4"];
+const property17 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property17.webp"];
+const property17slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property17slide1.webp"];
+const property17slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property17slide2.webp"];
+const property17slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property17slide3.webp"];
+const property17slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property17slide4.webp"];
+const property18 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property18.webp"];
+const property18slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property18slide1.webp"];
+const property18slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property18slide2.webp"];
+const property18slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property18slide3.webp"];
+const property18slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property18slide4.webp"];
+const property18_video =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property18_video.mp4"];
+const property19 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property19.webp"];
+const property19slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property19slide1.webp"];
+const property19slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property19slide2.webp"];
+const property19slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property19slide3.webp"];
+const property19slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property19slide4.webp"];
+const property20 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property20.webp"];
+const property20slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property20slide1.webp"];
+const property20slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property20slide2.webp"];
+const property20slide3 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property20slide3.webp"];
+const property20slide4 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property20slide4.webp"];
+const property21 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property21.webp"];
+const property21slide1 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property21slide1.webp"];
+const property21slide2 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property21slide2.webp"];
+const property22 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property22.webp"];
+const property23 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property23.webp"];
+const property24 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property24.webp"];
+const property25 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property25.webp"];
+const property26 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property26.webp"];
+const property27 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property27.webp"];
+const property28 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property28.webp"];
+const property29 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property29.webp"];
+const property30 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property30.webp"];
+const property31 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property31.webp"];
+const property32 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property32.webp"];
+const property33 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property33.webp"];
+const property34 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property34.webp"];
+const property35 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property35.webp"];
+const property36 =
+  cloudinaryAssets["src/assets/images/ongoingprojects/property36.webp"];
 
 export interface PropertyDetail {
   id: string;

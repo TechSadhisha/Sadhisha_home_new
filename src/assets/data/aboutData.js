@@ -1,46 +1,53 @@
+import cloudinaryAssets from "../cloudinary_assets.json";
 
+const innovation =
+  cloudinaryAssets["src/assets/images/about/about us/innovation.webp"];
+const Sustainability =
+  cloudinaryAssets["src/assets/images/about/about us/sustainabilty.webp"];
+const Integrity =
+  cloudinaryAssets["src/assets/images/about/about us/integrity.webp"];
+const ClientCentric =
+  cloudinaryAssets["src/assets/images/about/about us/client-centric.webp"];
 
-import innovation from '../images/about/about us/innovation.webp'
-import Sustainability from '../images/about/about us/sustainabilty.webp'
-import Integrity from '../images/about/about us/integrity.webp'
-import ClientCentric from '../images/about/about us/client-centric.webp'
+const AuroLogo =
+  cloudinaryAssets["src/assets/images/common/AURO ARCHITECTS/1.webp"];
+const SadhishaConstructionLogo =
+  cloudinaryAssets["src/assets/images/common/SADHISHA CONSTRUCTION/1.webp"];
+const SadhishaHomesLogo =
+  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/1.webp"];
 
-import AuroLogo from '../../assets/images/common/AURO ARCHITECTS/1.webp';
-import SadhishaConstructionLogo from '../../assets/images/common/SADHISHA CONSTRUCTION/1.webp';
-  import SadhishaHomesLogo from '../../assets/images/common/SADHISHA LOGO 1/1.webp';
- 
- const coreValues = [
+const coreValues = [
   {
     title: "Innovation",
     description:
       "We embrace cutting-edge technologies and design thinking to deliver solutions that are creative, future-focused, and distinctly impactful.",
-    image: innovation
+    image: innovation,
   },
   {
     title: "Sustainability",
     description:
       "We prioritize eco-friendly practices in every project, ensuring minimal environmental impact while promoting long-term resilience and responsible development.",
-    image: Sustainability
+    image: Sustainability,
   },
   {
     title: "Integrity",
     description:
       "We build lasting relationships rooted in trust, transparency, and ethical conduct—upholding the highest standards in everything we do.",
-   image: Integrity
+    image: Integrity,
   },
   {
     title: "Client-Centric",
     description:
       "Your vision is our mission. We work hand-in-hand with every client to bring their ideas to life through thoughtful collaboration and personalized service.",
-    image: ClientCentric
-  }
+    image: ClientCentric,
+  },
 ];
 
 const dataStats = [
-  { label: 'Years Experience', value: 30, suffix: '+' },
-  { label: 'Projects Executed', value: 300, suffix: '+' },
-  { label: 'Villas Designed', value: 3000, suffix: '+' },
-  { label: 'Plots Developed', value: 10000, suffix: '+' }
+  { label: "Years Experience", value: 30, suffix: "+" },
+  { label: "Projects Executed", value: 300, suffix: "+" },
+  { label: "Villas Designed", value: 3000, suffix: "+" },
+  { label: "Plots Developed", value: 10000, suffix: "+" },
 ];
 
 const affiliatesData = [
@@ -48,25 +55,24 @@ const affiliatesData = [
     name: "Auro Architects",
     description: `The creative powerhouse behind Sadhisha’s award-winning designs. Auro Architects specializes in sustainable architecture, urban planning, interior design, and project visualization, bringing form and function together with cultural sensitivity.`,
     image: AuroLogo,
-    route: '/auro-architects'
+    route: "/auro-architects",
   },
   {
     name: "Sadhisha Homes",
     description: `Our flagship real estate development company, known for delivering high-quality villas, apartments, and residential communities with a strong emphasis on lifestyle, comfort, and timely delivery.`,
     image: SadhishaHomesLogo,
-    route: '/sadhisha-homes'
+    route: "/sadhisha-homes",
   },
   {
     name: "Sadhisha Construction Technologies",
     description: `Our advanced construction arm focused on innovation through light-gauge steel systems, prefabrication, BIM, and modular construction—ensuring speed, sustainability, and structural excellence.`,
     image: SadhishaConstructionLogo,
-    route: '/sadhisha-constructions'
-  }
+    route: "/sadhisha-constructions",
+  },
 ];
 
-
 export default {
-    coreValues,
-    dataStats,
-    affiliatesData
-}
+  coreValues,
+  dataStats,
+  affiliatesData,
+};

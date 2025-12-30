@@ -1,5 +1,7 @@
 import { Phone } from "lucide-react";
-import heroVideo from "../../assets/images/ongoingprojects/hero-Video.mp4";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
+const heroVideo =
+  cloudinaryAssets["src/assets/images/ongoingprojects/hero-Video.mp4"];
 import Header from "./Header";
 import { FaWhatsapp } from "react-icons/fa";
 

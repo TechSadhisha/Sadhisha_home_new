@@ -2,19 +2,27 @@ import React, { useEffect } from "react";
 import { Section } from "../../layouts/Section";
 import "../../styles/pages/affilate-pages/sadhisha-homes.css";
 import AuroArchitectsData from "../../assets/data/auroArchitectsData";
-import building from "../../assets/images/home/builig black and white.webp";
-import dummy2 from "../../assets/images/home/dummy1.webp";
-import dummy1 from "../../assets/images/home/dummy2.webp";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-import logo from "../../assets/images/common/sadhisha-half-logo.webp";
+const building =
+  cloudinaryAssets["src/assets/images/home/builig black and white.webp"];
+const dummy2 = cloudinaryAssets["src/assets/images/home/dummy1.webp"];
+const dummy1 = cloudinaryAssets["src/assets/images/home/dummy2.webp"];
 
-import SadhishaConstructionLogo from "../../assets/images/common/SADHISHA CONSTRUCTION/1.webp";
+const logo =
+  cloudinaryAssets["src/assets/images/common/sadhisha-half-logo.webp"];
+
+const SadhishaConstructionLogo =
+  cloudinaryAssets["src/assets/images/common/SADHISHA CONSTRUCTION/1.webp"];
 
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import sadhishaConstructionData from "../../assets/data/sadhishaConstructionData";
-import SadhishaConstructionImage from "../../assets/images/our_companies/construction.webp";
-import Construction2 from "../../assets/images/our_companies/construction2.webp";
-import Construction3 from "../../assets/images/our_companies/construction3.webp";
+const SadhishaConstructionImage =
+  cloudinaryAssets["src/assets/images/our_companies/construction.webp"];
+const Construction2 =
+  cloudinaryAssets["src/assets/images/our_companies/construction2.webp"];
+const Construction3 =
+  cloudinaryAssets["src/assets/images/our_companies/construction3.webp"];
 
 import {
   FaPhoneAlt,
@@ -42,7 +50,8 @@ const SadhishaConstruction = () => {
         <Section>
           <div className="md-md-0">
             <div className=" flex-row-center mb-3">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src={SadhishaConstructionLogo}
                 width={130}
                 alt="SadhishaConstructionLogo"
@@ -90,21 +99,24 @@ const SadhishaConstruction = () => {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={SadhishaConstructionImage}
                     alt="First slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={Construction2}
                     alt="Second slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={Construction3}
                     alt="Third slide"
@@ -143,19 +155,37 @@ const SadhishaConstruction = () => {
 
               <div className="py-3">
                 <div className="d-flex gap-3 mb-md-0 mb-2 align-items-center">
-                  <img loading="lazy" src={logo} width={40} className="mb-3" alt="" />
+                  <img
+                    loading="lazy"
+                    src={logo}
+                    width={40}
+                    className="mb-3"
+                    alt=""
+                  />
                   <h5 className="subTitleWhite fs-6">
                     Stronger and more durable structural performance
                   </h5>
                 </div>
                 <div className=" d-flex gap-3 mb-md-0 mb-2 align-items-center">
-                  <img loading="lazy" src={logo} width={40} className="mb-3" alt="" />
+                  <img
+                    loading="lazy"
+                    src={logo}
+                    width={40}
+                    className="mb-3"
+                    alt=""
+                  />
                   <h5 className="subTitleWhite fs-6">
                     Lightweight yet resilient in diverse environments{" "}
                   </h5>
                 </div>
                 <div className=" d-flex gap-3 mb-md-0 mb-2 align-items-center">
-                  <img loading="lazy" src={logo} width={40} className="mb-3" alt="" />
+                  <img
+                    loading="lazy"
+                    src={logo}
+                    width={40}
+                    className="mb-3"
+                    alt=""
+                  />
                   <h5 className="subTitleWhite fs-6">
                     Simplified construction process and faster delivery
                   </h5>
@@ -167,7 +197,8 @@ const SadhishaConstruction = () => {
               <div className="row justify-content-center d-flex">
                 <div className="col-6 pb-md-5 align-items-start flex-row-center">
                   <div className="position-relative">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src={building}
                       alt="Workforce"
                       className="img-fluid rounded"
@@ -176,14 +207,16 @@ const SadhishaConstruction = () => {
                 </div>
                 <div className="col-6 pt-md-5 align-items-end d-flex gap-3 flex-column">
                   <div className="position-relative">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src={dummy1}
                       alt="Workforce"
                       className="img-fluid rounded"
                     />
                   </div>
                   <div className="position-relative">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src={dummy2}
                       alt="Workforce"
                       className="img-fluid rounded"
@@ -225,7 +258,8 @@ const SadhishaConstruction = () => {
                 >
                   <div className="benefit-card">
                     <div className="text-center channel-partner-benefit-img-box mb-3">
-                      <img loading="lazy"
+                      <img
+                        loading="lazy"
                         src={benefit.image}
                         alt={benefit.title}
                         style={{ width: "100px" }}

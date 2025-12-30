@@ -1,26 +1,33 @@
-import AuroLogo from "../../assets/images/common/AURO ARCHITECTS/1.webp";
-import SadhishaConstructionLogo from "../../assets/images/common/SADHISHA CONSTRUCTION/1.webp";
-import SadhishaHomesLogo from "../../assets/images/common/SADHISHA LOGO 1/1.webp";
+import cloudinaryAssets from "../cloudinary_assets.json";
 
-import logo from "../images/common/sadhisha-half-logo.png";
+const AuroLogo =
+  cloudinaryAssets["src/assets/images/common/AURO ARCHITECTS/1.webp"];
+const SadhishaConstructionLogo =
+  cloudinaryAssets["src/assets/images/common/SADHISHA CONSTRUCTION/1.webp"];
+const SadhishaHomesLogo =
+  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/1.webp"];
 
-import pillar1 from "../images/home/row-1-column-1.webp";
-import pillar2 from "../images/home/row-1-column-2.webp";
-import pillar3 from "../images/home/row-1-column-3.webp";
-import pillar4 from "../images/home/row-1-column-4.webp";
+const logo =
+  cloudinaryAssets["src/assets/images/common/sadhisha-half-logo.png"];
 
+const pillar1 = cloudinaryAssets["src/assets/images/home/row-1-column-1.webp"];
+const pillar2 = cloudinaryAssets["src/assets/images/home/row-1-column-2.webp"];
+const pillar3 = cloudinaryAssets["src/assets/images/home/row-1-column-3.webp"];
+const pillar4 = cloudinaryAssets["src/assets/images/home/row-1-column-4.webp"];
 
-
-import Acquisition from "../images/home/acquisattion.webp";
-import audit from "../images/home/audit.webp";
-import clientRelation from "../images/home/client-relation.webp";
-import construction from "../images/home/construction.webp";
-import design from "../images/home/design.webp";
-import development from "../images/home/development.webp";
-import finance from "../images/home/finance.webp";
-import legal from "../images/home/legal.webp";
-import sales from "../images/home/sales.webp";
-import marketing from "../images/home/marketing.webp";
+const Acquisition =
+  cloudinaryAssets["src/assets/images/home/acquisattion.webp"];
+const audit = cloudinaryAssets["src/assets/images/home/audit.webp"];
+const clientRelation =
+  cloudinaryAssets["src/assets/images/home/client-relation.webp"];
+const construction =
+  cloudinaryAssets["src/assets/images/home/construction.webp"];
+const design = cloudinaryAssets["src/assets/images/home/design.webp"];
+const development = cloudinaryAssets["src/assets/images/home/development.webp"];
+const finance = cloudinaryAssets["src/assets/images/home/finance.webp"];
+const legal = cloudinaryAssets["src/assets/images/home/legal.webp"];
+const sales = cloudinaryAssets["src/assets/images/home/sales.webp"];
+const marketing = cloudinaryAssets["src/assets/images/home/marketing.webp"];
 
 const dataStats = [
   { label: "Years Experience", value: 30, suffix: "+" },

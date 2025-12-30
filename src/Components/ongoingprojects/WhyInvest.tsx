@@ -1,5 +1,8 @@
 import { Check } from "lucide-react";
-import beachImage from "../../assets/images/ongoingprojects/beach.webp";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
+
+const beachImage =
+  cloudinaryAssets["src/assets/images/ongoingprojects/beach.webp"];
 
 const WhyInvest = () => {
   const reasons = [
@@ -19,7 +22,8 @@ const WhyInvest = () => {
 
         <div className="row g-5 align-items-center">
           <div className="col-lg-6">
-            <img loading="lazy"
+            <img
+              loading="lazy"
               src={beachImage}
               alt="Coastal landscape"
               className="img-fluid rounded shadow-lg"

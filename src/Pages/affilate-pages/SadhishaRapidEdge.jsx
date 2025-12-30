@@ -5,13 +5,19 @@ import AuroArchitectsData from "../../assets/data/auroArchitectsData";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import sadhishaHomesData from "../../assets/data/sadhishaHomesData";
 
-import SadhishaHomesLogo from "../../assets/images/common/SADHISHA LOGO 1/1.webp";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
+
+const SadhishaHomesLogo =
+  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/1.webp"];
 
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 
-import RapidEdge from "../../assets/images/our_companies/rapid_edge.webp";
-import RapidEdge1 from "../../assets/images/our_companies/rapid_edge1.webp";
-import RapidEdge2 from "../../assets/images/our_companies/rapid_edge2.webp";
+const RapidEdge =
+  cloudinaryAssets["src/assets/images/our_companies/rapid_edge.webp"];
+const RapidEdge1 =
+  cloudinaryAssets["src/assets/images/our_companies/rapid_edge1.webp"];
+const RapidEdge2 =
+  cloudinaryAssets["src/assets/images/our_companies/rapid_edge2.webp"];
 
 const SadhishaRapidEdge = () => {
   useEffect(() => {
@@ -27,7 +33,8 @@ const SadhishaRapidEdge = () => {
         <Section>
           <div className="md-md-0">
             <div className=" flex-row-center mb-3">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src={SadhishaHomesLogo}
                 width={130}
                 alt="SadhishaHomesLogo"
@@ -75,21 +82,24 @@ const SadhishaRapidEdge = () => {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={RapidEdge}
                     alt="First slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={RapidEdge1}
                     alt="Second slide"
                   />
                 </div>
                 <div className="carousel-item">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={RapidEdge2}
                     alt="Third slide"
@@ -131,7 +141,8 @@ const SadhishaRapidEdge = () => {
                   className="rounded-2 py-md-5 px-md-3 p-3 developmentFeaturesCard mb-md-4 mb-3 "
                 >
                   <div className="d-flex justify-content-center mb-md-4 mb-3">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       className="p-3"
                       src={point.image}
                       width={120}

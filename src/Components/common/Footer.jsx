@@ -10,8 +10,10 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { GrNext } from "react-icons/gr";
 import { Link } from "react-router-dom";
+import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-import sadhishaLogo from "../../assets/images/common/SADHISHA LOGO 1/2.png";
+const sadhishaLogo =
+  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/2.png"];
 
 const Footer = () => {
   return (
@@ -69,7 +71,7 @@ const Footer = () => {
                 </li>
 
                 <li className="nav-item">
-                  <a  href="#contact-section"  className=" text-white">
+                  <a href="#contact-section" className=" text-white">
                     Contact
                   </a>
                 </li>
@@ -120,7 +122,12 @@ const Footer = () => {
             </div>
             <div className="col-md-2 order-md-1 order-2">
               <div className="logo-box">
-                <img loading="lazy" src={sadhishaLogo} className="w-100" alt="" />
+                <img
+                  loading="lazy"
+                  src={sadhishaLogo}
+                  className="w-100"
+                  alt=""
+                />
               </div>
             </div>
             <div className="col-md-5 order-md-3 order-3"></div>
