@@ -12,8 +12,7 @@ import { GrNext } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-const sadhishaLogo =
-  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/2.png"];
+import sadhishaLogo from "../../assets/images/common/sadhisha_logo.png";
 
 const Footer = () => {
   return (

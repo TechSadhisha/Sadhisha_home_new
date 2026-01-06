@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import cloudinaryAssets from "../../assets/cloudinary_assets.json";
-const logo = cloudinaryAssets["src/assets/images/ongoingprojects/logo.webp"];
+import sadhishaLogo from "../../assets/images/common/sadhisha_logo.png";
 
 const Header = () => {
   return (
@@ -23,7 +23,7 @@ const Header = () => {
             >
               <img
                 loading="lazy"
-                src={logo}
+                src={sadhishaLogo}
                 alt="Sadhisha Homes"
                 style={{ height: "75px" }}
               />

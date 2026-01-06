@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import cloudinaryAssets from "../../assets/cloudinary_assets.json";
-const sadhishaLogo =
-  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/2.png"];
+import sadhishaLogo from "../../assets/images/common/sadhisha_logo.png";
 
 import "../../styles/components/common/navbar.css";
 import { Link } from "react-router-dom";

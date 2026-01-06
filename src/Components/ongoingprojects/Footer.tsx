@@ -1,7 +1,7 @@
 import { MapPin, Mail, Phone, Facebook, Twitter, Youtube } from "lucide-react";
 import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-const logo1 = cloudinaryAssets["src/assets/images/ongoingprojects/logo1.webp"];
+import sadhishaLogo1 from "../../assets/images/common/sadhisha_logo1.png";
 const award = cloudinaryAssets["src/assets/images/ongoingprojects/award.webp"];
 
 const Footer = () => {
@@ -30,7 +30,7 @@ const Footer = () => {
             <h3 className="h5 fw-bold mb-4">Contact Sadisha</h3>
             <img
               loading="lazy"
-              src={logo1}
+              src={sadhishaLogo1}
               alt="Sadhisha Homes"
               style={{ height: "96px" }}
               className="mb-4"
