@@ -1,11 +1,10 @@
 import cloudinaryAssets from "../cloudinary_assets.json";
 
-const AuroLogo =
-  cloudinaryAssets["src/assets/images/common/AURO ARCHITECTS/1.webp"];
-const SadhishaConstructionLogo =
-  cloudinaryAssets["src/assets/images/common/SADHISHA CONSTRUCTION/1.webp"];
-const SadhishaHomesLogo =
-  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/1.webp"];
+import sadhishaLogo1 from "../images/common/sadhisha_homes.webp";
+
+const AuroLogo = sadhishaLogo1;
+const SadhishaConstructionLogo = sadhishaLogo1;
+const SadhishaHomesLogo = sadhishaLogo1;
 
 const logo =
   cloudinaryAssets["src/assets/images/common/sadhisha-half-logo.png"];
@@ -568,7 +567,7 @@ const affiliatesData = [
     route: "/sadhisha-homes",
   },
   {
-    name: "Sadhisha Construction Technologies",
+    name: "Sadhisha Construction",
     description: `Our advanced construction arm focused on innovation through light-gauge steel systems, prefabrication, BIM, and modular construction—ensuring speed, sustainability, and structural excellence.`,
     image: SadhishaConstructionLogo,
     route: "/sadhisha-constructions",

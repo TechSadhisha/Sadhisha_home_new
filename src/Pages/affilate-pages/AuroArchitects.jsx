@@ -6,8 +6,7 @@ import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 
 import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-const AuroLogo =
-  cloudinaryAssets["src/assets/images/common/AURO ARCHITECTS/1.webp"];
+import AuroLogo from "../../assets/images/common/sadhisha_homes.webp";
 
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 const AuroArchitectsImage =

@@ -5,8 +5,7 @@ import sadhishaHomesData from "../../assets/data/sadhishaHomesData";
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-const SadhishaHomesLogo =
-  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/1.webp"];
+import SadhishaHomesLogo from "../../assets/images/common/sadhisha_homes.webp";
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 const ai1 = cloudinaryAssets["src/assets/images/our_companies/ai1.webp"];
 const ai2 = cloudinaryAssets["src/assets/images/our_companies/ai2.webp"];

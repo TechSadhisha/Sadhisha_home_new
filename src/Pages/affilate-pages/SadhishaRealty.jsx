@@ -7,8 +7,7 @@ import sadhishaHomesData from "../../assets/data/sadhishaHomesData";
 
 import cloudinaryAssets from "../../assets/cloudinary_assets.json";
 
-const SadhishaHomesLogo =
-  cloudinaryAssets["src/assets/images/common/SADHISHA LOGO 1/1.webp"];
+import SadhishaHomesLogo from "../../assets/images/common/sadhisha_homes.webp";
 
 import ContactDetails from "../../Components/index-pages/ContactDetails";
 

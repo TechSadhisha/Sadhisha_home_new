@@ -12,8 +12,7 @@ const dummy1 = cloudinaryAssets["src/assets/images/home/dummy2.webp"];
 const logo =
   cloudinaryAssets["src/assets/images/common/sadhisha-half-logo.webp"];
 
-const SadhishaConstructionLogo =
-  cloudinaryAssets["src/assets/images/common/SADHISHA CONSTRUCTION/1.webp"];
+import SadhishaConstructionLogo from "../../assets/images/common/sadhisha_homes.webp";
 
 import GeneralEnquiryForm from "../../Components/Forms/GeneralEnquiryForm";
 import sadhishaConstructionData from "../../assets/data/sadhishaConstructionData";

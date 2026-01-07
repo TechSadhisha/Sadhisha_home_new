@@ -555,7 +555,7 @@ const Home = () => {
                     <img
                       loading="lazy"
                       src={affiliates.image}
-                      width={180}
+                      width={120}
                       style={{ borderRadius: "50%" }}
                       alt=""
                     />
