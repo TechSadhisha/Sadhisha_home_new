@@ -40,7 +40,9 @@ const GeneralEnquiryForm = () => {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL || "http://localhost:5001"}/api/leads`,
+        `${
+          import.meta.env.VITE_API_URL || "https://sadhishaworldwide.in"
+        }/api/leads`,
 
         {
           name: data.name,
